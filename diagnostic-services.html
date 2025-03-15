@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Diagnostic Services - Brooks of Cherith Hospitals</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="services-styles.css">
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalTest",
+    "name": "Diagnostic Services",
+    "description": "State-of-the-art diagnostic center offering a comprehensive range of tests and procedures to help diagnose and monitor various medical conditions with accuracy and precision.",
+    "usedToDiagnose": ["Heart Disease", "Cancer", "Neurological Disorders", "Respiratory Conditions"],
+    "normalRange": "Varies by test",
+    "affectedBy": ["Patient medical history", "Current medications", "Fasting requirements"],
+    "usesDevice": {
+      "@type": "MedicalDevice",
+      "name": "Advanced Diagnostic Equipment"
+    },
+    "relevantSpecialty": {
+      "@type": "MedicalSpecialty",
+      "name": "Radiology and Laboratory Medicine"
+    },
+    "provider": {
+      "@type": "MedicalOrganization",
+      "name": "Brooks of Cherith Hospitals",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Health Avenue, Westlands",
+        "addressLocality": "Nairobi",
+        "addressRegion": "Nairobi",
+        "postalCode": "00100",
+        "addressCountry": "KE"
+      }
+    }
+  }
+</script>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+      <div class="container">
+          <div class="logo">
+              <img src="/placeholder.svg?height=60&width=100" alt="Brooks of Cherith Hospitals">
+          </div>
+          <nav class="main-nav">
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li class="dropdown">
+                      <a href="services.html" class="active">Our Services <i class="fas fa-chevron-down"></i></a>
+                      <div class="dropdown-content">
+                          <a href="specialist-outpatient.html">Specialist Outpatient</a>
+                          <a href="general-outpatient.html">General Outpatient</a>
+                          <a href="diagnostic-services.html" class="active">Diagnostic Services</a>
+                          <a href="emergency-trauma-services.html">Emergency & Trauma</a>
+                      </div>
+                  </li>
+                  <li class="dropdown">
+                      <a href="#">Locations <i class="fas fa-chevron-down"></i></a>
+                      <div class="dropdown-content">
+                          <a href="#">Main Hospital</a>
+                          <a href="#">Satellite Clinics</a>
+                      </div>
+                  </li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">News & Insights</a></li>
+              </ul>
+          </nav>
+          <div class="contact-btn">
+              <a href="#" class="btn btn-primary">Contact Us <i class="fas fa-arrow-right"></i></a>
+          </div>
+          <div class="mobile-menu-btn">
+              <i class="fas fa-bars"></i>
+          </div>
+      </div>
+  </header>
+
+  <!-- Service Hero Section -->
+  <section class="service-detail-hero diagnostic-hero">
+      <div class="container">
+          <div class="service-detail-hero-content">
+              <div class="service-badge">
+                  <span><i class="fas fa-clock"></i> Available Mon-Sat</span>
+              </div>
+              <h1>Diagnostic Services</h1>
+              <p>State-of-the-art diagnostic center offering a comprehensive range of tests and procedures to help diagnose and monitor various medical conditions with accuracy and precision.</p>
+              <div class="hero-cta">
+                  <a href="#" class="btn btn-primary btn-large">Book an Appointment</a>
+                  <a href="tel:+254723043404" class="btn btn-outline-primary btn-large">
+                      <i class="fas fa-phone-alt"></i> Call: +254(0) 723 043 404
+                  </a>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Service Overview Section -->
+  <section class="service-overview">
+      <div class="container">
+          <div class="service-overview-content">
+              <div class="service-overview-text">
+                  <h2>Advanced Diagnostic Solutions</h2>
+                  <p>At Brooks of Cherith Hospitals, our Diagnostic Services department is equipped with state-of-the-art technology and staffed by experienced professionals to provide accurate and timely diagnostic results. We offer a comprehensive range of diagnostic tests and procedures to help identify and monitor various medical conditions.</p>
+                  
+                  <p>Our diagnostic center plays a crucial role in the healthcare journey, providing physicians with the information they need to make informed decisions about your treatment. We are committed to delivering precise results with minimal wait times, ensuring that you receive the care you need as quickly as possible.</p>
+                  
+                  <div class="service-highlights-box">
+                      <h3>Why Choose Our Diagnostic Services</h3>
+                      <ul>
+                          <li><i class="fas fa-microscope"></i> <strong>Advanced Technology:</strong> State-of-the-art equipment for accurate and detailed results</li>
+                          <li><i class="fas fa-user-md"></i> <strong>Expert Technicians:</strong> Highly trained professionals with specialized expertise</li>
+                          <li><i class="fas fa-clock"></i> <strong>Quick Turnaround:</strong> Efficient processes to deliver results promptly</li>
+                          <li><i class="fas fa-shield-alt"></i> <strong>Safety Protocols:</strong> Strict adherence to safety and infection control standards</li>
+                          <li><i class="fas fa-file-medical-alt"></i> <strong>Comprehensive Reporting:</strong> Detailed reports with clear interpretations</li>
+                      </ul>
+                  </div>
+              </div>
+              
+              <div class="service-overview-image">
+                  <img src="https://images.unsplash.com/photo-1581595219315-a187dd40c322?q=80&w=880&auto=format&fit=crop" alt="Advanced diagnostic equipment at Brooks of Cherith Hospitals">
+                  <div class="image-caption">Our state-of-the-art diagnostic center features advanced imaging technology</div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Diagnostic Services Section -->
+  <section class="specialties-section">
+      <div class="container">
+          <div class="section-header">
+              <h2>Our Diagnostic Services</h2>
+              <p>Explore our comprehensive range of diagnostic tests and procedures</p>
+          </div>
+          
+          <div class="specialties-accordion">
+              <!-- Imaging Services -->
+              <div class="accordion-item">
+                  <div class="accordion-header">
+                      <div class="specialty-icon">
+                          <i class="fas fa-x-ray"></i>
+                      </div>
+                      <h3>Imaging Services</h3>
+                      <div class="accordion-toggle">
+                          <i class="fas fa-plus"></i>
+                      </div>
+                  </div>
+                  <div class="accordion-content">
+                      <p>Our imaging services utilize advanced technology to provide detailed images of the body's internal structures. These images help physicians diagnose and monitor various medical conditions, from broken bones to complex diseases.</p>
+                      
+                      <div class="specialty-services">
+                          <h4>Services Offered:</h4>
+                          <ul>
+                              <li><i class="fas fa-check-circle"></i> X-ray imaging</li>
+                              <li><i class="fas fa-check-circle"></i> Ultrasound</li>
+                              <li><i class="fas fa-check-circle"></i> Computed Tomography (CT) scans</li>
+                              <li><i class="fas fa-check-circle"></i> Magnetic Resonance Imaging (MRI)</li>
+                              <li><i class="fas fa-check-circle"></i> Mammography</li>
+                              <li><i class="fas fa-check-circle"></i> Bone density scans</li>
+                              <li><i class="fas fa-check-circle"></i> Fluoroscopy</li>
+                              <li><i class="fas fa-check-circle"></i> Interventional radiology</li>
+                          </ul>
+                      </div>
+                      
+                      <div class="specialty-doctor">
+                          <div class="doctor-image">
+                              <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=300&auto=format&fit=crop" alt="Dr. Robert Kimani">
+                          </div>
+                          <div class="doctor-info">
+                              <h4>Dr. Robert Kimani</h4>
+                              <p class="doctor-title">Head of Radiology</p>
+                              <p class="doctor-credentials">MD, FRCR | 15+ years experience</p>
+                              <p class="doctor-bio">Dr. Kimani is a board-certified radiologist with extensive experience in diagnostic imaging and interventional procedures.</p>
+                              <a href="#" class="btn btn-outline-primary btn-sm">View Profile</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- Laboratory Services -->
+              <div class="accordion-item">
+                  <div class="accordion-header">
+                      <div class="specialty-icon">
+                          <i class="fas fa-vial"></i>
+                      </div>
+                      <h3>Laboratory Services</h3>
+                      <div class="accordion-toggle">
+                          <i class="fas fa-plus"></i>
+                      </div>
+                  </div>
+                  <div class="accordion-content">
+                      <p>Our laboratory services provide comprehensive testing of blood, urine, and other body fluids and tissues to help diagnose, treat, and prevent disease. Our state-of-the-art laboratory is equipped with advanced technology and staffed by experienced professionals.</p>
+                      
+                      <div class="specialty-services">
+                          <h4>Services Offered:</h4>
+                          <ul>
+                              <li><i class="fas fa-check-circle"></i> Complete blood count (CBC)</li>
+                              <li><i class="fas fa-check-circle"></i> Blood chemistry panels</li>
+                              <li><i class="fas fa-check-circle"></i> Urinalysis</li>
+                              <li><i class="fas fa-check-circle"></i> Microbiology cultures</li>
+                              <li><i class="fas fa-check-circle"></i> Pathology services</li>
+                              <li><i class="fas fa-check-circle"></i> Immunology testing</li>
+                              <li><i class="fas fa-check-circle"></i> Hormone testing</li>
+                              <li><i class="fas fa-check-circle"></i> Genetic testing</li>
+                          </ul>
+                      </div>
+                      
+                      <div class="specialty-doctor">
+                          <div class="doctor-image">
+                              <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=300&auto=format&fit=crop" alt="Dr. Jane Wambui">
+                          </div>
+                          <div class="doctor-info">
+                              <h4>Dr. Jane Wambui</h4>
+                              <p class="doctor-title">Chief Pathologist</p>
+                              <p class="doctor-credentials">MD, FRCPath | 12+ years experience</p>
+                              <p class="doctor-bio">Dr. Wambui specializes in clinical pathology and laboratory medicine, with expertise in hematology and immunology.</p>
+                              <a href="#" class="btn btn-outline-primary btn-sm">View Profile</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- Cardiac Diagnostics -->
+              <div class="accordion-item">
+                  <div class="accordion-header">
+                      <div class="specialty-icon">
+                          <i class="fas fa-heartbeat"></i>
+                      </div>
+                      <h3>Cardiac Diagnostics</h3>
+                      <div class="accordion-toggle">
+                          <i class="fas fa-plus"></i>
+                      </div>
+                  </div>
+                  <div class="accordion-content">
+                      <p>Our cardiac diagnostic services provide comprehensive evaluation of heart function to help diagnose and monitor cardiovascular conditions. We use advanced technology to assess heart health and detect potential issues early.</p>
+                      
+                      <div class="specialty-services">
+                          <h4>Services Offered:</h4>
+                          <ul>
+                              <li><i class="fas fa-check-circle"></i> Electrocardiogram (ECG/EKG)</li>
+                              <li><i class="fas fa-check-circle"></i> Echocardiogram</li>
+                              <li><i class="fas fa-check-circle"></i> Stress testing</li>
+                              <li><i class="fas fa-check-circle"></i> Holter monitoring</li>
+                              <li><i class="fas fa-check-circle"></i> Event monitoring</li>
+                              <li><i class="fas fa-check-circle"></i> Cardiac CT scans</li>
+                              <li><i class="fas fa-check-circle"></i> Cardiac MRI</li>
+                              <li><i class="fas fa-check-circle"></i> Cardiac catheterization</li>
+                          </ul>
+                      </div>
+                      
+                      <div class="specialty-doctor">
+                          <div class="doctor-image">
+                              <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=300&auto=format&fit=crop" alt="Dr. Sarah Johnson">
+                          </div>
+                          <div class="doctor-info">
+                              <h4>Dr. Sarah Johnson</h4>
+                              <p class="doctor-title">Lead Cardiologist</p>
+                              <p class="doctor-credentials">MD, FACC | 15+ years experience</p>
+                              <p class="doctor-bio">Dr. Johnson specializes in cardiovascular health with expertise in cardiac diagnostics and heart disease management.</p>
+                              <a href="#" class="btn btn-outline-primary btn-sm">View Profile</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- Neurological Diagnostics -->
+              <div class="accordion-item">
+                  <div class="accordion-header">
+                      <div class="specialty-icon">
+                          <i class="fas fa-brain"></i>
+                      </div>
+                      <h3>Neurological Diagnostics</h3>
+                      <div class="accordion-toggle">
+                          <i class="fas fa-plus"></i>
+                      </div>
+                  </div>
+                  <div class="accordion-content">
+                      <p>Our neurological diagnostic services provide comprehensive evaluation of the nervous system to help diagnose and monitor neurological conditions. We use advanced technology to assess brain and nerve function.</p>
+                      
+                      <div class="specialty-services">
+                          <h4>Services Offered:</h4>
+                          <ul>
+                              <li><i class="fas fa-check-circle"></i> Electroencephalogram (EEG)</li>
+                              <li><i class="fas fa-check-circle"></i> Electromyography (EMG)</li>
+                              <li><i class="fas fa-check-circle"></i> Nerve conduction studies</li>
+                              <li><i class="fas fa-check-circle"></i> Brain CT scans</li>
+                              <li><i class="fas fa-check-circle"></i> Brain MRI</li>
+                              <li><i class="fas fa-check-circle"></i> Lumbar puncture</li>
+                              <li><i class="fas fa-check-circle"></i> Cognitive testing</li>
+                              <li><i class="fas fa-check-circle"></i> Sleep studies</li>
+                          </ul>
+                      </div>
+                      
+                      <div class="specialty-doctor">
+                          <div class="doctor-image">
+                              <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=300&auto=format&fit=crop" alt="Dr. Michael Chen">
+                          </div>
+                          <div class="doctor-info">
+                              <h4>Dr. Michael Chen</h4>
+                              <p class="doctor-title">Senior Neurologist</p>
+                              <p class="doctor-credentials">MD, PhD | 12+ years experience</p>
+                              <p class="doctor-bio">Dr. Chen is a leading neurologist specializing in neurological diagnostics, stroke prevention, and headache disorders.</p>
+                              <a href="#" class="btn btn-outline-primary btn-sm">View Profile</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Meet Our Team Section -->
+  <section class="meet-team-section">
+      <div class="container">
+          <div class="section-header">
+              <h2>Meet Our Diagnostic Team</h2>
+              <p>Our team of experienced specialists is dedicated to providing accurate and timely diagnostic services</p>
+          </div>
+          
+          <div class="team-grid">
+              <div class="team-member">
+                  <div class="member-image">
+                      <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=500&auto=format&fit=crop" alt="Dr. Robert Kimani">
+                  </div>
+                  <div class="member-info">
+                      <h3>Dr. Robert Kimani</h3>
+                      <p class="member-title">Head of Radiology</p>
+                      <p class="member-credentials">MD, FRCR | 15+ years experience</p>
+                      <p class="member-bio">Dr. Kimani is a board-certified radiologist with extensive experience in diagnostic imaging and interventional procedures.</p>
+                      <div class="member-actions">
+                          <a href="#" class="btn btn-primary btn-sm">Book Appointment</a>
+                          <a href="#" class="btn btn-outline-primary btn-sm">View Profile</a>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="team-member">
+                  <div class="member-image">
+                      <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=500&auto=format&fit=crop" alt="Dr. Jane Wambui">
+                  </div>
+                  <div class="member-info">
+                      <h3>Dr. Jane Wambui</h3>
+                      <p class="member-title">Chief Pathologist</p>
+                      <p class="member-credentials">MD, FRCPath | 12+ years experience</p>
+                      <p class="member-bio">Dr. Wambui specializes in clinical pathology and laboratory medicine, with expertise in hematology and immunology.</p>
+                      <div class="member-actions">
+                          <a href="#" class="btn btn-primary btn-sm">Book Appointment</a>
+                          <a href="#" class="btn btn-outline-primary btn-sm">View Profile</a>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="team-member">
+                  <div class="member-image">
+                      <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=500&auto=format&fit=crop" alt="Dr. Sarah Johnson">
+                  </div>
+                  <div class="member-info">
+                      <h3>Dr. Sarah Johnson</h3>
+                      <p class="member-title">Lead Cardiologist</p>
+                      <p class="member-credentials">MD, FACC | 15+ years experience</p>
+                      <p class="member-bio">Dr. Johnson specializes in cardiovascular health with expertise in cardiac diagnostics and heart disease management.</p>
+                      <div class="member-actions">
+                          <a href="#" class="btn btn-primary btn-sm">Book Appointment</a>
+                          <a href="#" class="btn btn-outline-primary btn-sm">View Profile</a>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="team-member">
+                  <div class="member-image">
+                      <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?q=80&w=500&auto=format&fit=crop" alt="Dr. David Kamau">
+                  </div>
+                  <div class="member-info">
+                      <h3>Dr. David Kamau</h3>
+                      <p class="member-title">Radiologic Technologist</p>
+                      <p class="member-credentials">RT(R) | 10+ years experience</p>
+                      <p class="member-bio">David is a certified radiologic technologist with specialized training in CT, MRI, and X-ray imaging procedures.</p>
+                      <div class="member-actions">
+                          <a href="#" class="btn btn-primary btn-sm">Book Appointment</a>
+                          <a href="#" class="btn btn-outline-primary btn-sm">View Profile</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="view-all-team">
+              <a href="#" class="btn btn-outline-primary btn-large">View All Specialists <i class="fas fa-arrow-right"></i></a>
+          </div>
+      </div>
+  </section>
+
+  <!-- Patient Testimonials -->
+  <section class="testimonials service-testimonials">
+      <div class="container">
+          <div class="section-header">
+              <h2>What Our Patients Say</h2>
+              <p>Read about the experiences of patients who have received diagnostic services at our facility</p>
+          </div>
+          
+          <div class="testimonial-container">
+              <div class="testimonial-controls">
+                  <button class="testimonial-prev" aria-label="Previous testimonial">
+                      <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <button class="testimonial-next" aria-label="Next testimonial">
+                      <i class="fas fa-chevron-right"></i>
+                  </button>
+              </div>
+              
+              <div class="testimonial-slider">
+                  <div class="testimonial-slide active">
+                      <div class="testimonial-quote">
+                          <i class="fas fa-quote-left quote-icon"></i>
+                          <p>I was nervous about my MRI, but the staff at Brooks of Cherith made me feel comfortable throughout the entire process. They explained everything clearly and were very professional. I received my results quickly, which helped my doctor develop an effective treatment plan.</p>
+                          <div class="testimonial-author">
+                              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop" alt="Thomas K.">
+                              <div class="author-info">
+                                  <h4>Thomas K.</h4>
+                                  <p>MRI Patient</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="testimonial-slide">
+                      <div class="testimonial-quote">
+                          <i class="fas fa-quote-left quote-icon"></i>
+                          <p>The laboratory services at Brooks of Cherith are exceptional. I needed several blood tests for my ongoing health monitoring, and the phlebotomist was skilled and gentle. The results were available online quickly, and my doctor received a comprehensive report.</p>
+                          <div class="testimonial-author">
+                              <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?q=80&w=100&auto=format&fit=crop" alt="John M.">
+                              <div class="author-info">
+                                  <h4>John M.</h4>
+                                  <p>Laboratory Services Patient</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+                  <div class="testimonial-slide">
+                      <div class="testimonial-quote">
+                          <i class="fas fa-quote-left quote-icon"></i>
+                          <p>I had an echocardiogram at Brooks of Cherith, and I was impressed by the state-of-the-art equipment and the expertise of the technician. Dr. Johnson explained the results thoroughly and answered all my questions. The entire experience was positive and reassuring.</p>
+                          <div class="testimonial-author">
+                              <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=100&auto=format&fit=crop" alt="Mary W.">
+                              <div class="author-info">
+                                  <h4>Mary W.</h4>
+                                  <p>Cardiac Diagnostics Patient</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <div class="testimonial-dots">
+                  <span class="dot active"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Appointment CTA -->
+  <section class="appointment-cta">
+      <div class="container">
+          <div class="cta-content">
+              <h2>Ready to Schedule Your Diagnostic Procedure?</h2>
+              <p>Take the first step towards better health by booking an appointment with our diagnostic team.</p>
+              <div class="cta-buttons">
+                  <a href="#" class="btn btn-primary btn-large">Book an Appointment</a>
+                  <a href="tel:+254723043404" class="btn btn-outline-primary btn-large">
+                      <i class="fas fa-phone-alt"></i> Call Us: +254(0) 723 043 404
+                  </a>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+      <div class="container">
+          <div class="footer-top">
+              <div class="footer-column">
+                  <div class="footer-logo">
+                      <img src="/placeholder.svg?height=60&width=100" alt="Brooks of Cherith Hospitals">
+                      <p class="tagline">Healing with Compassion</p>
+                  </div>
+                  <p class="footer-about">Brooks of Cherith Hospitals provides holistic medical care that combines expertise with compassion, rooted in our faith-driven mission to heal and serve.</p>
+                  <div class="footer-certifications">
+                      <span><i class="fas fa-certificate"></i> Certified Medical Professionals</span>
+                      <span><i class="fas fa-award"></i> Accredited Healthcare Facility</span>
+                  </div>
+              </div>
+              
+              <div class="footer-column">
+                  <h4>Quick Links</h4>
+                  <ul class="footer-links">
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="services.html">Our Services</a></li>
+                      <li><a href="#">Find a Doctor</a></li>
+                      <li><a href="#">Locations</a></li>
+                      <li><a href="#">News & Insights</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                  </ul>
+              </div>
+              
+              <div class="footer-column">
+                  <h4>Our Services</h4>
+                  <ul class="footer-links">
+                      <li><a href="specialist-outpatient.html">Specialist Outpatient</a></li>
+                      <li><a href="general-outpatient.html">General Outpatient</a></li>
+                      <li><a href="diagnostic-services.html">Diagnostic Services</a></li>
+                      <li><a href="emergency-trauma-services.html">Emergency & Trauma</a></li>
+                      <li><a href="#">Antenatal Clinic</a></li>
+                      <li><a href="#">Pharmacy Services</a></li>
+                      <li><a href="#">Rehabilitative Medicine</a></li>
+                  </ul>
+              </div>
+              
+              <div class="footer-column">
+                  <h4>Contact & Support</h4>
+                  <ul class="footer-contact">
+                      <li>
+                          <i class="fas fa-phone-alt"></i>
+                          <div>
+                              <p>Emergency:</p>
+                              <a href="tel:+254723043404">+254(0) 723 043 404</a>
+                          </div>
+                      </li>
+                      <li>
+                          <i class="fas fa-envelope"></i>
+                          <div>
+                              <p>Email:</p>
+                              <a href="mailto:info@brookoflife.co.ke">info@brookoflife.co.ke</a>
+                          </div>
+                      </li>
+                      <li>
+                          <i class="fas fa-map-marker-alt"></i>
+                          <div>
+                              <p>Main Hospital:</p>
+                              <span>123 Health Avenue, Westlands, Nairobi</span>
+                          </div>
+                      </li>
+                  </ul>
+                  
+                  <div class="newsletter">
+                      <h4>Stay Informed – Join Our Newsletter</h4>
+                      <form class="newsletter-form">
+                          <input type="email" placeholder="Your email address">
+                          <button type="submit" class="btn-subscribe">Subscribe</button>
+                      </form>
+                  </div>
+              </div>
+          </div>
+          
+          <div class="footer-bottom">
+              <div class="footer-social">
+                  <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                  <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                  <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                  <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+              </div>
+              
+              <div class="footer-legal">
+                  <a href="#">Privacy Policy</a>
+                  <a href="#">Terms of Use</a>
+                  <a href="#">Sitemap</a>
+                  <a href="#">Careers</a>
+              </div>
+              
+              <div class="copyright">
+                  <p>&copy; 2025 Brooks of Cherith Hospitals. All Rights Reserved.</p>
+              </div>
+          </div>
+      </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="services.js"></script>
+</body>
+</html>
+

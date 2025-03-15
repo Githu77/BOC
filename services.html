@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Our Services - Brooks of Cherith Hospitals</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="services-styles.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalOrganization",
+      "name": "Brooks of Cherith Hospitals",
+      "url": "https://brookoflife.co.ke",
+      "logo": "https://brookoflife.co.ke/logo.png",
+      "medicalSpecialty": ["Cardiology", "Neurology", "Rheumatology", "General Medicine", "Diagnostic Imaging"],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "123 Health Avenue, Westlands",
+        "addressLocality": "Nairobi",
+        "addressRegion": "Nairobi",
+        "postalCode": "00100",
+        "addressCountry": "KE"
+      },
+      "telephone": "+254723043404",
+      "availableService": [
+        {
+          "@type": "MedicalProcedure",
+          "name": "Specialist Outpatient Services",
+          "url": "https://brookoflife.co.ke/services/specialist-outpatient"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "General Outpatient Services",
+          "url": "https://brookoflife.co.ke/services/general-outpatient"
+        },
+        {
+          "@type": "MedicalProcedure",
+          "name": "Diagnostic Services",
+          "url": "https://brookoflife.co.ke/services/diagnostic-services"
+        }
+      ]
+    }
+  </script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="/placeholder.svg?height=60&width=100" alt="Brooks of Cherith Hospitals">
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="services.html" class="active">Our Services <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="specialist-outpatient.html">Specialist Outpatient</a>
+                            <a href="general-outpatient.html">General Outpatient</a>
+                            <a href="diagnostic-services.html">Diagnostic Services</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Locations <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">Main Hospital</a>
+                            <a href="#">Satellite Clinics</a>
+                        </div>
+                    </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">News & Insights</a></li>
+                </ul>
+            </nav>
+            <div class="contact-btn">
+                <a href="#" class="btn btn-primary">Contact Us <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Hero Section -->
+    <section class="services-hero">
+        <div class="container">
+            <div class="services-hero-content">
+                <h1>Comprehensive Care for All</h1>
+                <p>Discover our range of specialized medical services designed to provide complete healthcare solutions for you and your family.</p>
+                
+                <div class="services-search">
+                    <div class="search-container">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="serviceSearch" placeholder="Search for a service or specialty...">
+                    </div>
+                    <div class="filter-container">
+                        <select id="specialtyFilter">
+                            <option value="">All Specialties</option>
+                            <option value="cardiology">Cardiology</option>
+                            <option value="neurology">Neurology</option>
+                            <option value="rheumatology">Rheumatology</option>
+                            <option value="pediatrics">Pediatrics</option>
+                            <option value="general">General Medicine</option>
+                        </select>
+                        <select id="availabilityFilter">
+                            <option value="">All Availability</option>
+                            <option value="24-7">24/7 Services</option>
+                            <option value="weekday">Weekday Only</option>
+                            <option value="weekend">Weekend Available</option>
+                        </select>
+                        <button class="filter-btn">Filter</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section class="services-grid-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Medical Services</h2>
+                <p>Explore our comprehensive range of healthcare services designed to meet your medical needs</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Specialist Outpatient Card -->
+                <div class="service-category-card" data-specialty="cardiology neurology rheumatology" data-availability="weekday weekend">
+                    <div class="service-card-image">
+                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=880&auto=format&fit=crop" alt="Specialist Outpatient Services">
+                        <div class="service-badge">
+                            <span><i class="fas fa-clock"></i> Mon-Sat</span>
+                        </div>
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Specialist Outpatient Services</h3>
+                        <p>Expert consultations and treatments from our specialized medical professionals in various fields including Cardiology, Neurology, Rheumatology, and more.</p>
+                        <ul class="service-highlights">
+                            <li><i class="fas fa-check-circle"></i> Specialized consultations</li>
+                            <li><i class="fas fa-check-circle"></i> Expert diagnosis</li>
+                            <li><i class="fas fa-check-circle"></i> Personalized treatment plans</li>
+                        </ul>
+                        <div class="service-card-footer">
+                            <a href="specialist-outpatient.html" class="btn btn-outline-primary">Learn More</a>
+                            <a href="#" class="btn btn-primary">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- General Outpatient Card -->
+                <div class="service-category-card" data-specialty="general pediatrics" data-availability="24-7">
+                    <div class="service-card-image">
+                        <img src="https://images.unsplash.com/photo-1666214280391-8ff5bd3c0bf0?q=80&w=880&auto=format&fit=crop" alt="General Outpatient Services">
+                        <div class="service-badge">
+                            <span><i class="fas fa-clock"></i> 24/7 Available</span>
+                        </div>
+                    </div>
+                    <div class="service-card-content">
+                        <h3>General Outpatient Services</h3>
+                        <p>Comprehensive healthcare services for patients of all ages, from routine check-ups to managing chronic conditions with our dedicated team of healthcare professionals.</p>
+                        <ul class="service-highlights">
+                            <li><i class="fas fa-check-circle"></i> Primary healthcare</li>
+                            <li><i class="fas fa-check-circle"></i> Preventive care</li>
+                            <li><i class="fas fa-check-circle"></i> Chronic disease management</li>
+                        </ul>
+                        <div class="service-card-footer">
+                            <a href="general-outpatient.html" class="btn btn-outline-primary">Learn More</a>
+                            <a href="#" class="btn btn-primary">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Diagnostic Services Card -->
+                <div class="service-category-card" data-specialty="cardiology general" data-availability="weekday weekend">
+                    <div class="service-card-image">
+                        <img src="https://images.unsplash.com/photo-1581595219315-a187dd40c322?q=80&w=880&auto=format&fit=crop" alt="Diagnostic Services">
+                        <div class="service-badge">
+                            <span><i class="fas fa-clock"></i> Mon-Sat</span>
+                        </div>
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Diagnostic Services</h3>
+                        <p>State-of-the-art diagnostic center offering a comprehensive range of tests and procedures to help diagnose and monitor various medical conditions with accuracy and precision.</p>
+                        <ul class="service-highlights">
+                            <li><i class="fas fa-check-circle"></i> Advanced imaging</li>
+                            <li><i class="fas fa-check-circle"></i> Laboratory testing</li>
+                            <li><i class="fas fa-check-circle"></i> Cardiac diagnostics</li>
+                        </ul>
+                        <div class="service-card-footer">
+                            <a href="diagnostic-services.html" class="btn btn-outline-primary">Learn More</a>
+                            <a href="#" class="btn btn-primary">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Emergency Care Card -->
+                <div class="service-category-card" data-specialty="general" data-availability="24-7">
+                    <div class="service-card-image">
+                        <img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?q=80&w=880&auto=format&fit=crop" alt="Emergency Care">
+                        <div class="service-badge emergency-badge">
+                            <span><i class="fas fa-clock"></i> 24/7 Emergency</span>
+                        </div>
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Emergency Care</h3>
+                        <p>Our emergency department is equipped to handle critical medical situations with speed and precision, providing immediate care for life-threatening conditions.</p>
+                        <ul class="service-highlights">
+                            <li><i class="fas fa-check-circle"></i> Rapid response</li>
+                            <li><i class="fas fa-check-circle"></i> Critical care</li>
+                            <li><i class="fas fa-check-circle"></i> 24/7 availability</li>
+                        </ul>
+                        <div class="service-card-footer">
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                            <a href="tel:+254723043404" class="btn btn-primary">Emergency: Call Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Antenatal Care Card -->
+                <div class="service-category-card" data-specialty="general" data-availability="weekday weekend">
+                    <div class="service-card-image">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=880&auto=format&fit=crop" alt="Antenatal Care">
+                        <div class="service-badge">
+                            <span><i class="fas fa-clock"></i> Mon-Sat</span>
+                        </div>
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Antenatal Care</h3>
+                        <p>Complete prenatal care for expectant mothers throughout pregnancy, ensuring the health and well-being of both mother and baby with our specialized maternal care team.</p>
+                        <ul class="service-highlights">
+                            <li><i class="fas fa-check-circle"></i> Prenatal check-ups</li>
+                            <li><i class="fas fa-check-circle"></i> Ultrasound services</li>
+                            <li><i class="fas fa-check-circle"></i> Maternal nutrition guidance</li>
+                        </ul>
+                        <div class="service-card-footer">
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                            <a href="#" class="btn btn-primary">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Rehabilitative Medicine Card -->
+                <div class="service-category-card" data-specialty="general" data-availability="weekday">
+                    <div class="service-card-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=880&auto=format&fit=crop" alt="Rehabilitative Medicine">
+                        <div class="service-badge">
+                            <span><i class="fas fa-clock"></i> Mon-Fri</span>
+                        </div>
+                    </div>
+                    <div class="service-card-content">
+                        <h3>Rehabilitative Medicine</h3>
+                        <p>Comprehensive rehabilitation programs designed to help patients recover from injuries, surgeries, or manage chronic conditions through specialized therapeutic interventions.</p>
+                        <ul class="service-highlights">
+                            <li><i class="fas fa-check-circle"></i> Physical therapy</li>
+                            <li><i class="fas fa-check-circle"></i> Occupational therapy</li>
+                            <li><i class="fas fa-check-circle"></i> Pain management</li>
+                        </ul>
+                        <div class="service-card-footer">
+                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                            <a href="#" class="btn btn-primary">Book Appointment</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="no-results-message" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No services found</h3>
+                <p>Please try different search terms or filters</p>
+                <button class="btn btn-primary reset-search">Reset Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Our Medical Services</h2>
+                <p>Experience healthcare excellence with our patient-centered approach</p>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Expert Medical Team</h3>
+                    <p>Our team of certified medical professionals brings years of experience and specialized expertise to provide you with the highest quality care.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>24/7 Availability</h3>
+                    <p>We understand that medical needs don't follow a schedule. That's why our emergency services are available around the clock.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Advanced Technology</h3>
+                    <p>We invest in state-of-the-art medical equipment and technology to ensure accurate diagnosis and effective treatment.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Compassionate Care</h3>
+                    <p>We believe in treating the whole person—body, mind, and spirit—with dignity, respect, and compassion at every step.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment CTA -->
+    <section class="appointment-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Schedule Your Visit?</h2>
+                <p>Take the first step towards better health by booking an appointment with our medical professionals.</p>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary btn-large">Book an Appointment</a>
+                    <a href="tel:+254723043404" class="btn btn-outline-primary btn-large">
+                        <i class="fas fa-phone-alt"></i> Call Us: +254(0) 723 043 404
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="/placeholder.svg?height=60&width=100" alt="Brooks of Cherith Hospitals">
+                        <p class="tagline">Healing with Compassion</p>
+                    </div>
+                    <p class="footer-about">Brooks of Cherith Hospitals provides holistic medical care that combines expertise with compassion, rooted in our faith-driven mission to heal and serve.</p>
+                    <div class="footer-certifications">
+                        <span><i class="fas fa-certificate"></i> Certified Medical Professionals</span>
+                        <span><i class="fas fa-award"></i> Accredited Healthcare Facility</span>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="#">Find a Doctor</a></li>
+                        <li><a href="#">Locations</a></li>
+                        <li><a href="#">News & Insights</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="specialist-outpatient.html">Specialist Outpatient</a></li>
+                        <li><a href="general-outpatient.html">General Outpatient</a></li>
+                        <li><a href="diagnostic-services.html">Diagnostic Services</a></li>
+                        <li><a href="#">Emergency Care</a></li>
+                        <li><a href="#">Antenatal Clinic</a></li>
+                        <li><a href="#">Pharmacy Services</a></li>
+                        <li><a href="#">Rehabilitative Medicine</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Contact & Support</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <p>Emergency:</p>
+                                <a href="tel:+254723043404">+254(0) 723 043 404</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <p>Email:</p>
+                                <a href="mailto:info@brookoflife.co.ke">info@brookoflife.co.ke</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <p>Main Hospital:</p>
+                                <span>123 Health Avenue, Westlands, Nairobi</span>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <div class="newsletter">
+                        <h4>Stay Informed – Join Our Newsletter</h4>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address">
+                            <button type="submit" class="btn-subscribe">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-social">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+                
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Sitemap</a>
+                    <a href="#">Careers</a>
+                </div>
+                
+                <div class="copyright">
+                    <p>&copy; 2025 Brooks of Cherith Hospitals. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="services.js"></script>
+</body>
+</html>
+
