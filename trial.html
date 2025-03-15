@@ -6,10 +6,1357 @@
   <title>Brooks of Cherith Hospitals</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Base Styles */
+:root {
+  --primary-color: #0a4b9f;
+  --secondary-color: #e63946;
+  --accent-color: #4caf50;
+  --text-color: #333;
+  --light-text: #fff;
+  --light-bg: #f8f9fa;
+  --border-color: #e1e4e8;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Background Styles */
+.hero-background {
+  background-image: linear-gradient(rgba(0, 32, 76, 0.8), rgba(0, 32, 76, 0.7)),
+    url("https://images.unsplash.com/photo-1631815588090-d4bfec5b7e9a?q=80&w=2070&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: var(--light-text);
+}
+
+/* Emergency Bar */
+.emergency-bar {
+  background-color: var(--primary-color);
+  padding: 10px 0;
+  font-size: 14px;
+}
+
+.emergency-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.emergency-contact {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.support-info {
+  display: flex;
+  gap: 20px;
+}
+
+.support-info span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Header Styles */
+header {
+  padding: 15px 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 30px;
+}
+
+.main-nav a {
+  color: var(--text-color);
+  font-weight: 500;
+  padding: 8px 0;
+  position: relative;
+  transition: var(--transition);
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: var(--primary-color);
+}
+
+.main-nav a.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: var(--shadow);
+  border-radius: 4px;
+  padding: 10px 0;
+  display: none;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 20px;
+  color: var(--text-color);
+}
+
+.dropdown-content a:hover {
+  background-color: var(--light-bg);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #083b7e;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-outline:hover {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.mobile-menu-btn {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero {
+  padding: 80px 0;
+  min-height: calc(100vh - 130px);
+  display: flex;
+  align-items: center;
+}
+
+.hero .container {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  gap: 40px;
+  align-items: center;
+}
+
+.tagline {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 10px 20px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  line-height: 1.2;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.hero h2 {
+  font-size: 36px;
+  color: var(--secondary-color);
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: var(--accent-color);
+}
+
+.description {
+  font-size: 18px;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Quick Access Section */
+.quick-access {
+  padding: 80px 0;
+  background-color: var(--light-bg);
+  position: relative;
+  z-index: 1;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.section-header p {
+  font-size: 16px;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.service-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: 30px;
+  text-align: center;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: var(--primary-color);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.service-card:hover::before {
+  transform: scaleX(1);
+}
+
+.card-icon {
+  width: 70px;
+  height: 70px;
+  background-color: rgba(10, 75, 159, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  color: var(--primary-color);
+  font-size: 28px;
+  transition: var(--transition);
+}
+
+.service-card:hover .card-icon {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: var(--text-color);
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+  min-height: 60px;
+}
+
+.card-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background-color: rgba(10, 75, 159, 0.1);
+  color: var(--primary-color);
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: var(--transition);
+}
+
+.card-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.view-all {
+  text-align: center;
+}
+
+.btn-outline-primary {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  background-color: transparent;
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* About Us Section */
+.about-us {
+  padding: 80px 0;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.section-subtitle {
+  display: inline-block;
+  background-color: rgba(10, 75, 159, 0.1);
+  color: var(--primary-color);
+  padding: 8px 16px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.about-text h2 {
+  font-size: 36px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.about-description {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+  line-height: 1.8;
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 20px 10px;
+  border-radius: 8px;
+  background-color: var(--light-bg);
+  transition: var(--transition);
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+
+.stat-number {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--secondary-color);
+  margin-bottom: 5px;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.4;
+}
+
+.about-image {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.about-image:hover img {
+  transform: scale(1.05);
+}
+
+.image-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Our Services Section */
+.our-services {
+  padding: 80px 0;
+  background-color: var(--light-bg);
+  position: relative;
+  z-index: 1;
+}
+
+.services-tabs {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.tabs-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  padding: 12px 24px;
+  background-color: white;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: var(--transition);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.tab-btn:hover {
+  background-color: rgba(10, 75, 159, 0.1);
+  color: var(--primary-color);
+}
+
+.tab-btn.active {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.tabs-content {
+  position: relative;
+}
+
+.tab-pane {
+  display: none;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.service-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.service-detail-content {
+  padding: 40px;
+}
+
+.service-badge {
+  margin-bottom: 20px;
+}
+
+.availability {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background-color: rgba(76, 175, 80, 0.1);
+  color: var(--accent-color);
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.emergency-badge {
+  background-color: rgba(230, 57, 70, 0.1);
+  color: var(--secondary-color);
+}
+
+.service-detail h3 {
+  font-size: 28px;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.service-detail p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 25px;
+  line-height: 1.7;
+}
+
+.specialties-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.specialty-item {
+  padding: 15px;
+  border-radius: 8px;
+  background-color: var(--light-bg);
+  transition: var(--transition);
+}
+
+.specialty-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow);
+}
+
+.specialty-icon {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(10, 75, 159, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+  font-size: 18px;
+}
+
+.specialty-item h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+
+.specialty-item p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+.service-detail-image {
+  height: 100%;
+  overflow: hidden;
+}
+
+.service-detail-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.service-detail:hover .service-detail-image img {
+  transform: scale(1.05);
+}
+
+.emergency-contact-box {
+  background-color: rgba(230, 57, 70, 0.1);
+  border-left: 4px solid var(--secondary-color);
+  padding: 15px 20px;
+  border-radius: 4px;
+  margin-bottom: 25px;
+}
+
+.emergency-contact-box h4 {
+  font-size: 18px;
+  color: var(--secondary-color);
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.emergency-number {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--secondary-color);
+  display: block;
+  margin-bottom: 5px;
+}
+
+.emergency-contact-box p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.services-cta {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.btn-large {
+  padding: 14px 30px;
+  font-size: 16px;
+}
+
+.btn-outline-large {
+  padding: 14px 30px;
+  font-size: 16px;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  background-color: transparent;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.btn-outline-large:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Find a Doctor Section */
+.find-doctor {
+  padding: 80px 0;
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.doctor-search-container {
+  max-width: 800px;
+  margin: 0 auto 50px;
+}
+
+.doctor-search {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  padding: 30px;
+}
+
+.search-input {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.search-input i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+}
+
+.search-input input {
+  width: 100%;
+  padding: 15px 15px 15px 45px;
+  border: 1px solid var(--border-color);
+  border-radius: 50px;
+  font-size: 16px;
+  outline: none;
+  transition: var(--transition);
+}
+
+.search-input input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(10, 75, 159, 0.1);
+}
+
+.search-filters {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.filter-select {
+  flex: 1;
+  min-width: 200px;
+  padding: 12px 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 50px;
+  font-size: 14px;
+  outline: none;
+  transition: var(--transition);
+  background-color: white;
+  cursor: pointer;
+}
+
+.filter-select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(10, 75, 159, 0.1);
+}
+
+.search-btn {
+  padding: 12px 25px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.search-btn:hover {
+  background-color: #083b7e;
+  transform: translateY(-2px);
+}
+
+.featured-doctors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.doctor-card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.doctor-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.doctor-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.doctor-card:hover .doctor-image img {
+  transform: scale(1.05);
+}
+
+.doctor-availability {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(76, 175, 80, 0.9);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.doctor-info {
+  padding: 20px;
+}
+
+.doctor-info h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+
+.doctor-specialty {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.doctor-credentials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  color: #666;
+}
+
+.doctor-credentials span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.doctor-bio {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.doctor-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-sm {
+  padding: 8px 15px;
+  font-size: 13px;
+}
+
+.btn-outline-primary {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  background-color: transparent;
+}
+
+.view-all-doctors {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Improved Mobile Menu Styles */
+@media (max-width: 767px) {
+  .dropdown-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+  }
+
+  .dropdown-content.show {
+    display: block;
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .hero .container {
+    grid-template-columns: 1fr;
+  }
+
+  .services-panel {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .about-image {
+    order: -1;
+    margin-bottom: 30px;
+  }
+
+  .service-detail {
+    grid-template-columns: 1fr;
+  }
+
+  .service-detail-image {
+    height: 300px;
+    order: -1;
+  }
+
+  .cta-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-nav,
+  .contact-btn {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .emergency-bar .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    padding: 60px 0;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero h2 {
+    font-size: 26px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .section-header h2 {
+    font-size: 28px;
+  }
+
+  .stats-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .tabs-navigation {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .tab-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .specialties-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-controls {
+    display: none;
+  }
+
+  .testimonial-quote {
+    padding: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .tagline {
+    font-size: 12px;
+  }
+
+  .doctor-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .doctor-actions .btn {
+    width: 100%;
+  }
+}
+
+/* Services Panel */
+.services-panel {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  color: var(--text-color);
+}
+
+.panel-header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.panel-header h3 {
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+.available-tag {
+  background-color: rgba(76, 175, 80, 0.1);
+  color: var(--accent-color);
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.search-box {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.search-box input {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.service-list {
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.service-item {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid var(--border-color);
+  transition: var(--transition);
+}
+
+.service-item:hover {
+  background-color: var(--light-bg);
+}
+
+.service-icon {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(10, 75, 159, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 18px;
+}
+
+.service-details h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.service-details p {
+  font-size: 13px;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.service-details i.fa-circle {
+  font-size: 6px;
+  color: var(--primary-color);
+}
+
+/* Additional responsive fixes */
+@media (max-width: 767px) {
+  .main-nav.active {
+    padding-top: 20px;
+  }
+
+  .main-nav.active ul {
+    padding: 0;
+  }
+
+  .main-nav.active li {
+    margin-bottom: 5px;
+  }
+
+  .main-nav.active a {
+    width: 100%;
+    display: block;
+  }
+
+  .dropdown-content {
+    width: 100%;
+  }
+}
+
+/* Partners Section */
+.partners {
+  padding: 60px 0;
+  background-color: white;
+  overflow: hidden;
+}
+
+.partner-slider {
+  position: relative;
+  padding: 20px 0;
+  margin: 40px 0;
+  overflow: hidden;
+}
+
+.partner-track {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  width: calc(200px * 18); /* Adjust based on number of logos and their width */
+}
+
+.partner-track:hover {
+  animation-play-state: paused;
+}
+
+.partner-logo {
+  flex: 0 0 200px;
+  height: 100px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.partner-logo:hover {
+  transform: scale(1.1);
+}
+
+.partner-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.partner-logo:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* Logo-specific styles to crop and position each logo correctly */
+.logo-kenbright {
+  object-position: 0 0;
+  width: 120px;
+}
+
+.logo-nhif {
+  object-position: -120px 0;
+  width: 100px;
+}
+
+.logo-minet {
+  object-position: -220px 0;
+  width: 90px;
+}
+
+.logo-maki {
+  object-position: -310px 0;
+  width: 80px;
+}
+
+.logo-allianz {
+  object-position: -390px 0;
+  width: 110px;
+}
+
+.logo-madison {
+  object-position: -500px 0;
+  width: 120px;
+}
+
+.logo-cic {
+  object-position: -620px 0;
+  width: 100px;
+}
+
+.logo-medilink {
+  object-position: -720px 0;
+  width: 110px;
+}
+
+.logo-bupa {
+  object-position: -830px 0;
+  width: 90px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-200px * 9)); /* Adjust based on number of unique logos */
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .partner-logo {
+    flex: 0 0 150px;
+    height: 80px;
+    padding: 15px;
+  }
+
+  .partner-track {
+    width: calc(150px * 18);
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-150px * 9));
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .partner-logo {
+    flex: 0 0 120px;
+    height: 60px;
+    padding: 10px;
+  }
+
+  .partner-track {
+    width: calc(120px * 18);
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-120px * 9));
+    }
+  }
+}
+
+
+  </style>
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
+    <div class="hero-background">
         <!-- Top Bar -->
         <div class="emergency-bar">
             <div class="container">
@@ -22,44 +1369,44 @@
                 </div>
             </div>
         </div>
-        
-        <div class="container">
-            <div class="logo">
-                <img src="Logo.png" alt="Brook of Cherith Hospitals">
-            </div>
-            <nav class="main-nav">
-                <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
-                    <li class="dropdown">
-                        <a href="services.html">Our Services </i></a>
-                        <div class="dropdown-content">
-                            <a href="specialist-outpatient.html">Specialist Outpatient</a>
-                            <a href="general-outpatient.html">General Outpatient</a>
-                            <a href="diagnostic-services.html">Diagnostic Services</a>
-                            <a href="emergency-trauma-services.html">Emergency & Trauma</a>
-                        </div>
-                    </li>
-                    <li class="dropdown">
-                        <a href="locations.html">Locations </i></a>
-                        <div class="dropdown-content">
-                            <a href="main-hospital.html">Head Quarters</a>
-                            <a href="ol-jororok-branch.html">Ol Jororok Branch</a>
-                        </div>
-                    </li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="news-insights.html">News & Insights</a></li>
-                </ul>
-            </nav>
-            <div class="contact-btn">
-                <a href="contact.html" class="btn btn-primary">Contact Us <i class="fas fa-arrow-right"></i></a>
-            </div>
-            <div class="mobile-menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </header>
 
-    <div class="hero-background">
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <img src="/placeholder.svg?height=60&width=100" alt="Sigma Medical Services">
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#" class="active">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#">Our Services <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="#">Specialist Outpatient</a>
+                                <a href="#">General Outpatient</a>
+                                <a href="#">Diagnostic Services</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#">Locations <i class="fas fa-chevron-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="#">Main Hospital</a>
+                                <a href="#">Satellite Clinics</a>
+                            </div>
+                        </li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">News & Insights</a></li>
+                    </ul>
+                </nav>
+                <div class="contact-btn">
+                    <a href="#" class="btn btn-primary">Contact Us <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+
         <!-- Hero Section -->
         <section class="hero">
             <div class="container">
@@ -871,6 +2218,78 @@
     </div>
 </section>
 
+<!-- Our Partners Section -->
+<section class="partners">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Partners</h2>
+            <p>Working together with leading healthcare and insurance providers</p>
+        </div>
+        
+        <div class="partner-slider">
+            <div class="partner-track">
+                <!-- First set of logos -->
+                <div class="partner-logo">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-anC5mgqqoqxB596kd1sn0HXVETEYAk.png" alt="Kenbright Insurance" class="logo-kenbright">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-anC5mgqqoqxB596kd1sn0HXVETEYAk.png" alt="NHIF - National Hospital Insurance Fund" class="logo-nhif">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-anC5mgqqoqxB596kd1sn0HXVETEYAk.png" alt="Minet Insurance" class="logo-minet">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-anC5mgqqoqxB596kd1sn0HXVETEYAk.png" alt="Maki Healthcare" class="logo-maki">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-anC5mgqqoqxB596kd1sn0HXVETEYAk.png" alt="Allianz Worldwide Care" class="logo-allianz">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-anC5mgqqoqxB596kd1sn0HXVETEYAk.png" alt="Madison Insurance" class="logo-madison">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-anC5mgqqoqxB596kd1sn0HXVETEYAk.png" alt="CIC GROUP" class="logo-cic">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-anC5mgqqoqxB596kd1sn0HXVETEYAk.png" alt="Africa Medilink" class="logo-medilink">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-anC5mgqqoqxB596kd1sn0HXVETEYAk.png" alt="BUPA Healthcare" class="logo-bupa">
+                </div>
+                
+                <!-- Duplicate set for infinite scroll effect -->
+                <div class="partner-logo">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-anC5mgqqoqxB596kd1sn0HXVETEYAk.png" alt="Kenbright Insurance" class="logo-kenbright">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-anC5mgqqoqxB596kd1sn0HXVETEYAk.png" alt="NHIF - National Hospital Insurance Fund" class="logo-nhif">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-anC5mgqqoqxB596kd1sn0HXVETEYAk.png" alt="Minet Insurance" class="logo-minet">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-anC5mgqqoqxB596kd1sn0HXVETEYAk.png" alt="Maki Healthcare" class="logo-maki">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-anC5mgqqoqxB596kd1sn0HXVETEYAk.png" alt="Allianz Worldwide Care" class="logo-allianz">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-anC5mgqqoqxB596kd1sn0HXVETEYAk.png" alt="Madison Insurance" class="logo-madison">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-anC5mgqqoqxB596kd1sn0HXVETEYAk.png" alt="CIC GROUP" class="logo-cic">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-anC5mgqqoqxB596kd1sn0HXVETEYAk.png" alt="Africa Medilink" class="logo-medilink">
+                </div>
+                <div class="partner-logo">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-anC5mgqqoqxB596kd1sn0HXVETEYAk.png" alt="BUPA Healthcare" class="logo-bupa">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Footer -->
 <footer class="footer">
     <div class="container">
@@ -972,7 +2391,612 @@
     </div>
 </footer>
 
-    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+  // Mobile menu toggle with improved functionality
+  const mobileMenuBtn = document.querySelector(".mobile-menu-btn")
+  const mainNav = document.querySelector(".main-nav")
+  const body = document.body
+
+  if (mobileMenuBtn) {
+    mobileMenuBtn.addEventListener("click", function () {
+      if (mainNav) {
+        mainNav.classList.toggle("active")
+
+        // Prevent body scrolling when menu is open
+        if (mainNav.classList.contains("active")) {
+          body.style.overflow = "hidden"
+        } else {
+          body.style.overflow = ""
+        }
+
+        // Change icon based on menu state
+        const icon = this.querySelector("i")
+        if (icon) {
+          if (mainNav.classList.contains("active")) {
+            icon.classList.remove("fa-bars")
+            icon.classList.add("fa-times")
+          } else {
+            icon.classList.remove("fa-times")
+            icon.classList.add("fa-bars")
+          }
+        }
+      }
+    })
+  }
+
+  // Improve dropdown behavior on mobile
+  const dropdowns = document.querySelectorAll(".dropdown")
+
+  dropdowns.forEach((dropdown) => {
+    const dropdownLink = dropdown.querySelector("a")
+    const dropdownContent = dropdown.querySelector(".dropdown-content")
+
+    if (dropdownLink && dropdownContent) {
+      // Add dropdown toggle for mobile
+      const dropdownToggle = document.createElement("span")
+      dropdownToggle.className = "dropdown-toggle"
+      dropdownToggle.innerHTML = '<i class="fas fa-chevron-down"></i>'
+      dropdownLink.appendChild(dropdownToggle)
+
+      dropdownToggle.addEventListener("click", function (e) {
+        e.preventDefault()
+        e.stopPropagation()
+
+        // Close all other dropdowns first
+        dropdowns.forEach((otherDropdown) => {
+          if (otherDropdown !== dropdown) {
+            const otherContent = otherDropdown.querySelector(".dropdown-content")
+            if (otherContent) {
+              otherContent.classList.remove("show")
+            }
+            const otherToggle = otherDropdown.querySelector(".dropdown-toggle i")
+            if (otherToggle) {
+              otherToggle.className = "fas fa-chevron-down"
+            }
+          }
+        })
+
+        // Toggle current dropdown
+        dropdownContent.classList.toggle("show")
+
+        // Rotate chevron
+        const icon = this.querySelector("i")
+        if (icon) {
+          if (dropdownContent.classList.contains("show")) {
+            icon.className = "fas fa-chevron-up"
+          } else {
+            icon.className = "fas fa-chevron-down"
+          }
+        }
+      })
+    }
+  })
+
+  // Close mobile menu when clicking outside
+  document.addEventListener("click", (e) => {
+    if (mainNav && mainNav.classList.contains("active")) {
+      if (!mainNav.contains(e.target) && e.target !== mobileMenuBtn && !mobileMenuBtn.contains(e.target)) {
+        mainNav.classList.remove("active")
+        body.style.overflow = ""
+        const icon = mobileMenuBtn.querySelector("i")
+        if (icon) {
+          icon.classList.remove("fa-times")
+          icon.classList.add("fa-bars")
+        }
+      }
+    }
+
+    // Close dropdowns when clicking outside
+    dropdowns.forEach((dropdown) => {
+      const dropdownContent = dropdown.querySelector(".dropdown-content")
+      if (dropdownContent && dropdownContent.classList.contains("show")) {
+        if (!dropdown.contains(e.target)) {
+          dropdownContent.classList.remove("show")
+          const toggle = dropdown.querySelector(".dropdown-toggle i")
+          if (toggle) {
+            toggle.className = "fas fa-chevron-down"
+          }
+        }
+      }
+    })
+  })
+
+  // Service search functionality
+  const searchInput = document.querySelector(".search-box input")
+  const serviceItems = document.querySelectorAll(".service-item")
+
+  if (searchInput && serviceItems.length > 0) {
+    searchInput.addEventListener("input", function () {
+      const searchTerm = this.value.toLowerCase()
+
+      serviceItems.forEach((item) => {
+        const serviceText = item.textContent.toLowerCase()
+        if (serviceText.includes(searchTerm)) {
+          item.style.display = "flex"
+        } else {
+          item.style.display = "none"
+        }
+      })
+    })
+  }
+
+  // Add smooth scrolling for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+    anchor.addEventListener("click", function (e) {
+      // Don't prevent default for dropdown toggles
+      if (
+        this.parentElement.classList.contains("dropdown") &&
+        this.nextElementSibling &&
+        this.nextElementSibling.classList.contains("dropdown-content")
+      ) {
+        return
+      }
+
+      const targetId = this.getAttribute("href")
+      if (targetId === "#") return
+
+      const targetElement = document.querySelector(targetId)
+      if (targetElement) {
+        e.preventDefault()
+        targetElement.scrollIntoView({
+          behavior: "smooth",
+        })
+
+        // Close mobile menu after navigation
+        if (mainNav && mainNav.classList.contains("active")) {
+          mainNav.classList.remove("active")
+          body.style.overflow = ""
+          const icon = mobileMenuBtn.querySelector("i")
+          if (icon) {
+            icon.classList.remove("fa-times")
+            icon.classList.add("fa-bars")
+          }
+        }
+      }
+    })
+  })
+
+  // Add animation on scroll with IntersectionObserver for better performance
+  const animateElements = (elements, threshold = 0.1) => {
+    if (!elements.length) return
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-in")
+            observer.unobserve(entry.target)
+          }
+        })
+      },
+      { threshold },
+    )
+
+    elements.forEach((element, index) => {
+      element.style.opacity = "0"
+      element.style.transform = "translateY(20px)"
+      element.style.transition = `opacity 0.5s ease ${index * 0.1}s, transform 0.5s ease ${index * 0.1}s`
+      element.classList.add("animate-target")
+      observer.observe(element)
+    })
+  }
+
+  // Add the CSS for animation
+  const style = document.createElement("style")
+  style.textContent = `
+    .animate-target.animate-in {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+    }
+    
+    /* Improved mobile menu styles */
+    @media (max-width: 767px) {
+      .main-nav {
+        display: none;
+      }
+      
+      .main-nav.active {
+        display: block;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: white;
+        z-index: 1000;
+        padding: 20px;
+        overflow-y: auto;
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      }
+      
+      .main-nav.active ul {
+        flex-direction: column;
+        gap: 0;
+      }
+      
+      .main-nav.active li {
+        width: 100%;
+        border-bottom: 1px solid #f0f0f0;
+      }
+      
+      .main-nav.active a {
+        display: block;
+        padding: 15px 0;
+      }
+      
+      .dropdown-toggle {
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+      }
+      
+      .dropdown > a {
+        position: relative;
+        padding-right: 50px !important;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: static;
+        box-shadow: none;
+        padding-left: 20px;
+        background-color: #f8f9fa;
+        border-radius: 0;
+      }
+      
+      .dropdown-content.show {
+        display: block;
+      }
+      
+      .dropdown-content a {
+        padding: 12px 15px !important;
+      }
+    }
+  `
+  document.head.appendChild(style)
+
+  // Apply animations to various elements
+  animateElements(document.querySelectorAll(".service-item"))
+  animateElements(document.querySelectorAll(".service-card"))
+  animateElements(document.querySelectorAll(".specialty-item"))
+  animateElements(document.querySelectorAll(".doctor-card"))
+  animateElements(document.querySelectorAll(".news-card"))
+  animateElements(document.querySelectorAll(".stat-item"))
+
+  // About section animations with IntersectionObserver
+  const aboutImage = document.querySelector(".about-image")
+  const aboutText = document.querySelector(".about-text")
+
+  if (aboutImage && aboutText) {
+    // Set initial state
+    aboutImage.style.opacity = "0"
+    aboutImage.style.transform = "translateX(50px)"
+    aboutImage.style.transition = "opacity 0.8s ease, transform 0.8s ease"
+
+    aboutText.style.opacity = "0"
+    aboutText.style.transform = "translateX(-50px)"
+    aboutText.style.transition = "opacity 0.8s ease, transform 0.8s ease"
+
+    const aboutObserver = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            aboutImage.style.opacity = "1"
+            aboutImage.style.transform = "translateX(0)"
+            aboutText.style.opacity = "1"
+            aboutText.style.transform = "translateX(0)"
+            aboutObserver.unobserve(entry.target)
+          }
+        })
+      },
+      { threshold: 0.2 },
+    )
+
+    aboutObserver.observe(document.querySelector(".about-us"))
+  }
+
+  // Testimonial slider functionality
+  const testimonialSlides = document.querySelectorAll(".testimonial-slide")
+  const testimonialDots = document.querySelectorAll(".dot")
+  const prevButton = document.querySelector(".testimonial-prev")
+  const nextButton = document.querySelector(".testimonial-next")
+  let currentSlide = 0
+  let touchStartX = 0
+  let touchEndX = 0
+
+  function showSlide(index) {
+    // Hide all slides
+    testimonialSlides.forEach((slide) => {
+      slide.classList.remove("active")
+    })
+
+    // Remove active class from all dots
+    testimonialDots.forEach((dot) => {
+      dot.classList.remove("active")
+    })
+
+    // Show the current slide and activate the corresponding dot
+    testimonialSlides[index].classList.add("active")
+    testimonialDots[index].classList.add("active")
+  }
+
+  // Initialize dots click event
+  if (testimonialDots.length > 0) {
+    testimonialDots.forEach((dot, index) => {
+      dot.addEventListener("click", () => {
+        currentSlide = index
+        showSlide(currentSlide)
+      })
+    })
+  }
+
+  // Initialize prev/next buttons
+  if (prevButton && nextButton) {
+    prevButton.addEventListener("click", () => {
+      currentSlide = (currentSlide - 1 + testimonialSlides.length) % testimonialSlides.length
+      showSlide(currentSlide)
+    })
+
+    nextButton.addEventListener("click", () => {
+      currentSlide = (currentSlide + 1) % testimonialSlides.length
+      showSlide(currentSlide)
+    })
+  }
+
+  // Add swipe functionality for testimonials on touch devices
+  const testimonialContainer = document.querySelector(".testimonial-container")
+  if (testimonialContainer && testimonialSlides.length > 0) {
+    testimonialContainer.addEventListener(
+      "touchstart",
+      (e) => {
+        touchStartX = e.changedTouches[0].screenX
+      },
+      { passive: true },
+    )
+
+    testimonialContainer.addEventListener(
+      "touchend",
+      (e) => {
+        touchEndX = e.changedTouches[0].screenX
+        handleSwipe()
+      },
+      { passive: true },
+    )
+
+    function handleSwipe() {
+      const swipeThreshold = 50
+      if (touchEndX < touchStartX - swipeThreshold) {
+        // Swipe left - next slide
+        currentSlide = (currentSlide + 1) % testimonialSlides.length
+        showSlide(currentSlide)
+      } else if (touchEndX > touchStartX + swipeThreshold) {
+        // Swipe right - previous slide
+        currentSlide = (currentSlide - 1 + testimonialSlides.length) % testimonialSlides.length
+        showSlide(currentSlide)
+      }
+    }
+  }
+
+  // Auto-advance slides every 5 seconds
+  let slideInterval = setInterval(() => {
+    if (testimonialSlides.length > 0) {
+      currentSlide = (currentSlide + 1) % testimonialSlides.length
+      showSlide(currentSlide)
+    }
+  }, 5000)
+
+  // Pause auto-advance when user interacts with testimonials
+  if (testimonialContainer) {
+    testimonialContainer.addEventListener("mouseenter", () => {
+      clearInterval(slideInterval)
+    })
+
+    testimonialContainer.addEventListener("mouseleave", () => {
+      slideInterval = setInterval(() => {
+        if (testimonialSlides.length > 0) {
+          currentSlide = (currentSlide + 1) % testimonialSlides.length
+          showSlide(currentSlide)
+        }
+      }, 5000)
+    })
+  }
+
+  // Tab functionality for services
+  const tabButtons = document.querySelectorAll(".tab-btn")
+  if (tabButtons.length > 0) {
+    tabButtons.forEach((button) => {
+      button.addEventListener("click", function () {
+        // Remove active class from all buttons
+        tabButtons.forEach((btn) => {
+          btn.classList.remove("active")
+        })
+
+        // Add active class to clicked button
+        this.classList.add("active")
+
+        // Get the tab to show
+        const tabId = this.getAttribute("data-tab")
+
+        // Hide all tab panes
+        document.querySelectorAll(".tab-pane").forEach((pane) => {
+          pane.classList.remove("active")
+        })
+
+        // Show the selected tab pane
+        document.getElementById(tabId).classList.add("active")
+      })
+    })
+  }
+
+  // Doctor search functionality
+  const doctorSearchInput = document.querySelector(".doctor-search input")
+  const doctorCards = document.querySelectorAll(".doctor-card")
+  const filterSelects = document.querySelectorAll(".filter-select")
+  const searchBtn = document.querySelector(".search-btn")
+
+  if (searchBtn && doctorCards.length > 0) {
+    searchBtn.addEventListener("click", filterDoctors)
+
+    // Also filter when pressing Enter in the search input
+    if (doctorSearchInput) {
+      doctorSearchInput.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") {
+          filterDoctors()
+        }
+      })
+    }
+  }
+
+  function filterDoctors() {
+    const searchTerm = doctorSearchInput ? doctorSearchInput.value.toLowerCase() : ""
+    const specialtyFilter = filterSelects[0] ? filterSelects[0].value.toLowerCase() : ""
+    const availabilityFilter = filterSelects[1] ? filterSelects[1].value.toLowerCase() : ""
+
+    doctorCards.forEach((card) => {
+      const doctorName = card.querySelector("h3").textContent.toLowerCase()
+      const doctorSpecialty = card.querySelector(".doctor-specialty").textContent.toLowerCase()
+      const doctorAvailability = card.querySelector(".doctor-availability").textContent.toLowerCase()
+
+      // Check if the doctor matches all active filters
+      const matchesSearch = !searchTerm || doctorName.includes(searchTerm) || doctorSpecialty.includes(searchTerm)
+      const matchesSpecialty = !specialtyFilter || doctorSpecialty.includes(specialtyFilter)
+      const matchesAvailability =
+        !availabilityFilter ||
+        (availabilityFilter === "today" && doctorAvailability.includes("Today")) ||
+        (availabilityFilter === "week" && !doctorAvailability.includes("Weekend")) ||
+        (availabilityFilter === "weekend" && doctorAvailability.includes("Weekend"))
+
+      // Show or hide based on filter results
+      if (matchesSearch && matchesSpecialty && matchesAvailability) {
+        card.style.display = "block"
+      } else {
+        card.style.display = "none"
+      }
+    })
+  }
+
+  // Form validation for appointment request
+  const appointmentForm = document.querySelector(".appointment-form form")
+  if (appointmentForm) {
+    appointmentForm.addEventListener("submit", function (e) {
+      e.preventDefault()
+
+      // Basic validation
+      const name = this.querySelector("#name").value
+      const phone = this.querySelector("#phone").value
+      const service = this.querySelector("#service").value
+      const date = this.querySelector("#date").value
+
+      if (!name || !phone || !service || !date) {
+        alert("Please fill in all required fields")
+        return
+      }
+
+      // If validation passes, you would normally submit the form
+      // For demo purposes, just show a success message
+      alert("Thank you! Your appointment request has been submitted. Our team will contact you within 24 hours.")
+      this.reset()
+    })
+  }
+
+  // Newsletter subscription
+  const newsletterForm = document.querySelector(".newsletter-form")
+  if (newsletterForm) {
+    newsletterForm.addEventListener("submit", function (e) {
+      e.preventDefault()
+
+      const email = this.querySelector('input[type="email"]').value
+
+      if (!email || !email.includes("@")) {
+        alert("Please enter a valid email address")
+        return
+      }
+
+      // If validation passes, you would normally submit the form
+      // For demo purposes, just show a success message
+      alert("Thank you for subscribing to our newsletter!")
+      this.reset()
+    })
+  }
+
+  // Resize handler for responsive adjustments
+  function handleResize() {
+    // Adjust mobile menu behavior based on screen width
+    if (window.innerWidth >= 768) {
+      if (mainNav) {
+        mainNav.classList.remove("active")
+        body.style.overflow = ""
+
+        // Reset dropdown styles for desktop
+        dropdowns.forEach((dropdown) => {
+          const dropdownContent = dropdown.querySelector(".dropdown-content")
+          if (dropdownContent) {
+            dropdownContent.classList.remove("show")
+            dropdownContent.style.display = ""
+          }
+
+          const toggle = dropdown.querySelector(".dropdown-toggle i")
+          if (toggle) {
+            toggle.className = "fas fa-chevron-down"
+          }
+        })
+      }
+    }
+  }
+
+  // Initial call and event listener for resize
+  handleResize()
+  window.addEventListener("resize", handleResize)
+
+  // Partners slider functionality
+  const partnerTrack = document.querySelector(".partner-track")
+  if (partnerTrack) {
+    // Pause animation on hover
+    partnerTrack.addEventListener("mouseenter", () => {
+      partnerTrack.style.animationPlayState = "paused"
+    })
+
+    partnerTrack.addEventListener("mouseleave", () => {
+      partnerTrack.style.animationPlayState = "running"
+    })
+
+    // Handle focus events for accessibility
+    const partnerLogos = partnerTrack.querySelectorAll(".partner-logo")
+    partnerLogos.forEach((logo) => {
+      logo.addEventListener("focus", () => {
+        partnerTrack.style.animationPlayState = "paused"
+      })
+
+      logo.addEventListener("blur", () => {
+        partnerTrack.style.animationPlayState = "running"
+      })
+    })
+
+    // Ensure smooth animation restart when the track is cloned
+    let isAnimationReset = false
+    partnerTrack.addEventListener("animationend", () => {
+      if (!isAnimationReset) {
+        partnerTrack.style.animation = "none"
+        partnerTrack.offsetHeight // Trigger reflow
+        partnerTrack.style.animation = null
+        isAnimationReset = true
+        setTimeout(() => {
+          isAnimationReset = false
+        }, 0)
+      }
+    })
+  }
+})
+
+
+    </script>
 </body>
 </html>
 
