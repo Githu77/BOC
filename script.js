@@ -562,3 +562,42 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("resize", handleResize)
 })
 
+// Partners slider functionality
+const partnerTrack = document.querySelector(".partner-track")
+if (partnerTrack) {
+  // Pause animation on hover
+  partnerTrack.addEventListener("mouseenter", () => {
+    partnerTrack.style.animationPlayState = "paused"
+  })
+
+  partnerTrack.addEventListener("mouseleave", () => {
+    partnerTrack.style.animationPlayState = "running"
+  })
+
+  // Handle focus events for accessibility
+  const partnerLogos = partnerTrack.querySelectorAll(".partner-logo")
+  partnerLogos.forEach((logo) => {
+    logo.addEventListener("focus", () => {
+      partnerTrack.style.animationPlayState = "paused"
+    })
+
+    logo.addEventListener("blur", () => {
+      partnerTrack.style.animationPlayState = "running"
+    })
+  })
+
+  // Ensure smooth animation restart when the track is cloned
+  let isAnimationReset = false
+  partnerTrack.addEventListener("animationend", () => {
+    if (!isAnimationReset) {
+      partnerTrack.style.animation = "none"
+      partnerTrack.offsetHeight // Trigger reflow
+      partnerTrack.style.animation = null
+      isAnimationReset = true
+      setTimeout(() => {
+        isAnimationReset = false
+      }, 0)
+    }
+  })
+}
+

@@ -2353,3 +2353,152 @@ img {
   }
 }
 
+/* Partners Section */
+.partners {
+  padding: 60px 0;
+  background-color: white;
+  overflow: hidden;
+}
+
+.partner-slider {
+  position: relative;
+  padding: 20px 0;
+  margin: 40px 0;
+  overflow: hidden;
+}
+
+.partner-track {
+  display: flex;
+  animation: scroll 40s linear infinite;
+  width: calc(200px * 18); /* Adjust based on number of logos and their width */
+}
+
+.partner-track:hover {
+  animation-play-state: paused;
+}
+
+.partner-logo {
+  flex: 0 0 200px;
+  height: 150px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.partner-logo:hover {
+  transform: scale(1.1);
+}
+
+.partner-logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.partner-logo:hover img {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+/* Logo-specific styles to crop and position each logo correctly */
+.logo-kenbright {
+  object-position: 0 0;
+  width: 120px;
+}
+
+.logo-nhif {
+  object-position: -120px 0;
+  width: 100px;
+}
+
+.logo-minet {
+  object-position: -220px 0;
+  width: 90px;
+}
+
+.logo-maki {
+  object-position: -310px 0;
+  width: 80px;
+}
+
+.logo-allianz {
+  object-position: -390px 0;
+  width: 110px;
+}
+
+.logo-madison {
+  object-position: -500px 0;
+  width: 120px;
+}
+
+.logo-cic {
+  object-position: -620px 0;
+  width: 100px;
+}
+
+.logo-medilink {
+  object-position: -720px 0;
+  width: 110px;
+}
+
+.logo-bupa {
+  object-position: -830px 0;
+  width: 90px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-200px * 9)); /* Adjust based on number of unique logos */
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .partner-logo {
+    flex: 0 0 150px;
+    height: 80px;
+    padding: 15px;
+  }
+
+  .partner-track {
+    width: calc(150px * 18);
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-150px * 9));
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .partner-logo {
+    flex: 0 0 120px;
+    height: 60px;
+    padding: 10px;
+  }
+
+  .partner-track {
+    width: calc(120px * 18);
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-120px * 9));
+    }
+  }
+}
