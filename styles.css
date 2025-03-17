@@ -15,6 +15,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -81,6 +82,16 @@ ul {
   gap: 8px;
 }
 
+.time{
+  display: none;
+}
+
+@media (max-width: 48em) { /* 768px - tablet and below */
+  .support-info {
+    display: none; /* Hides the Certified Medical Professionals span */
+  }
+}
+
 /* Header Styles */
 header {
   top: 0;
@@ -88,7 +99,7 @@ header {
   background-color: rgba(255, 255, 255, 0.95);
   box-shadow: var(--shadow);
   position: sticky;
-  z-index: 1001;
+  z-index: 1000;
 }
 
 header .container {
@@ -196,6 +207,7 @@ header .container {
   font-size: 24px;
   cursor: pointer;
   color: var(--primary-color);
+  z-index: 1000;
 }
 
 /* Hero Section */
@@ -251,6 +263,13 @@ header .container {
   gap: 15px;
   margin-top: 20px;
 }
+
+@media (max-width: 48em) { /* 480px */
+  .cta-buttons {
+    flex-direction: column;
+  }
+}
+  
 
 /* Quick Access Section */
 .quick-access {
@@ -361,6 +380,7 @@ header .container {
   font-weight: 600;
   font-size: 14px;
   transition: var(--transition);
+  cursor: pointer;
 }
 
 .card-btn:hover {
@@ -505,6 +525,13 @@ header .container {
   gap: 10px;
   margin-bottom: 30px;
   flex-wrap: wrap;
+}
+
+@media (max-width: 48em) { /* 768px */
+  .tabs-navigation {
+    flex-direction: row; /* Stack vertically */
+    align-items: flex-start; /* Align tabs left (optional: center if preferred) */
+  }
 }
 
 .tab-btn {

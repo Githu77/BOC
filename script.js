@@ -127,6 +127,22 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   }
 
+    //Find contact us section
+    const scrollButtons = document.querySelectorAll('[data-scroll-to]');
+
+    scrollButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        // Get the target ID from the data attribute
+        const targetId = button.getAttribute('data-scroll-to');
+        const targetElement = document.getElementById(targetId);
+  
+        if (targetElement) {
+          // Scroll to the target element
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
   // Add smooth scrolling for anchor links
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
@@ -180,12 +196,13 @@ document.addEventListener("DOMContentLoaded", () => {
     )
 
     elements.forEach((element, index) => {
-      element.style.opacity = "0"
-      element.style.transform = "translateY(20px)"
-      element.style.transition = `opacity 0.5s ease ${index * 0.1}s, transform 0.5s ease ${index * 0.1}s`
-      element.classList.add("animate-target")
-      observer.observe(element)
-    })
+      // Remove all animation-related styles
+      // element.style.opacity = "0";
+      // element.style.transform = "translateY(20px)";
+      // element.style.transition = `opacity 0.5s ease ${index * 0.1}s, transform 0.5s ease ${index * 0.1}s`;
+      element.classList.add("animate-target");
+      observer.observe(element);
+    });
   }
 
   // Add the CSS for animation
@@ -284,11 +301,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // Set initial state
     aboutImage.style.opacity = "0"
     aboutImage.style.transform = "translateX(50px)"
-    aboutImage.style.transition = "opacity 0.8s ease, transform 0.8s ease"
+    aboutImage.style.transition = "opacity 0.1s ease, transform 0.1s ease"
 
     aboutText.style.opacity = "0"
     aboutText.style.transform = "translateX(-50px)"
-    aboutText.style.transition = "opacity 0.8s ease, transform 0.8s ease"
+    aboutText.style.transition = "opacity 0.1s ease, transform 0.1s ease"
 
     const aboutObserver = new IntersectionObserver(
       (entries) => {
@@ -307,6 +324,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     aboutObserver.observe(document.querySelector(".about-us"))
   }
+
+
+
 
   // Testimonial slider functionality
   const testimonialSlides = document.querySelectorAll(".testimonial-slide")
