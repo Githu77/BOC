@@ -211,8 +211,11 @@
 }
 
 .service-card-footer {
-  
-  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: auto;
+  width: 70%;
 }
 
 .service-card-footer .btn {
