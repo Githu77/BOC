@@ -214,9 +214,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     
     /* Improved mobile menu styles */
-    @media (max-width: 767px) {
+    @media (max-width: 992px) {
       .main-nav {
         display: none;
+      }
+
+      .contact-link{
+        display: block;
       }
       
       .main-nav.active {
@@ -555,7 +559,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // Resize handler for responsive adjustments
   function handleResize() {
     // Adjust mobile menu behavior based on screen width
-    if (window.innerWidth >= 768) {
+    if (window.innerWidth >= 992) {
       if (mainNav) {
         mainNav.classList.remove("active")
         body.style.overflow = ""

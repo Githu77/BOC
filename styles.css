@@ -202,6 +202,10 @@ header .container {
   color: var(--primary-color);
 }
 
+.contact-link{
+  display: none;
+}
+
 .mobile-menu-btn {
   display: none;
   font-size: 24px;
@@ -1206,6 +1210,15 @@ header .container {
 
 /* Responsive Styles */
 @media (max-width: 992px) {
+  .main-nav,
+  .contact-btn {
+    display: none;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
   .hero .container {
     grid-template-columns: 1fr;
   }
@@ -1248,15 +1261,6 @@ header .container {
 }
 
 @media (max-width: 768px) {
-  .main-nav,
-  .contact-btn {
-    display: none;
-  }
-
-  .mobile-menu-btn {
-    display: block;
-  }
-
   .emergency-bar .container {
     flex-direction: column;
     gap: 10px;
