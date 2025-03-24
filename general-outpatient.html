@@ -56,7 +56,7 @@
                 </div>
                 <div class="support-info">
                     <span><i class="fas fa-clock"></i> 24/7 Support</span>
-                    <span><i class="fas fa-user-md"></i> Certified Medical Professionals</span>
+                    <span class="professionals"><i class="fas fa-user-md"></i> Certified Medical Professionals</span>
                 </div>
             </div>
         </div>
@@ -67,12 +67,12 @@
             </div>
             <nav class="main-nav">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
                     <li class="dropdown">
                         <a href="services.html">Our Services </i></a>
                         <div class="dropdown-content">
                             <a href="specialist-outpatient.html">Specialist Outpatient</a>
-                            <a href="general-outpatient.html" class="active">General Outpatient</a>
+                            <a href="general-outpatient.html">General Outpatient</a>
                             <a href="diagnostic-services.html">Diagnostic Services</a>
                             <a href="emergency-trauma-services.html">Emergency & Trauma</a>
                         </div>
@@ -84,8 +84,9 @@
                             <a href="ol-jororok-branch.html">Ol Jororok Branch</a>
                         </div>
                     </li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html">About Us</a></li>
                     <li><a href="news-insights.html">News & Insights</a></li>
+                    <li class="contact-link"><a href="contact.html">Contact Us</a></li>
                 </ul>
             </nav>
             <div class="contact-btn">
@@ -130,11 +131,11 @@
                     <div class="service-highlights-box">
                         <h3>Why Choose Our General Outpatient Services</h3>
                         <ul>
-                            <li><i class="fas fa-user-md"></i> <strong>Experienced Physicians:</strong> Skilled general practitioners with extensive experience in primary care</li>
-                            <li><i class="fas fa-clock"></i> <strong>24/7 Availability:</strong> Round-the-clock access to healthcare services for urgent needs</li>
-                            <li><i class="fas fa-clipboard-check"></i> <strong>Comprehensive Care:</strong> Complete range of primary healthcare services under one roof</li>
-                            <li><i class="fas fa-calendar-check"></i> <strong>Convenient Scheduling:</strong> Flexible appointment times to accommodate your busy schedule</li>
-                            <li><i class="fas fa-hospital"></i> <strong>Modern Facilities:</strong> State-of-the-art equipment and comfortable examination rooms</li>
+                            <li><i class="fas fa-user-md"></i> <p><strong>Experienced Physicians:</strong><br> Skilled general practitioners with extensive experience in primary care</p></li>
+                            <li><i class="fas fa-clock"></i> <p><strong>24/7 Availability:</strong><br> Round-the-clock access to healthcare services for urgent needs</p></li>
+                            <li><i class="fas fa-clipboard-check"></i> <p><strong>Comprehensive Care:</strong><br> Complete range of primary healthcare services under one roof</p></li>
+                            <li><i class="fas fa-calendar-check"></i> <p><strong>Convenient Scheduling:</strong><br> Flexible appointment times to accommodate your busy schedule</p></li>
+                            <li><i class="fas fa-hospital"></i> <p><strong>Modern Facilities:</strong><br> State-of-the-art equipment and comfortable examination rooms</p></li>
                         </ul>
                     </div>
                 </div>
@@ -147,439 +148,309 @@
         </div>
     </section>
 
-    <!-- Services Offered Section -->
-    <section class="services-offered-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our General Outpatient Services</h2>
-                <p>Explore our comprehensive range of primary healthcare services</p>
+<!-- Services Offered Section -->
+<section class="services-offered-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our General Outpatient Services</h2>
+            <p>Explore our comprehensive range of primary healthcare services</p>
+        </div>
+        
+        <div class="services-accordion">
+            <!-- Primary Care -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <div class="specialty-icon">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Primary Care</h3>
+                    <div class="accordion-toggle">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="accordion-content">
+                    <p>Our primary care services focus on providing comprehensive healthcare for patients of all ages. We offer routine check-ups, preventive care, and management of common illnesses to help you maintain optimal health and well-being.</p>
+                    
+                    <div class="specialty-services">
+                        <h4>Services Offered:</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Routine physical examinations</li>
+                            <li><i class="fas fa-check-circle"></i> Health screenings and assessments</li>
+                            <li><i class="fas fa-check-circle"></i> Immunizations and vaccinations</li>
+                            <li><i class="fas fa-check-circle"></i> Management of common illnesses</li>
+                            <li><i class="fas fa-check-circle"></i> Health education and counseling</li>
+                            <li><i class="fas fa-check-circle"></i> Referrals to specialists when needed</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
             
-            <div class="services-accordion">
-                <!-- Primary Care -->
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <div class="specialty-icon">
-                            <i class="fas fa-user-md"></i>
-                        </div>
-                        <h3>Primary Care</h3>
-                        <div class="accordion-toggle">
-                            <i class="fas fa-plus"></i>
-                        </div>
+            <!-- Chronic Disease Management -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <div class="specialty-icon">
+                        <i class="fas fa-heartbeat"></i>
                     </div>
-                    <div class="accordion-content">
-                        <p>Our primary care services focus on providing comprehensive healthcare for patients of all ages. We offer routine check-ups, preventive care, and management of common illnesses to help you maintain optimal health and well-being.</p>
-                        
-                        <div class="specialty-services">
-                            <h4>Services Offered:</h4>
-                            <ul>
-                                <li><i class="fas fa-check-circle"></i> Routine physical examinations</li>
-                                <li><i class="fas fa-check-circle"></i> Health screenings and assessments</li>
-                                <li><i class="fas fa-check-circle"></i> Immunizations and vaccinations</li>
-                                <li><i class="fas fa-check-circle"></i> Management of common illnesses</li>
-                                <li><i class="fas fa-check-circle"></i> Health education and counseling</li>
-                                <li><i class="fas fa-check-circle"></i> Referrals to specialists when needed</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="specialty-doctor">
-                            <div class="doctor-image">
-                                <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=300&auto=format&fit=crop" alt="Dr. James Mwangi">
-                            </div>
-                            <div class="doctor-info">
-                                <h4>Dr. James Mwangi</h4>
-                                <p class="doctor-title">Lead General Physician</p>
-                                <p class="doctor-credentials">MD, MPH | 8+ years experience</p>
-                                <p class="doctor-bio">Dr. Mwangi provides comprehensive primary care with a focus on preventive medicine and holistic wellness approaches.</p>
-                                <a href="#" class="btn btn-outline-primary btn-sm">View Profile</a>
-                            </div>
-                        </div>
+                    <h3>Chronic Disease Management</h3>
+                    <div class="accordion-toggle">
+                        <i class="fas fa-plus"></i>
                     </div>
                 </div>
-                
-                <!-- Chronic Disease Management -->
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <div class="specialty-icon">
-                            <i class="fas fa-heartbeat"></i>
-                        </div>
-                        <h3>Chronic Disease Management</h3>
-                        <div class="accordion-toggle">
-                            <i class="fas fa-plus"></i>
-                        </div>
-                    </div>
-                    <div class="accordion-content">
-                        <p>Our chronic disease management program provides ongoing care and support for patients with long-term health conditions. We work with you to develop personalized treatment plans that help you effectively manage your condition and improve your quality of life.</p>
-                        
-                        <div class="specialty-services">
-                            <h4>Services Offered:</h4>
-                            <ul>
-                                <li><i class="fas fa-check-circle"></i> Diabetes management</li>
-                                <li><i class="fas fa-check-circle"></i> Hypertension (high blood pressure) care</li>
-                                <li><i class="fas fa-check-circle"></i> Asthma and COPD management</li>
-                                <li><i class="fas fa-check-circle"></i> Heart disease monitoring</li>
-                                <li><i class="fas fa-check-circle"></i> Medication management</li>
-                                <li><i class="fas fa-check-circle"></i> Lifestyle modification guidance</li>
-                                <li><i class="fas fa-check-circle"></i> Regular monitoring and follow-up</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="specialty-doctor">
-                            <div class="doctor-image">
-                                <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=300&auto=format&fit=crop" alt="Dr. Rebecca Njeri">
-                            </div>
-                            <div class="doctor-info">
-                                <h4>Dr. Rebecca Njeri</h4>
-                                <p class="doctor-title">Chronic Care Specialist</p>
-                                <p class="doctor-credentials">MD | 9+ years experience</p>
-                                <p class="doctor-bio">Dr. Njeri specializes in the management of chronic conditions with a focus on patient education and empowerment for self-care.</p>
-                                <a href="#" class="btn btn-outline-primary btn-sm">View Profile</a>
-                            </div>
-                        </div>
+                <div class="accordion-content">
+                    <p>Our chronic disease management program provides ongoing care and support for patients with long-term health conditions. We work with you to develop personalized treatment plans that help you effectively manage your condition and improve your quality of life.</p>
+                    
+                    <div class="specialty-services">
+                        <h4>Services Offered:</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Diabetes management</li>
+                            <li><i class="fas fa-check-circle"></i> Hypertension (high blood pressure) care</li>
+                            <li><i class="fas fa-check-circle"></i> Asthma and COPD management</li>
+                            <li><i class="fas fa-check-circle"></i> Heart disease monitoring</li>
+                            <li><i class="fas fa-check-circle"></i> Medication management</li>
+                            <li><i class="fas fa-check-circle"></i> Lifestyle modification guidance</li>
+                            <li><i class="fas fa-check-circle"></i> Regular monitoring and follow-up</li>
+                        </ul>
                     </div>
                 </div>
-                
-                <!-- Antenatal Care -->
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <div class="specialty-icon">
-                            <i class="fas fa-baby"></i>
-                        </div>
-                        <h3>Antenatal Care</h3>
-                        <div class="accordion-toggle">
-                            <i class="fas fa-plus"></i>
-                        </div>
+            </div>
+            
+            <!-- Antenatal Care -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <div class="specialty-icon">
+                        <i class="fas fa-baby"></i>
                     </div>
-                    <div class="accordion-content">
-                        <p>Our antenatal care services provide comprehensive prenatal care for expectant mothers throughout pregnancy. We offer regular check-ups, screenings, and education to ensure the health and well-being of both mother and baby.</p>
-                        
-                        <div class="specialty-services">
-                            <h4>Services Offered:</h4>
-                            <ul>
-                                <li><i class="fas fa-check-circle"></i> Prenatal check-ups and monitoring</li>
-                                <li><i class="fas fa-check-circle"></i> Ultrasound services</li>
-                                <li><i class="fas fa-check-circle"></i> Maternal nutrition guidance</li>
-                                <li><i class="fas fa-check-circle"></i> Prenatal vitamins and supplements</li>
-                                <li><i class="fas fa-check-circle"></i> Childbirth education</li>
-                                <li><i class="fas fa-check-circle"></i> High-risk pregnancy management</li>
-                                <li><i class="fas fa-check-circle"></i> Postnatal care and support</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="specialty-doctor">
-                            <div class="doctor-image">
-                                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=300&auto=format&fit=crop" alt="Dr. Grace Wanjiku">
-                            </div>
-                            <div class="doctor-info">
-                                <h4>Dr. Grace Wanjiku</h4>
-                                <p class="doctor-title">Maternal Health Specialist</p>
-                                <p class="doctor-credentials">MD, MRCOG | 12+ years experience</p>
-                                <p class="doctor-bio">Dr. Wanjiku specializes in maternal health with a focus on providing comprehensive care throughout pregnancy and beyond.</p>
-                                <a href="#" class="btn btn-outline-primary btn-sm">View Profile</a>
-                            </div>
-                        </div>
+                    <h3>Antenatal Care</h3>
+                    <div class="accordion-toggle">
+                        <i class="fas fa-plus"></i>
                     </div>
                 </div>
-                
-                <!-- Preventive Care -->
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <div class="specialty-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <h3>Preventive Care</h3>
-                        <div class="accordion-toggle">
-                            <i class="fas fa-plus"></i>
-                        </div>
-                    </div>
-                    <div class="accordion-content">
-                        <p>Our preventive care services focus on keeping you healthy and preventing illness before it occurs. We offer a range of screenings, vaccinations, and health education to help you maintain optimal health and detect potential health issues early.</p>
-                        
-                        <div class="specialty-services">
-                            <h4>Services Offered:</h4>
-                            <ul>
-                                <li><i class="fas fa-check-circle"></i> Health risk assessments</li>
-                                <li><i class="fas fa-check-circle"></i> Cancer screenings</li>
-                                <li><i class="fas fa-check-circle"></i> Cardiovascular disease screenings</li>
-                                <li><i class="fas fa-check-circle"></i> Adult immunizations</li>
-                                <li><i class="fas fa-check-circle"></i> Lifestyle counseling</li>
-                                <li><i class="fas fa-check-circle"></i> Nutritional guidance</li>
-                                <li><i class="fas fa-check-circle"></i> Weight management</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="specialty-doctor">
-                            <div class="doctor-image">
-                                <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=300&auto=format&fit=crop" alt="Dr. James Mwangi">
-                            </div>
-                            <div class="doctor-info">
-                                <h4>Dr. James Mwangi</h4>
-                                <p class="doctor-title">Lead General Physician</p>
-                                <p class="doctor-credentials">MD, MPH | 8+ years experience</p>
-                                <p class="doctor-bio">Dr. Mwangi provides comprehensive primary care with a focus on preventive medicine and holistic wellness approaches.</p>
-                                <a href="#" class="btn btn-outline-primary btn-sm">View Profile</a>
-                            </div>
-                        </div>
+                <div class="accordion-content">
+                    <p>Our antenatal care services provide comprehensive prenatal care for expectant mothers throughout pregnancy. We offer regular check-ups, screenings, and education to ensure the health and well-being of both mother and baby.</p>
+                    
+                    <div class="specialty-services">
+                        <h4>Services Offered:</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Prenatal check-ups and monitoring</li>
+                            <li><i class="fas fa-check-circle"></i> Ultrasound services</li>
+                            <li><i class="fas fa-check-circle"></i> Maternal nutrition guidance</li>
+                            <li><i class="fas fa-check-circle"></i> Prenatal vitamins and supplements</li>
+                            <li><i class="fas fa-check-circle"></i> Childbirth education</li>
+                            <li><i class="fas fa-check-circle"></i> High-risk pregnancy management</li>
+                            <li><i class="fas fa-check-circle"></i> Postnatal care and support</li>
+                        </ul>
                     </div>
                 </div>
-                
-                <!-- General Physician -->
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <div class="specialty-icon">
-                            <i class="fas fa-stethoscope"></i>
-                        </div>
-                        <h3>General Physician</h3>
-                        <div class="accordion-toggle">
-                            <i class="fas fa-plus"></i>
-                        </div>
+            </div>
+            
+            <!-- Preventive Care -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <div class="specialty-icon">
+                        <i class="fas fa-shield-alt"></i>
                     </div>
-                    <div class="accordion-content">
-                        <p>Our general physicians are the first point of contact for most health concerns. They provide comprehensive care for a wide range of conditions and can refer you to specialists when needed. Our physicians focus on building long-term relationships with patients to provide continuity of care.</p>
-                        
-                        <div class="specialty-services">
-                            <h4>Services Offered:</h4>
-                            <ul>
-                                <li><i class="fas fa-check-circle"></i> Diagnosis and treatment of common illnesses</li>
-                                <li><i class="fas fa-check-circle"></i> Management of acute and chronic conditions</li>
-                                <li><i class="fas fa-check-circle"></i> Preventive healthcare and screenings</li>
-                                <li><i class="fas fa-check-circle"></i> Health risk assessments</li>
-                                <li><i class="fas fa-check-circle"></i> Referrals to specialists when needed</li>
-                                <li><i class="fas fa-check-circle"></i> Follow-up care after hospitalization</li>
-                                <li><i class="fas fa-check-circle"></i> Coordination of care across multiple providers</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="specialty-doctor">
-                            <div class="doctor-image">
-                                <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?q=80&w=300&auto=format&fit=crop" alt="Dr. Samuel Ochieng">
-                            </div>
-                            <div class="doctor-info">
-                                <h4>Dr. Samuel Ochieng</h4>
-                                <p class="doctor-title">Senior General Physician</p>
-                                <p class="doctor-credentials">MD | 10+ years experience</p>
-                                <p class="doctor-bio">Dr. Ochieng is dedicated to providing comprehensive care for patients of all ages, with particular expertise in managing complex medical conditions and preventive healthcare.</p>
-                                <a href="#" class="btn btn-outline-primary btn-sm">View Profile</a>
-                            </div>
-                        </div>
+                    <h3>Preventive Care</h3>
+                    <div class="accordion-toggle">
+                        <i class="fas fa-plus"></i>
                     </div>
                 </div>
+                <div class="accordion-content">
+                    <p>Our preventive care services focus on keeping you healthy and preventing illness before it occurs. We offer a range of screenings, vaccinations, and health education to help you maintain optimal health and detect potential health issues early.</p>
+                    
+                    <div class="specialty-services">
+                        <h4>Services Offered:</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Health risk assessments</li>
+                            <li><i class="fas fa-check-circle"></i> Cancer screenings</li>
+                            <li><i class="fas fa-check-circle"></i> Cardiovascular disease screenings</li>
+                            <li><i class="fas fa-check-circle"></i> Adult immunizations</li>
+                            <li><i class="fas fa-check-circle"></i> Lifestyle counseling</li>
+                            <li><i class="fas fa-check-circle"></i> Nutritional guidance</li>
+                            <li><i class="fas fa-check-circle"></i> Weight management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- General Physician -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <div class="specialty-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3>General Physician</h3>
+                    <div class="accordion-toggle">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="accordion-content">
+                    <p>Our general physicians are the first point of contact for most health concerns. They provide comprehensive care for a wide range of conditions and can refer you to specialists when needed. Our physicians focus on building long-term relationships with patients to provide continuity of care.</p>
+                    
+                    <div class="specialty-services">
+                        <h4>Services Offered:</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Diagnosis and treatment of common illnesses</li>
+                            <li><i class="fas fa-check-circle"></i> Management of acute and chronic conditions</li>
+                            <li><i class="fas fa-check-circle"></i> Preventive healthcare and screenings</li>
+                            <li><i class="fas fa-check-circle"></i> Health risk assessments</li>
+                            <li><i class="fas fa-check-circle"></i> Referrals to specialists when needed</li>
+                            <li><i class="fas fa-check-circle"></i> Follow-up care after hospitalization</li>
+                            <li><i class="fas fa-check-circle"></i> Coordination of care across multiple providers</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-                <!-- Family Planning Clinic -->
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <div class="specialty-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h3>Family Planning Clinic</h3>
-                        <div class="accordion-toggle">
-                            <i class="fas fa-plus"></i>
-                        </div>
+            <!-- Family Planning Clinic -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <div class="specialty-icon">
+                        <i class="fas fa-users"></i>
                     </div>
-                    <div class="accordion-content">
-                        <p>Our Family Planning Clinic provides confidential counseling and a range of contraceptive options to help individuals and couples make informed decisions about their reproductive health. We offer personalized care that respects your values, preferences, and health needs.</p>
-                        
-                        <div class="specialty-services">
-                            <h4>Services Offered:</h4>
-                            <ul>
-                                <li><i class="fas fa-check-circle"></i> Comprehensive contraceptive counseling</li>
-                                <li><i class="fas fa-check-circle"></i> Short-term contraceptive methods (pills, patches, rings)</li>
-                                <li><i class="fas fa-check-circle"></i> Long-acting reversible contraceptives (IUDs, implants)</li>
-                                <li><i class="fas fa-check-circle"></i> Barrier methods (condoms, diaphragms)</li>
-                                <li><i class="fas fa-check-circle"></i> Natural family planning education</li>
-                                <li><i class="fas fa-check-circle"></i> Emergency contraception</li>
-                                <li><i class="fas fa-check-circle"></i> Pre-conception counseling</li>
-                                <li><i class="fas fa-check-circle"></i> STI screening and prevention</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="specialty-doctor">
-                            <div class="doctor-image">
-                                <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=300&auto=format&fit=crop" alt="Dr. Esther Kamau">
-                            </div>
-                            <div class="doctor-info">
-                                <h4>Dr. Esther Kamau</h4>
-                                <p class="doctor-title">Reproductive Health Specialist</p>
-                                <p class="doctor-credentials">MD, MPH | 8+ years experience</p>
-                                <p class="doctor-bio">Dr. Kamau specializes in reproductive health and family planning, providing compassionate care and education to help patients make informed decisions about their reproductive health.</p>
-                                <a href="#" class="btn btn-outline-primary btn-sm">View Profile</a>
-                            </div>
-                        </div>
+                    <h3>Family Planning Clinic</h3>
+                    <div class="accordion-toggle">
+                        <i class="fas fa-plus"></i>
                     </div>
                 </div>
+                <div class="accordion-content">
+                    <p>Our Family Planning Clinic provides confidential counseling and a range of contraceptive options to help individuals and couples make informed decisions about their reproductive health. We offer personalized care that respects your values, preferences, and health needs.</p>
+                    
+                    <div class="specialty-services">
+                        <h4>Services Offered:</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Comprehensive contraceptive counseling</li>
+                            <li><i class="fas fa-check-circle"></i> Short-term contraceptive methods (pills, patches, rings)</li>
+                            <li><i class="fas fa-check-circle"></i> Long-acting reversible contraceptives (IUDs, implants)</li>
+                            <li><i class="fas fa-check-circle"></i> Barrier methods (condoms, diaphragms)</li>
+                            <li><i class="fas fa-check-circle"></i> Natural family planning education</li>
+                            <li><i class="fas fa-check-circle"></i> Emergency contraception</li>
+                            <li><i class="fas fa-check-circle"></i> Pre-conception counseling</li>
+                            <li><i class="fas fa-check-circle"></i> STI screening and prevention</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-                <!-- Well Baby Clinic -->
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <div class="specialty-icon">
-                            <i class="fas fa-baby"></i>
-                        </div>
-                        <h3>Well Baby Clinic</h3>
-                        <div class="accordion-toggle">
-                            <i class="fas fa-plus"></i>
-                        </div>
+            <!-- Well Baby Clinic -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <div class="specialty-icon">
+                        <i class="fas fa-baby"></i>
                     </div>
-                    <div class="accordion-content">
-                        <p>Our Well Baby Clinic provides comprehensive healthcare for infants and young children, focusing on growth monitoring, developmental assessments, immunizations, and parental education. We partner with parents to ensure the optimal health and development of their children.</p>
-                        
-                        <div class="specialty-services">
-                            <h4>Services Offered:</h4>
-                            <ul>
-                                <li><i class="fas fa-check-circle"></i> Regular growth and development monitoring</li>
-                                <li><i class="fas fa-check-circle"></i> Comprehensive immunization services</li>
-                                <li><i class="fas fa-check-circle"></i> Nutritional assessment and counseling</li>
-                                <li><i class="fas fa-check-circle"></i> Developmental milestone screening</li>
-                                <li><i class="fas fa-check-circle"></i> Early detection of health issues</li>
-                                <li><i class="fas fa-check-circle"></i> Breastfeeding support and guidance</li>
-                                <li><i class="fas fa-check-circle"></i> Parenting education and support</li>
-                                <li><i class="fas fa-check-circle"></i> Management of common childhood illnesses</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="specialty-doctor">
-                            <div class="doctor-image">
-                                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=300&auto=format&fit=crop" alt="Dr. Mercy Wangari">
-                            </div>
-                            <div class="doctor-info">
-                                <h4>Dr. Mercy Wangari</h4>
-                                <p class="doctor-title">Pediatrician</p>
-                                <p class="doctor-credentials">MD, Pediatrics | 9+ years experience</p>
-                                <p class="doctor-bio">Dr. Wangari is passionate about child health and development, providing comprehensive care for infants and young children with a focus on preventive healthcare and parental education.</p>
-                                <a href="#" class="btn btn-outline-primary btn-sm">View Profile</a>
-                            </div>
-                        </div>
+                    <h3>Well Baby Clinic</h3>
+                    <div class="accordion-toggle">
+                        <i class="fas fa-plus"></i>
                     </div>
                 </div>
+                <div class="accordion-content">
+                    <p>Our Well Baby Clinic provides comprehensive healthcare for infants and young children, focusing on growth monitoring, developmental assessments, immunizations, and parental education. We partner with parents to ensure the optimal health and development of their children.</p>
+                    
+                    <div class="specialty-services">
+                        <h4>Services Offered:</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Regular growth and development monitoring</li>
+                            <li><i class="fas fa-check-circle"></i> Comprehensive immunization services</li>
+                            <li><i class="fas fa-check-circle"></i> Nutritional assessment and counseling</li>
+                            <li><i class="fas fa-check-circle"></i> Developmental milestone screening</li>
+                            <li><i class="fas fa-check-circle"></i> Early detection of health issues</li>
+                            <li><i class="fas fa-check-circle"></i> Breastfeeding support and guidance</li>
+                            <li><i class="fas fa-check-circle"></i> Parenting education and support</li>
+                            <li><i class="fas fa-check-circle"></i> Management of common childhood illnesses</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-                <!-- Physiotherapy -->
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <div class="specialty-icon">
-                            <i class="fas fa-walking"></i>
-                        </div>
-                        <h3>Physiotherapy</h3>
-                        <div class="accordion-toggle">
-                            <i class="fas fa-plus"></i>
-                        </div>
+            <!-- Physiotherapy -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <div class="specialty-icon">
+                        <i class="fas fa-walking"></i>
                     </div>
-                    <div class="accordion-content">
-                        <p>Our Physiotherapy services help patients recover movement and function after injury, illness, or disability. Using evidence-based techniques and personalized treatment plans, our physiotherapists work with you to improve mobility, reduce pain, and enhance your quality of life.</p>
-                        
-                        <div class="specialty-services">
-                            <h4>Services Offered:</h4>
-                            <ul>
-                                <li><i class="fas fa-check-circle"></i> Musculoskeletal assessment and treatment</li>
-                                <li><i class="fas fa-check-circle"></i> Post-surgical rehabilitation</li>
-                                <li><i class="fas fa-check-circle"></i> Sports injury rehabilitation</li>
-                                <li><i class="fas fa-check-circle"></i> Back and neck pain management</li>
-                                <li><i class="fas fa-check-circle"></i> Neurological rehabilitation</li>
-                                <li><i class="fas fa-check-circle"></i> Pediatric physiotherapy</li>
-                                <li><i class="fas fa-check-circle"></i> Geriatric physiotherapy</li>
-                                <li><i class="fas fa-check-circle"></i> Ergonomic assessment and advice</li>
-                                <li><i class="fas fa-check-circle"></i> Exercise prescription and guidance</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="specialty-doctor">
-                            <div class="doctor-image">
-                                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=300&auto=format&fit=crop" alt="Mr. David Mutua">
-                            </div>
-                            <div class="doctor-info">
-                                <h4>Mr. David Mutua</h4>
-                                <p class="doctor-title">Senior Physiotherapist</p>
-                                <p class="doctor-credentials">BSc Physiotherapy, MSc Rehabilitation | 7+ years experience</p>
-                                <p class="doctor-bio">Mr. Mutua specializes in musculoskeletal and sports rehabilitation, helping patients recover from injuries and improve their physical function through evidence-based therapeutic approaches.</p>
-                                <a href="#" class="btn btn-outline-primary btn-sm">View Profile</a>
-                            </div>
-                        </div>
+                    <h3>Physiotherapy</h3>
+                    <div class="accordion-toggle">
+                        <i class="fas fa-plus"></i>
                     </div>
                 </div>
-                <!-- Antenatal Care -->
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <div class="specialty-icon">
-                            <i class="fas fa-baby"></i>
-                        </div>
-                        <h3>Antenatal Care</h3>
-                        <div class="accordion-toggle">
-                            <i class="fas fa-plus"></i>
-                        </div>
-                    </div>
-                    <div class="accordion-content">
-                        <p>Our antenatal care services provide comprehensive prenatal care for expectant mothers throughout pregnancy. We offer regular check-ups, screenings, and education to ensure the health and well-being of both mother and baby.</p>
-                        
-                        <div class="specialty-services">
-                            <h4>Services Offered:</h4>
-                            <ul>
-                                <li><i class="fas fa-check-circle"></i> Prenatal check-ups and monitoring</li>
-                                <li><i class="fas fa-check-circle"></i> Ultrasound services</li>
-                                <li><i class="fas fa-check-circle"></i> Maternal nutrition guidance</li>
-                                <li><i class="fas fa-check-circle"></i> Prenatal vitamins and supplements</li>
-                                <li><i class="fas fa-check-circle"></i> Childbirth education</li>
-                                <li><i class="fas fa-check-circle"></i> High-risk pregnancy management</li>
-                                <li><i class="fas fa-check-circle"></i> Postnatal care and support</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="specialty-doctor">
-                            <div class="doctor-image">
-                                <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=300&auto=format&fit=crop" alt="Dr. Grace Wanjiku">
-                            </div>
-                            <div class="doctor-info">
-                                <h4>Dr. Grace Wanjiku</h4>
-                                <p class="doctor-title">Maternal Health Specialist</p>
-                                <p class="doctor-credentials">MD, MRCOG | 12+ years experience</p>
-                                <p class="doctor-bio">Dr. Wanjiku specializes in maternal health with a focus on providing comprehensive care throughout pregnancy and beyond.</p>
-                                <a href="#" class="btn btn-outline-primary btn-sm">View Profile</a>
-                            </div>
-                        </div>
+                <div class="accordion-content">
+                    <p>Our Physiotherapy services help patients recover movement and function after injury, illness, or disability. Using evidence-based techniques and personalized treatment plans, our physiotherapists work with you to improve mobility, reduce pain, and enhance your quality of life.</p>
+                    
+                    <div class="specialty-services">
+                        <h4>Services Offered:</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Musculoskeletal assessment and treatment</li>
+                            <li><i class="fas fa-check-circle"></i> Post-surgical rehabilitation</li>
+                            <li><i class="fas fa-check-circle"></i> Sports injury rehabilitation</li>
+                            <li><i class="fas fa-check-circle"></i> Back and neck pain management</li>
+                            <li><i class="fas fa-check-circle"></i> Neurological rehabilitation</li>
+                            <li><i class="fas fa-check-circle"></i> Pediatric physiotherapy</li>
+                            <li><i class="fas fa-check-circle"></i> Geriatric physiotherapy</li>
+                            <li><i class="fas fa-check-circle"></i> Ergonomic assessment and advice</li>
+                            <li><i class="fas fa-check-circle"></i> Exercise prescription and guidance</li>
+                        </ul>
                     </div>
                 </div>
-                
-                <!-- Preventive Care -->
-                <div class="accordion-item">
-                    <div class="accordion-header">
-                        <div class="specialty-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <h3>Preventive Care</h3>
-                        <div class="accordion-toggle">
-                            <i class="fas fa-plus"></i>
-                        </div>
+            </div>
+            <!-- Antenatal Care -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <div class="specialty-icon">
+                        <i class="fas fa-baby"></i>
                     </div>
-                    <div class="accordion-content">
-                        <p>Our preventive care services focus on keeping you healthy and preventing illness before it occurs. We offer a range of screenings, vaccinations, and health education to help you maintain optimal health and detect potential health issues early.</p>
-                        
-                        <div class="specialty-services">
-                            <h4>Services Offered:</h4>
-                            <ul>
-                                <li><i class="fas fa-check-circle"></i> Health risk assessments</li>
-                                <li><i class="fas fa-check-circle"></i> Cancer screenings</li>
-                                <li><i class="fas fa-check-circle"></i> Cardiovascular disease screenings</li>
-                                <li><i class="fas fa-check-circle"></i> Adult immunizations</li>
-                                <li><i class="fas fa-check-circle"></i> Lifestyle counseling</li>
-                                <li><i class="fas fa-check-circle"></i> Nutritional guidance</li>
-                                <li><i class="fas fa-check-circle"></i> Weight management</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="specialty-doctor">
-                            <div class="doctor-image">
-                                <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=300&auto=format&fit=crop" alt="Dr. James Mwangi">
-                            </div>
-                            <div class="doctor-info">
-                                <h4>Dr. James Mwangi</h4>
-                                <p class="doctor-title">Lead General Physician</p>
-                                <p class="doctor-credentials">MD, MPH | 8+ years experience</p>
-                                <p class="doctor-bio">Dr. Mwangi provides comprehensive primary care with a focus on preventive medicine and holistic wellness approaches.</p>
-                                <a href="#" class="btn btn-outline-primary btn-sm">View Profile</a>
-                            </div>
-                        </div>
+                    <h3>Antenatal Care</h3>
+                    <div class="accordion-toggle">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="accordion-content">
+                    <p>Our antenatal care services provide comprehensive prenatal care for expectant mothers throughout pregnancy. We offer regular check-ups, screenings, and education to ensure the health and well-being of both mother and baby.</p>
+                    
+                    <div class="specialty-services">
+                        <h4>Services Offered:</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Prenatal check-ups and monitoring</li>
+                            <li><i class="fas fa-check-circle"></i> Ultrasound services</li>
+                            <li><i class="fas fa-check-circle"></i> Maternal nutrition guidance</li>
+                            <li><i class="fas fa-check-circle"></i> Prenatal vitamins and supplements</li>
+                            <li><i class="fas fa-check-circle"></i> Childbirth education</li>
+                            <li><i class="fas fa-check-circle"></i> High-risk pregnancy management</li>
+                            <li><i class="fas fa-check-circle"></i> Postnatal care and support</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Preventive Care -->
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <div class="specialty-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Preventive Care</h3>
+                    <div class="accordion-toggle">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="accordion-content">
+                    <p>Our preventive care services focus on keeping you healthy and preventing illness before it occurs. We offer a range of screenings, vaccinations, and health education to help you maintain optimal health and detect potential health issues early.</p>
+                    
+                    <div class="specialty-services">
+                        <h4>Services Offered:</h4>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Health risk assessments</li>
+                            <li><i class="fas fa-check-circle"></i> Cancer screenings</li>
+                            <li><i class="fas fa-check-circle"></i> Cardiovascular disease screenings</li>
+                            <li><i class="fas fa-check-circle"></i> Adult immunizations</li>
+                            <li><i class="fas fa-check-circle"></i> Lifestyle counseling</li>
+                            <li><i class="fas fa-check-circle"></i> Nutritional guidance</li>
+                            <li><i class="fas fa-check-circle"></i> Weight management</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Meet Our Team Section -->
     <section class="meet-team-section">
@@ -599,10 +470,6 @@
                         <p class="member-title">Lead General Physician</p>
                         <p class="member-credentials">MD, MPH | 8+ years experience</p>
                         <p class="member-bio">Dr. Mwangi provides comprehensive primary care with a focus on preventive medicine and holistic wellness approaches.</p>
-                        <div class="member-actions">
-                            <a href="#" class="btn btn-primary btn-sm">Book Appointment</a>
-                            <a href="#" class="btn btn-outline-primary btn-sm">View Profile</a>
-                        </div>
                     </div>
                 </div>
                 
@@ -615,10 +482,6 @@
                         <p class="member-title">Chronic Care Specialist</p>
                         <p class="member-credentials">MD | 9+ years experience</p>
                         <p class="member-bio">Dr. Njeri specializes in the management of chronic conditions with a focus on patient education and empowerment for self-care.</p>
-                        <div class="member-actions">
-                            <a href="#" class="btn btn-primary btn-sm">Book Appointment</a>
-                            <a href="#" class="btn btn-outline-primary btn-sm">View Profile</a>
-                        </div>
                     </div>
                 </div>
                 
@@ -631,10 +494,6 @@
                         <p class="member-title">Maternal Health Specialist</p>
                         <p class="member-credentials">MD, MRCOG | 12+ years experience</p>
                         <p class="member-bio">Dr. Wanjiku specializes in maternal health with a focus on providing comprehensive care throughout pregnancy and beyond.</p>
-                        <div class="member-actions">
-                            <a href="#" class="btn btn-primary btn-sm">Book Appointment</a>
-                            <a href="#" class="btn btn-outline-primary btn-sm">View Profile</a>
-                        </div>
                     </div>
                 </div>
                 
@@ -647,86 +506,7 @@
                         <p class="member-title">Family Medicine Physician</p>
                         <p class="member-credentials">MD | 7+ years experience</p>
                         <p class="member-bio">Dr. Kimani provides comprehensive family medicine services with a focus on preventive care and health maintenance for patients of all ages.</p>
-                        <div class="member-actions">
-                            <a href="#" class="btn btn-primary btn-sm">Book Appointment</a>
-                            <a href="#" class="btn btn-outline-primary btn-sm">View Profile</a>
-                        </div>
                     </div>
-                </div>
-            </div>
-            
-            <div class="view-all-team">
-                <a href="#" class="btn btn-outline-primary btn-large">View All Physicians <i class="fas fa-arrow-right"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Patient Testimonials -->
-    <section class="testimonials service-testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2>What Our Patients Say</h2>
-                <p>Read about the experiences of patients who have received care at our general outpatient department</p>
-            </div>
-            
-            <div class="testimonial-container">
-                <div class="testimonial-controls">
-                    <button class="testimonial-prev" aria-label="Previous testimonial">
-                        <i class="fas fa-chevron-left"></i>
-                    </button>
-                    <button class="testimonial-next" aria-label="Next testimonial">
-                        <i class="fas fa-chevron-right"></i>
-                    </button>
-                </div>
-                
-                <div class="testimonial-slider">
-                    <div class="testimonial-slide active">
-                        <div class="testimonial-quote">
-                            <i class="fas fa-quote-left quote-icon"></i>
-                            <p>Dr. Mwangi has been my family doctor for years. His approach to healthcare is holistic and patient-centered. He takes the time to listen and explain everything clearly. I appreciate his focus on preventive care and how he helps me stay healthy.</p>
-                            <div class="testimonial-author">
-                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop" alt="Robert K.">
-                                <div class="author-info">
-                                    <h4>Robert K.</h4>
-                                    <p>Primary Care Patient</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="testimonial-slide">
-                        <div class="testimonial-quote">
-                            <i class="fas fa-quote-left quote-icon"></i>
-                            <p>As an expectant mother, I was anxious about my pregnancy journey. The antenatal care at Brooks of Cherith has been outstanding. Dr. Wanjiku is attentive, the facilities are clean, and I always feel well-cared for during my visits.</p>
-                            <div class="testimonial-author">
-                                <img src="https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?q=80&w=100&auto=format&fit=crop" alt="Rebecca N.">
-                                <div class="author-info">
-                                    <h4>Rebecca N.</h4>
-                                    <p>Antenatal Clinic Patient</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="testimonial-slide">
-                        <div class="testimonial-quote">
-                            <i class="fas fa-quote-left quote-icon"></i>
-                            <p>Living with diabetes was challenging until I started seeing Dr. Njeri. Her comprehensive approach to managing my condition has made a significant difference. My blood sugar levels are now well-controlled, and I've learned how to better manage my health.</p>
-                            <div class="testimonial-author">
-                                <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?q=80&w=100&auto=format&fit=crop" alt="John M.">
-                                <div class="author-info">
-                                    <h4>John M.</h4>
-                                    <p>Chronic Care Patient</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-dots">
-                    <span class="dot active"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
                 </div>
             </div>
         </div>
@@ -754,8 +534,8 @@
             <div class="footer-top">
                 <div class="footer-column">
                     <div class="footer-logo">
-                        <img src="/placeholder.svg?height=60&width=100" alt="Brooks of Cherith Hospitals">
-                        <p class="tagline">Healing with Compassion</p>
+                        <img src="Logo-white.jpg" alt="Brooks of Cherith Hospitals">
+                        <p class="tagline">We treat, God cures.</p>
                     </div>
                     <p class="footer-about">Brooks of Cherith Hospitals provides holistic medical care that combines expertise with compassion, rooted in our faith-driven mission to heal and serve.</p>
                     <div class="footer-certifications">
@@ -763,33 +543,31 @@
                         <span><i class="fas fa-award"></i> Accredited Healthcare Facility</span>
                     </div>
                 </div>
-                
-                <div class="footer-column">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="services.html">Our Services</a></li>
-                        <li><a href="#">Find a Doctor</a></li>
-                        <li><a href="#">Locations</a></li>
-                        <li><a href="#">News & Insights</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
+                <div class="footer-sub-column">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Our Services</a></li>
+                            <li><a href="locations.html">Locations</a></li>
+                            <li><a href="news-insights.html">News & Insights</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h4>Our Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="specialist-outpatient.html">Specialist Outpatient</a></li>
+                            <li><a href="general-outpatient.html">General Outpatient</a></li>
+                            <li><a href="diagnostic-services.html">Diagnostic Services</a></li>
+                            <li><a href="emergency-trauma-services.html">Emergency Care</a></li>
+                            <li><a href="general-outpatient.html">Antenatal Clinic</a></li>
+                            <li><a href="general-outpatient.html">Rehabilitative Medicine</a></li>
+                        </ul>
+                    </div>
                 </div>
-                
-                <div class="footer-column">
-                    <h4>Our Services</h4>
-                    <ul class="footer-links">
-                        <li><a href="specialist-outpatient.html">Specialist Outpatient</a></li>
-                        <li><a href="general-outpatient.html">General Outpatient</a></li>
-                        <li><a href="diagnostic-services.html">Diagnostic Services</a></li>
-                        <li><a href="#">Emergency Care</a></li>
-                        <li><a href="#">Antenatal Clinic</a></li>
-                        <li><a href="#">Pharmacy Services</a></li>
-                        <li><a href="#">Rehabilitative Medicine</a></li>
-                    </ul>
-                </div>
-                
                 <div class="footer-column">
                     <h4>Contact & Support</h4>
                     <ul class="footer-contact">
@@ -804,33 +582,25 @@
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <p>Email:</p>
-                                <a href="mailto:info@brookoflife.co.ke">info@brookoflife.co.ke</a>
+                                <a href="mailto:info@brooksofcherith.co.ke">info@brookofcherith.co.ke</a>
                             </div>
                         </li>
                         <li>
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
                                 <p>Main Hospital:</p>
-                                <span>123 Health Avenue, Westlands, Nairobi</span>
+                                <span>UpperHill, Matumbato Rd Gate 37, Nairobi</span>
                             </div>
                         </li>
                     </ul>
-                    
-                    <div class="newsletter">
-                        <h4>Stay Informed – Join Our Newsletter</h4>
-                        <form class="newsletter-form">
-                            <input type="email" placeholder="Your email address">
-                            <button type="submit" class="btn-subscribe">Subscribe</button>
-                        </form>
-                    </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
                 <div class="footer-social">
-                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://web.facebook.com/brookofcherithmedicalcenter/?_rdc=1&_rdr#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/brookofcherith" class="social-icon"><i class="fas fa-x"></i></a>
+                    <a href="https://www.instagram.com/brookofcherithmedical" class="social-icon"><i class="fab fa-instagram"></i></a>
                     <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
                     <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
                 </div>
@@ -838,8 +608,6 @@
                 <div class="footer-legal">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Use</a>
-                    <a href="#">Sitemap</a>
-                    <a href="#">Careers</a>
                 </div>
                 
                 <div class="copyright">
