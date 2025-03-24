@@ -45,56 +45,57 @@
   </script>
 </head>
 <body>
-<!-- Header Section -->
-<header>
-    <!-- Top Bar -->
-    <div class="emergency-bar">
+    <!-- Header Section -->
+    <header>
+        <!-- Top Bar -->
+        <div class="emergency-bar">
+            <div class="container">
+                <div class="emergency-contact">
+                    <i class="fas fa-phone-alt"></i> Emergency Services: +254(0) 723 043 404
+                </div>
+                <div class="support-info">
+                    <span><i class="fas fa-clock"></i> 24/7 Support</span>
+                    <span class="professionals"><i class="fas fa-user-md"></i> Certified Medical Professionals</span>
+                </div>
+            </div>
+        </div>
+        
         <div class="container">
-            <div class="emergency-contact">
-                <i class="fas fa-phone-alt"></i> Emergency Services: +254(0) 723 043 404
+            <div class="logo">
+                <img src="Logo.png" alt="Brook of Cherith Hospitals">
             </div>
-            <div class="support-info">
-                <span><i class="fas fa-clock"></i> 24/7 Support</span>
-                <span><i class="fas fa-user-md"></i> Certified Medical Professionals</span>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li class="dropdown">
+                        <a href="services.html">Our Services </i></a>
+                        <div class="dropdown-content">
+                            <a href="specialist-outpatient.html">Specialist Outpatient</a>
+                            <a href="general-outpatient.html">General Outpatient</a>
+                            <a href="diagnostic-services.html">Diagnostic Services</a>
+                            <a href="emergency-trauma-services.html">Emergency & Trauma</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="locations.html">Locations </i></a>
+                        <div class="dropdown-content">
+                            <a href="main-hospital.html">Head Quarters</a>
+                            <a href="ol-jororok-branch.html">Ol Jororok Branch</a>
+                        </div>
+                    </li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="news-insights.html">News & Insights</a></li>
+                    <li class="contact-link"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="contact-btn">
+                <a href="contact.html" class="btn btn-primary">Contact Us <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
-    </div>
-    
-    <div class="container">
-        <div class="logo">
-            <img src="Logo.png" alt="Brook of Cherith Hospitals">
-        </div>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="services.html" class="active">Our Services </i></a>
-                    <div class="dropdown-content">
-                        <a href="specialist-outpatient.html">Specialist Outpatient</a>
-                        <a href="general-outpatient.html">General Outpatient</a>
-                        <a href="diagnostic-services.html">Diagnostic Services</a>
-                        <a href="emergency-trauma-services.html">Emergency & Trauma</a>
-                    </div>
-                </li>
-                <li class="dropdown">
-                    <a href="locations.html">Locations </i></a>
-                    <div class="dropdown-content">
-                        <a href="main-hospital.html">Head Quarters</a>
-                        <a href="ol-jororok-branch.html">Ol Jororok Branch</a>
-                    </div>
-                </li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="news-insights.html">News & Insights</a></li>
-            </ul>
-        </nav>
-        <div class="contact-btn">
-            <a href="contact.html" class="btn btn-primary">Contact Us <i class="fas fa-arrow-right"></i></a>
-        </div>
-        <div class="mobile-menu-btn">
-            <i class="fas fa-bars"></i>
-        </div>
-    </div>
-</header>
+    </header>
 
 
     <!-- Services Hero Section -->
@@ -118,12 +119,6 @@
                             <option value="pediatrics">Pediatrics</option>
                             <option value="general">General Medicine</option>
                         </select>
-                        <select id="availabilityFilter">
-                            <option value="">All Availability</option>
-                            <option value="24-7">24/7 Services</option>
-                            <option value="weekday">Weekday Only</option>
-                            <option value="weekend">Weekend Available</option>
-                        </select>
                         <button class="filter-btn">Filter</button>
                     </div>
                 </div>
@@ -145,7 +140,7 @@
                     <div class="service-card-image">
                         <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=880&auto=format&fit=crop" alt="Specialist Outpatient Services">
                         <div class="service-badge">
-                            <span><i class="fas fa-clock"></i> Mon-Sat</span>
+                            <span><i class="fas fa-clock"></i> 24/7 Available</span>
                         </div>
                     </div>
                     <div class="service-card-content">
@@ -184,7 +179,7 @@
                         </ul>
                         <div class="service-card-footer">
                             <a href="general-outpatient.html" class="btn btn-outline-primary">Learn More</a>
-                            <a href="#" class="btn btn-primary">Book Appointment</a>
+                            <a href="contact.html" class="btn btn-primary">Book Appointment</a>
                         </div>
                     </div>
                 </div>
@@ -194,7 +189,7 @@
                     <div class="service-card-image">
                         <img src="https://images.unsplash.com/photo-1581595219315-a187dd40c322?q=80&w=880&auto=format&fit=crop" alt="Diagnostic Services">
                         <div class="service-badge">
-                            <span><i class="fas fa-clock"></i> Mon-Sat</span>
+                            <span><i class="fas fa-clock"></i> 24/7 Available</span>
                         </div>
                     </div>
                     <div class="service-card-content">
@@ -209,7 +204,7 @@
                         </ul>
                         <div class="service-card-footer">
                             <a href="diagnostic-services.html" class="btn btn-outline-primary">Learn More</a>
-                            <a href="#" class="btn btn-primary">Book Appointment</a>
+                            <a href="contact.html" class="btn btn-primary">Book Appointment</a>
                         </div>
                     </div>
                 </div>
@@ -233,7 +228,7 @@
                             <li><i class="fas fa-check-circle"></i> 24/7 availability</li>
                         </ul>
                         <div class="service-card-footer">
-                            <a href="#" class="btn btn-outline-primary">Learn More</a>
+                            <a href="emergency-trauma-services.html" class="btn btn-outline-primary">Learn More</a>
                             <a href="tel:+254723043404" class="btn btn-primary">Emergency: Call Now</a>
                         </div>
                     </div>
@@ -244,7 +239,7 @@
                     <div class="service-card-image">
                         <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=880&auto=format&fit=crop" alt="Antenatal Care">
                         <div class="service-badge">
-                            <span><i class="fas fa-clock"></i> Mon-Sat</span>
+                            <span><i class="fas fa-clock"></i> 24/7 Availability</span>
                         </div>
                     </div>
                     <div class="service-card-content">
@@ -256,8 +251,8 @@
                             <li><i class="fas fa-check-circle"></i> Maternal nutrition guidance</li>
                         </ul>
                         <div class="service-card-footer">
-                            <a href="#" class="btn btn-outline-primary">Learn More</a>
-                            <a href="#" class="btn btn-primary">Book Appointment</a>
+                            <a href="general-outpatient.html" class="btn btn-outline-primary">Learn More</a>
+                            <a href="contact.html" class="btn btn-primary">Book Appointment</a>
                         </div>
                     </div>
                 </div>
@@ -267,7 +262,7 @@
                     <div class="service-card-image">
                         <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=880&auto=format&fit=crop" alt="Rehabilitative Medicine">
                         <div class="service-badge">
-                            <span><i class="fas fa-clock"></i> Mon-Fri</span>
+                            <span><i class="fas fa-clock"></i> 24/7 Availability</span>
                         </div>
                     </div>
                     <div class="service-card-content">
@@ -279,8 +274,8 @@
                             <li><i class="fas fa-check-circle"></i> Pain management</li>
                         </ul>
                         <div class="service-card-footer">
-                            <a href="#" class="btn btn-outline-primary">Learn More</a>
-                            <a href="#" class="btn btn-primary">Book Appointment</a>
+                            <a href="general-outpatient.html" class="btn btn-outline-primary">Learn More</a>
+                            <a href="contact.html" class="btn btn-primary">Book Appointment</a>
                         </div>
                     </div>
                 </div>
@@ -356,31 +351,30 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-top">
-                <div class="footer-column">
-                    <div class="footer-logo">
-                        <img src="/placeholder.svg?height=60&width=100" alt="Brooks of Cherith Hospitals">
-                        <p class="tagline">Healing with Compassion</p>
-                    </div>
-                    <p class="footer-about">Brooks of Cherith Hospitals provides holistic medical care that combines expertise with compassion, rooted in our faith-driven mission to heal and serve.</p>
-                    <div class="footer-certifications">
-                        <span><i class="fas fa-certificate"></i> Certified Medical Professionals</span>
-                        <span><i class="fas fa-award"></i> Accredited Healthcare Facility</span>
-                    </div>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <img src="Logo-white.jpg" alt="Brooks of Cherith Hospitals">
+                    <p class="tagline">We treat, God cures.</p>
                 </div>
-                
+                <p class="footer-about">Brooks of Cherith Hospitals provides holistic medical care that combines expertise with compassion, rooted in our faith-driven mission to heal and serve.</p>
+                <div class="footer-certifications">
+                    <span><i class="fas fa-certificate"></i> Certified Medical Professionals</span>
+                    <span><i class="fas fa-award"></i> Accredited Healthcare Facility</span>
+                </div>
+            </div>
+            <div class="footer-sub-column">
                 <div class="footer-column">
                     <h4>Quick Links</h4>
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Our Services</a></li>
-                        <li><a href="#">Find a Doctor</a></li>
-                        <li><a href="#">Locations</a></li>
-                        <li><a href="#">News & Insights</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="locations.html">Locations</a></li>
+                        <li><a href="news-insights.html">News & Insights</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
                 
@@ -390,71 +384,60 @@
                         <li><a href="specialist-outpatient.html">Specialist Outpatient</a></li>
                         <li><a href="general-outpatient.html">General Outpatient</a></li>
                         <li><a href="diagnostic-services.html">Diagnostic Services</a></li>
-                        <li><a href="#">Emergency Care</a></li>
-                        <li><a href="#">Antenatal Clinic</a></li>
-                        <li><a href="#">Pharmacy Services</a></li>
-                        <li><a href="#">Rehabilitative Medicine</a></li>
+                        <li><a href="emergency-trauma-services.html">Emergency Care</a></li>
+                        <li><a href="general-outpatient.html">Antenatal Clinic</a></li>
+                        <li><a href="general-outpatient.html">Rehabilitative Medicine</a></li>
                     </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h4>Contact & Support</h4>
-                    <ul class="footer-contact">
-                        <li>
-                            <i class="fas fa-phone-alt"></i>
-                            <div>
-                                <p>Emergency:</p>
-                                <a href="tel:+254723043404">+254(0) 723 043 404</a>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <p>Email:</p>
-                                <a href="mailto:info@brookoflife.co.ke">info@brookoflife.co.ke</a>
-                            </div>
-                        </li>
-                        <li>
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <p>Main Hospital:</p>
-                                <span>123 Health Avenue, Westlands, Nairobi</span>
-                            </div>
-                        </li>
-                    </ul>
-                    
-                    <div class="newsletter">
-                        <h4>Stay Informed – Join Our Newsletter</h4>
-                        <form class="newsletter-form">
-                            <input type="email" placeholder="Your email address">
-                            <button type="submit" class="btn-subscribe">Subscribe</button>
-                        </form>
-                    </div>
                 </div>
             </div>
-            
-            <div class="footer-bottom">
-                <div class="footer-social">
-                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-                </div>
-                
-                <div class="footer-legal">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Use</a>
-                    <a href="#">Sitemap</a>
-                    <a href="#">Careers</a>
-                </div>
-                
-                <div class="copyright">
-                    <p>&copy; 2025 Brooks of Cherith Hospitals. All Rights Reserved.</p>
-                </div>
+            <div class="footer-column">
+                <h4>Contact & Support</h4>
+                <ul class="footer-contact">
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <p>Emergency:</p>
+                            <a href="tel:+254723043404">+254(0) 723 043 404</a>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <p>Email:</p>
+                            <a href="mailto:info@brooksofcherith.co.ke">info@brookofcherith.co.ke</a>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p>Main Hospital:</p>
+                            <span>UpperHill, Matumbato Rd Gate 37, Nairobi</span>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
-    </footer>
+        
+        <div class="footer-bottom">
+            <div class="footer-social">
+                <a href="https://web.facebook.com/brookofcherithmedicalcenter/?_rdc=1&_rdr#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/brookofcherith" class="social-icon"><i class="fas fa-x"></i></a>
+                <a href="https://www.instagram.com/brookofcherithmedical" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+            
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Brooks of Cherith Hospitals. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
 
     <script src="script.js"></script>
     <script src="services.js"></script>

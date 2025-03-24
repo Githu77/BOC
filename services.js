@@ -1,44 +1,42 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Accordion functionality
-  const accordionItems = document.querySelectorAll(".accordion-item")
+  const accordionItems = document.querySelectorAll(".accordion-item");
 
   if (accordionItems.length > 0) {
     accordionItems.forEach((item) => {
-      const header = item.querySelector(".accordion-header")
+      const header = item.querySelector(".accordion-header");
 
-      header.addEventListener("click", () => {
+      header.addEventListener("click", (event) => {
+        // Prevent any default behavior (though <button> doesn't have one)
+        event.preventDefault();
+
         // Check if this item is already active
-        const isActive = item.classList.contains("active")
+        const isActive = item.classList.contains("active");
 
         // Close all accordion items
         accordionItems.forEach((accItem) => {
-          accItem.classList.remove("active")
-          const toggle = accItem.querySelector(".accordion-toggle i")
+          accItem.classList.remove("active");
+          const toggle = accItem.querySelector(".accordion-toggle i");
           if (toggle) {
-            toggle.className = "fas fa-plus"
+            toggle.className = "fas fa-plus";
           }
-        })
+        });
 
         // If the clicked item wasn't active, open it
         if (!isActive) {
-          item.classList.add("active")
-          const toggle = item.querySelector(".accordion-toggle i")
+          item.classList.add("active");
+          const toggle = item.querySelector(".accordion-toggle i");
           if (toggle) {
-            toggle.className = "fas fa-minus"
+            toggle.className = "fas fa-minus";
           }
         }
-      })
-    })
+      });
+    });
 
-    // Open the first accordion item by default
-    if (accordionItems[0]) {
-      accordionItems[0].classList.add("active")
-      const toggle = accordionItems[0].querySelector(".accordion-toggle i")
-      if (toggle) {
-        toggle.className = "fas fa-minus"
-      }
-    }
+    // Open the first accordion item by default (already set in HTML with .active class)
+    // No need to repeat the logic here since it's handled in the HTML
   }
+})
 
   // Services search and filter functionality
   const serviceSearch = document.getElementById("serviceSearch")
@@ -245,5 +243,5 @@ document.addEventListener("DOMContentLoaded", () => {
   animateElements(document.querySelectorAll(".benefit-card"))
   animateElements(document.querySelectorAll(".accordion-item"))
   animateElements(document.querySelectorAll(".team-member"))
-})
+
 

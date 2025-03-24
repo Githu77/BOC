@@ -198,7 +198,6 @@
 
 .service-highlights li {
   display: flex;
-  align-items: flex-start;
   gap: 10px;
   margin-bottom: 8px;
   font-size: 14px;
@@ -208,6 +207,11 @@
 .service-highlights li i {
   color: var(--accent-color);
   margin-top: 3px;
+}
+
+.choose-link{
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .service-card-footer {
