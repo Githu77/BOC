@@ -1,427 +1,1526 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Why Choose Our Specialist Services - Brooks of Cherith Hospitals</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-  <style>
-    /* Reset and Global Styles */
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Contact Us - Brooks of Cherith Hospitals</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="contact-styles.css">
+<!-- SEO Meta Tags -->
+<meta name="description" content="Contact Brooks of Cherith Hospitals for inquiries, feedback, or support. We're here to help with all your healthcare needs.">
+<meta name="keywords" content="contact medical foundation Nairobi, healthcare contact Kenya, Brooks of Cherith Hospitals phone number, medical support contact">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalOrganization",
+  "name": "Brooks of Cherith Hospitals",
+  "url": "https://brookoflife.co.ke/contact",
+  "logo": "https://brookoflife.co.ke/logo.png",
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "telephone": "+254723043404",
+      "contactType": "customer service",
+      "availableLanguage": ["English", "Swahili"],
+      "contactOption": "TollFree"
+    },
+    {
+      "@type": "ContactPoint",
+      "telephone": "+254723043404",
+      "contactType": "emergency",
+      "availableLanguage": ["English", "Swahili"],
+      "contactOption": "HearingImpairedSupported"
     }
-
-    html, body {
-      width: 100%;
-      overflow-x: hidden;
-      font-family: 'Arial', sans-serif;
-      line-height: 1.6;
-      color: #333;
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "123 Health Avenue, Westlands",
+    "addressLocality": "Nairobi",
+    "addressRegion": "Nairobi",
+    "postalCode": "00100",
+    "addressCountry": "KE"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "08:00",
+      "closes": "20:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday"],
+      "opens": "09:00",
+      "closes": "17:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Sunday"],
+      "opens": "10:00",
+      "closes": "14:00"
     }
+  ]
+}
+</script>
+<style>
+  /* Contact Page Styles */
 
-    .container {
-      width: 100%;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
+/* Contact Hero Section */
+.contact-hero {
+  background-color: #e6f0fa;
+  padding: 100px 0;
+  position: relative;
+  text-align: center;
+}
 
-    /* Variables */
-    :root {
-      --primary-color: #0a4b9f;
-    }
+.contact-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2070&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.1;
+  z-index: 1;
+}
 
-    /* Why Choose Us Section */
-    .why-choose-us {
-      padding: 80px 0;
-      background-color: #f8f9fa; /* Light background for contrast */
-    }
+.contact-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-    .why-choose-us .container {
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
+.contact-hero-content h1 {
+  font-size: 42px;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
 
-    /* Section Header */
-    .section-header {
-      text-align: center;
-      margin-bottom: 40px;
-    }
+.contact-hero-content p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 0;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-    .section-header h2 {
-      font-size: 32px;
-      font-weight: 700;
-      color: var(--primary-color, #0a4b9f);
-      margin-bottom: 10px;
-    }
+/* Contact Information Section */
+.contact-info-section {
+  padding: 80px 0;
+  background-color: white;
+}
 
-    .section-header p {
-      font-size: 16px;
-      color: #666;
-      max-width: 600px;
-      margin: 0 auto;
-    }
+.contact-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
 
-    /* Benefits Table (Accordion) */
-    .benefits-table {
-      width: 100%;
-      max-width: 800px;
-      margin: 0 auto;
-      border-collapse: collapse;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      overflow: hidden;
-    }
+.contact-info-card {
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
-    /* Accordion Item */
-    .accordion-item {
-      transition: all 0.3s ease;
-    }
+.contact-info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
 
-    .accordion-item:hover {
-      background-color: rgba(10, 75, 159, 0.05);
-    }
+.info-icon {
+  width: 70px;
+  height: 70px;
+  background-color: rgba(10, 75, 159, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  color: var(--primary-color);
+  font-size: 28px;
+  transition: var(--transition);
+}
 
-    /* Accordion Header */
-    .accordion-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 20px;
-      border-bottom: 1px solid #eee;
-      cursor: pointer;
-      background: none;
-      border: none;
-      width: 100%;
-      text-align: left;
-      transition: all 0.3s ease;
-    }
+.contact-info-card:hover .info-icon {
+  background-color: var(--primary-color);
+  color: white;
+}
 
-    .accordion-header:hover {
-      background-color: rgba(10, 75, 159, 0.1);
-    }
+.contact-info-card h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: var(--text-color);
+}
 
-    .accordion-header-content {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
+.contact-info-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
 
-    .benefit-icon {
-      width: 50px;
-      height: 50px;
-      background-color: rgba(10, 75, 159, 0.1);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--primary-color, #0a4b9f);
-      font-size: 24px;
-      flex-shrink: 0;
-      transition: all 0.3s ease;
-    }
+.info-details {
+  margin-bottom: 20px;
+}
 
-    .accordion-item:hover .benefit-icon,
-    .accordion-item.active .benefit-icon {
-      background-color: var(--primary-color, #0a4b9f);
-      color: white;
-    }
+.info-details p {
+  margin-bottom: 10px;
+}
 
-    .benefit-title h3 {
-      font-size: 20px;
-      font-weight: 600;
-      color: #333;
-    }
+.info-details a {
+  color: var(--primary-color);
+  transition: var(--transition);
+}
 
-    .accordion-toggle i {
-      font-size: 18px;
-      color: var(--primary-color, #0a4b9f);
-      transition: transform 0.3s ease;
-    }
+.info-details a:hover {
+  text-decoration: underline;
+}
 
-    .accordion-item.active .accordion-toggle i {
-      transform: rotate(180deg);
-    }
+.hours {
+  font-size: 14px;
+  color: #555;
+  margin-top: auto;
+}
 
-    /* Accordion Content */
-    .accordion-content {
-      display: none;
-      padding: 0 20px 20px 90px; /* Offset to align with title */
-      border-bottom: 1px solid #eee;
-    }
+.social-icons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: auto;
+}
 
-    .accordion-item.active .accordion-content {
-      display: block;
-      animation: slideDown 0.3s ease;
-    }
+.social-icon {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(10, 75, 159, 0.1);
+  color: var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
 
-    @keyframes slideDown {
-      from {
-        opacity: 0;
-        transform: translateY(-10px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
+.social-icon:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
 
-    .benefit-content p {
-      font-size: 16px;
-      color: #666;
-      line-height: 1.5;
-    }
+/* Contact Form Section */
+.contact-form-section {
+  padding: 80px 0;
+  background-color: #e6f0fa;
+}
 
-    /* Remove border from the last item */
-    .accordion-item:last-child .accordion-header,
-    .accordion-item:last-child .accordion-content {
-      border-bottom: none;
-    }
+.contact-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: var(--shadow);
+}
 
-    /* Responsive Design */
-    @media (max-width: 767px) {
-      .why-choose-us {
-        padding: 60px 0;
-      }
+.form-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
 
-      .section-header h2 {
-        font-size: 24px;
-      }
+.form-header h2 {
+  font-size: 28px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
 
-      .section-header p {
-        font-size: 14px;
-      }
+.form-header p {
+  font-size: 16px;
+  color: #555;
+}
 
-      /* Stack accordion items on mobile */
-      .benefits-table {
-        display: block;
-        max-width: 100%;
-      }
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
-      .accordion-item {
-        display: block;
-        margin-bottom: 15px;
-        border: 1px solid #eee;
-        border-radius: 10px;
-        background-color: white;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-      }
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
 
-      .accordion-item:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      }
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 
-      .accordion-header {
-        padding: 15px;
-      }
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 
-      .benefit-icon {
-        width: 60px;
-        height: 60px;
-        font-size: 28px;
-        margin: 0 auto;
-      }
+.required {
+  color: var(--secondary-color);
+}
 
-      .benefit-title h3 {
-        font-size: 18px;
-      }
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 12px 15px;
+  border: 1px solid #e1e4e8;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  transition: var(--transition);
+}
 
-      .accordion-content {
-        padding: 15px;
-        text-align: center;
-      }
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(10, 75, 159, 0.1);
+}
 
-      .benefit-content p {
-        font-size: 14px;
-      }
-    }
+.form-group.error input,
+.form-group.error select,
+.form-group.error textarea {
+  border-color: var(--secondary-color);
+}
 
-    @media (min-width: 768px) {
-      .benefits-table {
-        display: table;
-      }
+.error-message {
+  font-size: 12px;
+  color: var(--secondary-color);
+  display: none;
+}
 
-      .accordion-item {
-        display: table-row;
-      }
+.form-group.error .error-message {
+  display: block;
+}
 
-      .accordion-header,
-      .accordion-content {
-        display: table-cell;
-        width: 100%;
-      }
-    }
-  </style>
+.checkbox-group {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.checkbox-group input {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+}
+
+.checkbox-group label {
+  font-size: 13px;
+  font-weight: normal;
+  flex: 1;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.btn-large {
+  padding: 15px 30px;
+  font-size: 16px;
+}
+
+/* Success Message */
+.success-message {
+  text-align: center;
+  padding: 30px;
+}
+
+.success-icon {
+  width: 80px;
+  height: 80px;
+  background-color: rgba(76, 175, 80, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  color: var(--accent-color);
+  font-size: 40px;
+}
+
+.success-message h3 {
+  font-size: 24px;
+  color: var(--accent-color);
+  margin-bottom: 15px;
+}
+
+.success-message p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.success-message .btn {
+  margin-top: 10px;
+}
+
+/* Map Section */
+.map-section {
+  padding: 80px 0;
+  background-color: white;
+}
+
+.map-section h2 {
+  font-size: 28px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.section-intro {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 30px;
+  text-align: center;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.map-container {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  margin-top: 30px;
+}
+
+.map-wrapper {
+  width: 100%;
+  height: 450px;
+}
+
+.map-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.map-actions {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #e1e4e8;
+}
+
+/* FAQ Section */
+.faq-section {
+  padding: 80px 0;
+  background-color: #e6f0fa;
+}
+
+.faq-section h2 {
+  font-size: 28px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.faq-container {
+  max-width: 800px;
+  margin: 40px auto 0;
+}
+
+.faq-item {
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.faq-question {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.faq-question:hover {
+  background-color: rgba(10, 75, 159, 0.05);
+}
+
+.faq-question h3 {
+  font-size: 18px;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.faq-toggle {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(10, 75, 159, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 14px;
+  transition: var(--transition);
+}
+
+.faq-item.active .faq-toggle {
+  transform: rotate(45deg);
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.faq-answer {
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+  padding: 0 20px 20px;
+  max-height: 1000px;
+}
+
+.faq-answer p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .contact-hero,
+  .contact-info-section,
+  .contact-form-section,
+  .map-section,
+  .faq-section {
+    padding: 60px 0;
+  }
+
+  .contact-hero-content h1,
+  .form-header h2,
+  .map-section h2,
+  .faq-section h2 {
+    font-size: 28px;
+  }
+
+  .contact-hero-content p,
+  .form-header p,
+  .section-intro {
+    font-size: 16px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .contact-form-container {
+    padding: 30px 20px;
+  }
+
+  .faq-question h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-hero-content h1,
+  .form-header h2,
+  .map-section h2,
+  .faq-section h2 {
+    font-size: 24px;
+  }
+
+  .contact-info-card {
+    padding: 20px;
+  }
+
+  .info-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+
+  .checkbox-group {
+    align-items: flex-start;
+  }
+
+  .checkbox-group input {
+    margin-top: 3px;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) {
+  .contact-info-card:hover,
+  .faq-question:hover {
+    transform: none;
+  }
+
+  .faq-question {
+    padding: 15px 20px;
+  }
+
+  .faq-toggle {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* Appointment Booking Section */
+.appointment-section {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.appointment-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(to right, var(--primary-color), var(--accent-color));
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 32px;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.section-header p {
+  font-size: 16px;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.appointment-form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 10px;
+  padding: 40px;
+  box-shadow: var(--shadow);
+}
+
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.appointment-reference {
+  background-color: rgba(76, 175, 80, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  margin: 15px 0;
+  text-align: center;
+}
+
+#appointmentDate {
+  color: #333;
+}
+
+#appointmentDate::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+}
+
+/* Responsive styles for appointment section */
+@media (max-width: 768px) {
+  .appointment-section {
+    padding: 60px 0;
+  }
+
+  .section-header h2 {
+    font-size: 28px;
+  }
+
+  .appointment-form-container {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-header h2 {
+    font-size: 24px;
+  }
+}
+
+
+</style>
 </head>
 <body>
-  <!-- Why Choose Us Section -->
-  <section class="why-choose-us">
+<!-- Header -->
+<header>
     <div class="container">
-      <header class="section-header">
-        <h2>Why Choose Our Specialist Services</h2>
-        <p>Discover the benefits of entrusting your care to our expert team</p>
-      </header>
-      <table class="benefits-table">
-        <tr class="accordion-item active">
-          <td>
-            <button class="accordion-header">
-              <div class="accordion-header-content">
-                <div class="benefit-icon">
-                  <i class="fas fa-user-md"></i>
-                </div>
-                <div class="benefit-title">
-                  <h3>Expert Specialists</h3>
-                </div>
-              </div>
-              <div class="accordion-toggle">
-                <i class="fas fa-minus"></i>
-              </div>
-            </button>
-            <div class="accordion-content">
-              <div class="benefit-content">
-                <p>Board-certified physicians with advanced training</p>
-              </div>
-            </div>
-          </td>
-        </tr>
-        <tr class="accordion-item">
-          <td>
-            <button class="accordion-header">
-              <div class="accordion-header-content">
-                <div class="benefit-icon">
-                  <i class="fas fa-heartbeat"></i>
-                </div>
-                <div class="benefit-title">
-                  <h3>Comprehensive Care</h3>
-                </div>
-              </div>
-              <div class="accordion-toggle">
-                <i class="fas fa-plus"></i>
-              </div>
-            </button>
-            <div class="accordion-content">
-              <div class="benefit-content">
-                <p>Integrated approach for all aspects of your condition</p>
-              </div>
-            </div>
-          </td>
-        </tr>
-        <tr class="accordion-item">
-          <td>
-            <button class="accordion-header">
-              <div class="accordion-header-content">
-                <div class="benefit-icon">
-                  <i class="fas fa-check-circle"></i>
-                </div>
-                <div class="benefit-title">
-                  <h3>Personalized Treatment</h3>
-                </div>
-              </div>
-              <div class="accordion-toggle">
-                <i class="fas fa-plus"></i>
-              </div>
-            </button>
-            <div class="accordion-content">
-              <div class="benefit-content">
-                <p>Custom care plans tailored to your needs</p>
-              </div>
-            </div>
-          </td>
-        </tr>
-        <tr class="accordion-item">
-          <td>
-            <button class="accordion-header">
-              <div class="accordion-header-content">
-                <div class="benefit-icon">
-                  <i class="fas fa-clock"></i>
-                </div>
-                <div class="benefit-title">
-                  <h3>Timely Appointments</h3>
-                </div>
-              </div>
-              <div class="accordion-toggle">
-                <i class="fas fa-plus"></i>
-              </div>
-            </button>
-            <div class="accordion-content">
-              <div class="benefit-content">
-                <p>Reduced wait times for specialist consultations</p>
-              </div>
-            </div>
-          </td>
-        </tr>
-        <tr class="accordion-item">
-          <td>
-            <button class="accordion-header">
-              <div class="accordion-header-content">
-                <div class="benefit-icon">
-                  <i class="fas fa-hospital"></i>
-                </div>
-                <div class="benefit-title">
-                  <h3>Modern Facilities</h3>
-                </div>
-              </div>
-              <div class="accordion-toggle">
-                <i class="fas fa-plus"></i>
-              </div>
-            </button>
-            <div class="accordion-content">
-              <div class="benefit-content">
-                <p>State-of-the-art equipment and consultation rooms</p>
-              </div>
-            </div>
-          </td>
-        </tr>
-      </table>
+        <div class="logo">
+            <img src="/placeholder.svg?height=60&width=100" alt="Brooks of Cherith Hospitals">
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="services.html">Our Services <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="specialist-outpatient.html">Specialist Outpatient</a>
+                        <a href="general-outpatient.html">General Outpatient</a>
+                        <a href="diagnostic-services.html">Diagnostic Services</a>
+                        <a href="emergency-trauma-services.html">Emergency & Trauma</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="locations.html">Locations <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="main-hospital.html">Main Hospital</a>
+                        <a href="ol-jororok-branch.html">Ol Jororok Branch</a>
+                    </div>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="news-insights.html">News & Insights</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="contact-btn">
+            <a href="contact.html" class="btn btn-primary">Contact Us <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </div>
     </div>
-  </section>
+</header>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      // Accordion functionality
-      const accordionItems = document.querySelectorAll(".accordion-item");
+<!-- Contact Hero Section -->
+<section class="contact-hero">
+    <div class="container">
+        <div class="contact-hero-content">
+            <h1>Contact Us</h1>
+            <p>We're here to help with all your healthcare needs. Reach out to us with your questions, feedback, or to schedule an appointment.</p>
+        </div>
+    </div>
+</section>
 
-      if (accordionItems.length > 0) {
-        accordionItems.forEach((item) => {
-          const header = item.querySelector(".accordion-header");
+<!-- Contact Information Section -->
+<section class="contact-info-section">
+    <div class="container">
+        <div class="contact-info-grid">
+            <div class="contact-info-card">
+                <div class="info-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <h3>Call Us</h3>
+                <p>Our team is available to assist you by phone during business hours.</p>
+                <div class="info-details">
+                    <p><strong>Main Line:</strong> <a href="tel:+254723043404">+254(0) 723 043 404</a></p>
+                    <p><strong>Emergency:</strong> <a href="tel:+254723043404">+254(0) 723 043 404</a></p>
+                    <p><strong>Appointments:</strong> <a href="tel:+254723043405">+254(0) 723 043 405</a></p>
+                </div>
+                <p class="hours"><strong>Hours:</strong> Mon-Fri: 8am-8pm, Sat: 9am-5pm</p>
+            </div>
+            
+            <div class="contact-info-card">
+                <div class="info-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Email Us</h3>
+                <p>Send us an email and we'll get back to you within 24 hours.</p>
+                <div class="info-details">
+                    <p><strong>General Inquiries:</strong> <a href="mailto:info@brookoflife.co.ke">info@brookoflife.co.ke</a></p>
+                    <p><strong>Appointments:</strong> <a href="mailto:appointments@brookoflife.co.ke">appointments@brookoflife.co.ke</a></p>
+                    <p><strong>Feedback:</strong> <a href="mailto:feedback@brookoflife.co.ke">feedback@brookoflife.co.ke</a></p>
+                </div>
+            </div>
+            
+            <div class="contact-info-card">
+                <div class="info-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h3>Visit Us</h3>
+                <p>Come see us at one of our convenient locations.</p>
+                <div class="info-details">
+                    <p><strong>Main Hospital:</strong><br>123 Health Avenue, Westlands<br>Nairobi, Kenya 00100</p>
+                    <p><strong>Ol Jororok Branch:</strong><br>456 Care Street, Ol Jororok<br>Nyandarua, Kenya 20318</p>
+                </div>
+                <a href="locations.html" class="btn btn-outline-primary">View All Locations</a>
+            </div>
+            
+            <div class="contact-info-card">
+                <div class="info-icon">
+                    <i class="fas fa-comments"></i>
+                </div>
+                <h3>Connect With Us</h3>
+                <p>Follow us on social media for the latest updates and health tips.</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-          header.addEventListener("click", (event) => {
-            // Prevent any default behavior (though <button> doesn't have one)
-            event.preventDefault();
+<!-- Contact Form Section -->
+<section class="contact-form-section">
+    <div class="container">
+        <div class="contact-form-container">
+            <div class="form-header">
+                <h2>Send Us a Message</h2>
+                <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+            </div>
+            
+            <form id="contactForm" class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name <span class="required">*</span></label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                        <div class="error-message" id="nameError"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required">*</span></label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                        <div class="error-message" id="emailError"></div>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number">
+                        <div class="error-message" id="phoneError"></div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject <span class="required">*</span></label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Select a subject</option>
+                            <option value="appointment">Appointment Inquiry</option>
+                            <option value="services">Services Information</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="billing">Billing Question</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <div class="error-message" id="subjectError"></div>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message <span class="required">*</span></label>
+                    <textarea id="message" name="message" rows="6" placeholder="Enter your message" required></textarea>
+                    <div class="error-message" id="messageError"></div>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">I consent to Brooks of Cherith Hospitals collecting and storing my data for the purpose of responding to my inquiry. <span class="required">*</span></label>
+                    <div class="error-message" id="consentError"></div>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary btn-large">Submit Message</button>
+                </div>
+            </form>
+            
+            <!-- Success Message (hidden by default) -->
+            <div id="successMessage" class="success-message" style="display: none;">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h3>Thank You!</h3>
+                <p>Your message has been sent successfully. We'll get back to you as soon as possible.</p>
+                <button class="btn btn-primary" id="resetForm">Send Another Message</button>
+            </div>
+        </div>
+    </div>
+</section>
 
-            // Check if this item is already active
-            const isActive = item.classList.contains("active");
+<!-- Appointment Booking Section -->
+<section class="appointment-section">
+  <div class="container">
+    <div class="section-header">
+      <h2>Book an Appointment</h2>
+      <p>Schedule your visit with our medical professionals. We'll confirm your appointment within 24 hours.</p>
+    </div>
+    
+    <div class="appointment-form-container">
+      <form id="appointmentForm" class="appointment-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="appointmentName">Full Name <span class="required">*</span></label>
+            <input type="text" id="appointmentName" name="appointmentName" placeholder="Enter your full name" required>
+            <div class="error-message" id="appointmentNameError"></div>
+          </div>
+          
+          <div class="form-group">
+            <label for="appointmentEmail">Email Address <span class="required">*</span></label>
+            <input type="email" id="appointmentEmail" name="appointmentEmail" placeholder="Enter your email address" required>
+            <div class="error-message" id="appointmentEmailError"></div>
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="appointmentPhone">Phone Number <span class="required">*</span></label>
+            <input type="tel" id="appointmentPhone" name="appointmentPhone" placeholder="Enter your phone number" required>
+            <div class="error-message" id="appointmentPhoneError"></div>
+          </div>
+          
+          <div class="form-group">
+            <label for="appointmentDate">Preferred Date <span class="required">*</span></label>
+            <input type="date" id="appointmentDate" name="appointmentDate" required min="">
+            <div class="error-message" id="appointmentDateError"></div>
+          </div>
+        </div>
+        
+        <div class="form-row">
+          <div class="form-group">
+            <label for="appointmentTime">Preferred Time <span class="required">*</span></label>
+            <select id="appointmentTime" name="appointmentTime" required>
+              <option value="">Select a time</option>
+              <option value="morning">Morning (8:00 AM - 12:00 PM)</option>
+              <option value="afternoon">Afternoon (12:00 PM - 4:00 PM)</option>
+              <option value="evening">Evening (4:00 PM - 8:00 PM)</option>
+            </select>
+            <div class="error-message" id="appointmentTimeError"></div>
+          </div>
+          
+          <div class="form-group">
+            <label for="appointmentDepartment">Department <span class="required">*</span></label>
+            <select id="appointmentDepartment" name="appointmentDepartment" required>
+              <option value="">Select a department</option>
+              <option value="general">General Outpatient</option>
+              <option value="specialist">Specialist Outpatient</option>
+              <option value="diagnostic">Diagnostic Services</option>
+              <option value="emergency">Emergency & Trauma</option>
+              <option value="dental">Dental Clinic</option>
+              <option value="obstetrics">Obstetrics & Gynecology</option>
+              <option value="pediatrics">Pediatrics</option>
+            </select>
+            <div class="error-message" id="appointmentDepartmentError"></div>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <label for="appointmentDoctor">Preferred Doctor (Optional)</label>
+          <select id="appointmentDoctor" name="appointmentDoctor">
+            <option value="">No preference</option>
+            <option value="dr-smith">Dr. Smith - General Physician</option>
+            <option value="dr-johnson">Dr. Johnson - Cardiologist</option>
+            <option value="dr-patel">Dr. Patel - Pediatrician</option>
+            <option value="dr-wong">Dr. Wong - Obstetrician</option>
+            <option value="dr-garcia">Dr. Garcia - Dentist</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="appointmentReason">Reason for Visit <span class="required">*</span></label>
+          <textarea id="appointmentReason" name="appointmentReason" rows="4" placeholder="Please briefly describe your symptoms or reason for the appointment" required></textarea>
+          <div class="error-message" id="appointmentReasonError"></div>
+        </div>
+        
+        <div class="form-group checkbox-group">
+          <input type="checkbox" id="appointmentInsurance" name="appointmentInsurance">
+          <label for="appointmentInsurance">I have health insurance</label>
+        </div>
+        
+        <div class="form-group checkbox-group">
+          <input type="checkbox" id="appointmentConsent" name="appointmentConsent" required>
+          <label for="appointmentConsent">I consent to Brooks of Cherith Hospitals collecting and storing my data for the purpose of scheduling my appointment. <span class="required">*</span></label>
+          <div class="error-message" id="appointmentConsentError"></div>
+        </div>
+        
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary btn-large">Book Appointment</button>
+        </div>
+      </form>
+      
+      <!-- Appointment Success Message (hidden by default) -->
+      <div id="appointmentSuccessMessage" class="success-message" style="display: none;">
+        <div class="success-icon">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <h3>Appointment Request Received!</h3>
+        <p>Thank you for scheduling an appointment with Brooks of Cherith Hospitals. We'll review your request and send a confirmation to your email within 24 hours.</p>
+        <p class="appointment-reference">Your reference number: <strong id="referenceNumber">APT-12345</strong></p>
+        <button class="btn btn-primary" id="resetAppointmentForm">Schedule Another Appointment</button>
+      </div>
+    </div>
+  </div>
+</section>
 
-            // Close all accordion items
-            accordionItems.forEach((accItem) => {
-              accItem.classList.remove("active");
-              const toggle = accItem.querySelector(".accordion-toggle i");
-              if (toggle) {
-                toggle.className = "fas fa-plus";
-              }
-            });
+<!-- Map Section -->
+<section class="map-section">
+    <div class="container">
+        <h2>Find Us</h2>
+        <p class="section-intro">Our Main Hospital is conveniently located in Westlands, Nairobi, with easy access from major roads.</p>
+        
+        <div class="map-container">
+            <div class="map-wrapper">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8198107090635!2d36.8176!3d-1.2921!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMcKwMTcnMzEuNiJTIDM2wrA0OSczMS40IkU!5e0!3m2!1sen!2ske!4v1615293354237!5m2!1sen!2ske" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            
+            <div class="map-actions">
+                <a href="https://www.google.com/maps/dir/?api=1&destination=-1.2921,36.8219" target="_blank" class="btn btn-primary">
+                    <i class="fas fa-directions"></i> Get Directions
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
 
-            // If the clicked item wasn't active, open it
-            if (!isActive) {
-              item.classList.add("active");
-              const toggle = item.querySelector(".accordion-toggle i");
-              if (toggle) {
-                toggle.className = "fas fa-minus";
-              }
-            }
-          });
-        });
+<!-- FAQ Section -->
+<section class="faq-section">
+    <div class="container">
+        <h2>Frequently Asked Questions</h2>
+        <p class="section-intro">Find answers to common questions about contacting and visiting Brooks of Cherith Hospitals.</p>
+        
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How do I schedule an appointment?</h3>
+                    <div class="faq-toggle">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <p>You can schedule an appointment by calling our appointment line at +254(0) 723 043 405, emailing appointments@brookoflife.co.ke, or using our online appointment booking system on our website. For specialist consultations, we recommend booking at least 3-5 days in advance.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>What are your visiting hours?</h3>
+                    <div class="faq-toggle">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <p>Our visiting hours for inpatient wards are from 10:00 AM to 12:00 PM and 4:00 PM to 7:00 PM daily. We kindly ask that visitors respect these hours to ensure our patients get adequate rest. Special arrangements can be made for critical cases by speaking with the nurse in charge.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How can I access my medical records?</h3>
+                    <div class="faq-toggle">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <p>You can request access to your medical records by filling out a Medical Records Request Form at our reception or downloading it from our website and submitting it to records@brookoflife.co.ke. Please note that we require proper identification to protect your privacy. Records are typically processed within 3-5 business days.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Do you offer emergency services?</h3>
+                    <div class="faq-toggle">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <p>Yes, our Main Hospital in Westlands offers 24/7 emergency services. Our emergency department is equipped to handle all types of medical emergencies, with specialized trauma teams available around the clock. For emergencies, please call +254(0) 723 043 404 or come directly to our emergency entrance.</p>
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>How can I provide feedback about my experience?</h3>
+                    <div class="faq-toggle">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+                <div class="faq-answer">
+                    <p>We value your feedback and continuously strive to improve our services. You can provide feedback by filling out our patient satisfaction survey available at all our facilities, sending an email to feedback@brookoflife.co.ke, or using the contact form on this page. All feedback is reviewed by our quality improvement team.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-        // Open the first accordion item by default (already set in HTML with .active class)
-        // No need to repeat the logic here since it's handled in the HTML
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <img src="/placeholder.svg?height=60&width=100" alt="Brooks of Cherith Hospitals">
+                    <p class="tagline">Healing with Compassion</p>
+                </div>
+                <p class="footer-about">Brooks of Cherith Hospitals provides holistic medical care that combines expertise with compassion, rooted in our faith-driven mission to heal and serve.</p>
+                <div class="footer-certifications">
+                    <span><i class="fas fa-certificate"></i> Certified Medical Professionals</span>
+                    <span><i class="fas fa-award"></i> Accredited Healthcare Facility</span>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="#">Find a Doctor</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                    <li><a href="news-insights.html">News & Insights</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Our Services</h4>
+                <ul class="footer-links">
+                    <li><a href="specialist-outpatient.html">Specialist Outpatient</a></li>
+                    <li><a href="general-outpatient.html">General Outpatient</a></li>
+                    <li><a href="diagnostic-services.html">Diagnostic Services</a></li>
+                    <li><a href="emergency-trauma-services.html">Emergency & Trauma</a></li>
+                    <li><a href="#">Antenatal Clinic</a></li>
+                    <li><a href="#">Pharmacy Services</a></li>
+                    <li><a href="#">Rehabilitative Medicine</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Contact & Support</h4>
+                <ul class="footer-contact">
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <p>Emergency:</p>
+                            <a href="tel:+254723043404">+254(0) 723 043 404</a>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <p>Email:</p>
+                            <a href="mailto:info@brookoflife.co.ke">info@brookoflife.co.ke</a>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p>Main Hospital:</p>
+                            <span>123 Health Avenue, Westlands, Nairobi</span>
+                        </div>
+                    </li>
+                </ul>
+                
+                <div class="newsletter">
+                    <h4>Stay Informed – Join Our Newsletter</h4>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address">
+                        <button type="submit" class="btn-subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-social">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+            
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Sitemap</a>
+                <a href="#">Careers</a>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Brooks of Cherith Hospitals. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="contact.js">
+  document.addEventListener("DOMContentLoaded", () => {
+  // Form validation
+  const contactForm = document.getElementById("contactForm")
+  const successMessage = document.getElementById("successMessage")
+  const resetFormBtn = document.getElementById("resetForm")
+
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault()
+
+      // Reset previous error states
+      const formGroups = this.querySelectorAll(".form-group")
+      formGroups.forEach((group) => {
+        group.classList.remove("error")
+      })
+
+      let isValid = true
+
+      // Validate name
+      const nameInput = document.getElementById("name")
+      if (!nameInput.value.trim()) {
+        document.getElementById("nameError").textContent = "Please enter your name"
+        nameInput.closest(".form-group").classList.add("error")
+        isValid = false
       }
-    });
-  </script>
+
+      // Validate email
+      const emailInput = document.getElementById("email")
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+      if (!emailInput.value.trim() || !emailRegex.test(emailInput.value)) {
+        document.getElementById("emailError").textContent = "Please enter a valid email address"
+        emailInput.closest(".form-group").classList.add("error")
+        isValid = false
+      }
+
+      // Validate phone (optional but must be valid if provided)
+      const phoneInput = document.getElementById("phone")
+      if (phoneInput.value.trim()) {
+        const phoneRegex = /^[+]?[(]?[0-9]{1,4}[)]?[-\s.]?[0-9]{1,4}[-\s.]?[0-9]{1,9}$/
+        if (!phoneRegex.test(phoneInput.value)) {
+          document.getElementById("phoneError").textContent = "Please enter a valid phone number"
+          phoneInput.closest(".form-group").classList.add("error")
+          isValid = false
+        }
+      }
+
+      // Validate subject
+      const subjectInput = document.getElementById("subject")
+      if (!subjectInput.value) {
+        document.getElementById("subjectError").textContent = "Please select a subject"
+        subjectInput.closest(".form-group").classList.add("error")
+        isValid = false
+      }
+
+      // Validate message
+      const messageInput = document.getElementById("message")
+      if (!messageInput.value.trim()) {
+        document.getElementById("messageError").textContent = "Please enter your message"
+        messageInput.closest(".form-group").classList.add("error")
+        isValid = false
+      }
+
+      // Validate consent
+      const consentInput = document.getElementById("consent")
+      if (!consentInput.checked) {
+        document.getElementById("consentError").textContent = "You must consent to proceed"
+        consentInput.closest(".form-group").classList.add("error")
+        isValid = false
+      }
+
+      // If form is valid, show success message
+      if (isValid) {
+        contactForm.style.display = "none"
+        if (successMessage) {
+          successMessage.style.display = "block"
+        }
+
+        // Scroll to success message
+        successMessage.scrollIntoView({ behavior: "smooth" })
+      }
+    })
+  }
+
+  // Reset form button
+  if (resetFormBtn) {
+    resetFormBtn.addEventListener("click", () => {
+      if (contactForm) {
+        contactForm.reset()
+        contactForm.style.display = "flex"
+        successMessage.style.display = "none"
+
+        // Remove all error states
+        const formGroups = contactForm.querySelectorAll(".form-group")
+        formGroups.forEach((group) => {
+          group.classList.remove("error")
+        })
+      }
+    })
+  }
+
+  // FAQ Accordion
+  const faqItems = document.querySelectorAll(".faq-item")
+
+  if (faqItems.length > 0) {
+    faqItems.forEach((item) => {
+      const question = item.querySelector(".faq-question")
+
+      question.addEventListener("click", () => {
+        // Check if this item is already active
+        const isActive = item.classList.contains("active")
+
+        // Close all FAQ items
+        faqItems.forEach((faqItem) => {
+          faqItem.classList.remove("active")
+          const toggle = faqItem.querySelector(".faq-toggle i")
+          if (toggle) {
+            toggle.className = "fas fa-plus"
+          }
+        })
+
+        // If the clicked item wasn't active, open it
+        if (!isActive) {
+          item.classList.add("active")
+          const toggle = item.querySelector(".faq-toggle i")
+          if (toggle) {
+            toggle.className = "fas fa-minus"
+          }
+        }
+      })
+    })
+
+    // Open the first FAQ item by default
+    faqItems[0].classList.add("active")
+    const toggle = faqItems[0].querySelector(".faq-toggle i")
+    if (toggle) {
+      toggle.className = "fas fa-minus"
+    }
+  }
+
+  // Add animation on scroll with IntersectionObserver
+  const animateElements = (elements, threshold = 0.1) => {
+    if (!elements.length) return
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-in")
+            observer.unobserve(entry.target)
+          }
+        })
+      },
+      { threshold },
+    )
+
+    elements.forEach((element, index) => {
+      element.style.opacity = "0"
+      element.style.transform = "translateY(20px)"
+      element.style.transition = `opacity 0.5s ease ${index * 0.1}s, transform 0.5s ease ${index * 0.1}s`
+      element.classList.add("animate-target")
+      observer.observe(element)
+    })
+  }
+
+  // Apply animations to various elements
+  animateElements(document.querySelectorAll(".contact-info-card"))
+  animateElements(document.querySelectorAll(".faq-item"))
+
+  // Add CSS for animation
+  const style = document.createElement("style")
+  style.textContent = `
+        .animate-target.animate-in {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+    `
+  document.head.appendChild(style)
+
+  // Add this code at the end of the DOMContentLoaded event listener, before the closing });
+
+  // Appointment Form Validation
+  const appointmentForm = document.getElementById("appointmentForm")
+  const appointmentSuccessMessage = document.getElementById("appointmentSuccessMessage")
+  const resetAppointmentFormBtn = document.getElementById("resetAppointmentForm")
+
+  if (appointmentForm) {
+    // Set minimum date to today
+    const appointmentDateInput = document.getElementById("appointmentDate")
+    if (appointmentDateInput) {
+      const today = new Date()
+      const yyyy = today.getFullYear()
+      const mm = String(today.getMonth() + 1).padStart(2, "0")
+      const dd = String(today.getDate()).padStart(2, "0")
+      appointmentDateInput.min = `${yyyy}-${mm}-${dd}`
+    }
+
+    // Department and doctor relationship
+    const appointmentDepartment = document.getElementById("appointmentDepartment")
+    const appointmentDoctor = document.getElementById("appointmentDoctor")
+
+    if (appointmentDepartment && appointmentDoctor) {
+      appointmentDepartment.addEventListener("change", function () {
+        // Reset doctor selection
+        appointmentDoctor.innerHTML = '<option value="">No preference</option>'
+
+        // Add relevant doctors based on department
+        const department = this.value
+        if (department === "general") {
+          addDoctorOption("dr-smith", "Dr. Smith - General Physician")
+          addDoctorOption("dr-johnson", "Dr. Johnson - Family Medicine")
+        } else if (department === "specialist") {
+          addDoctorOption("dr-patel", "Dr. Patel - Cardiologist")
+          addDoctorOption("dr-wong", "Dr. Wong - Neurologist")
+          addDoctorOption("dr-garcia", "Dr. Garcia - Orthopedic Surgeon")
+        } else if (department === "obstetrics") {
+          addDoctorOption("dr-chen", "Dr. Chen - Obstetrician")
+          addDoctorOption("dr-rodriguez", "Dr. Rodriguez - Gynecologist")
+        } else if (department === "pediatrics") {
+          addDoctorOption("dr-miller", "Dr. Miller - Pediatrician")
+        } else if (department === "dental") {
+          addDoctorOption("dr-brown", "Dr. Brown - Dentist")
+        }
+      })
+
+      function addDoctorOption(value, text) {
+        const option = document.createElement("option")
+        option.value = value
+        option.textContent = text
+        appointmentDoctor.appendChild(option)
+      }
+    }
+
+    appointmentForm.addEventListener("submit", function (e) {
+      e.preventDefault()
+
+      // Reset previous error states
+      const formGroups = this.querySelectorAll(".form-group")
+      formGroups.forEach((group) => {
+        group.classList.remove("error")
+      })
+
+      let isValid = true
+
+      // Validate name
+      const nameInput = document.getElementById("appointmentName")
+      if (!nameInput.value.trim()) {
+        document.getElementById("appointmentNameError").textContent = "Please enter your name"
+        nameInput.closest(".form-group").classList.add("error")
+        isValid = false
+      }
+
+      // Validate email
+      const emailInput = document.getElementById("appointmentEmail")
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+      if (!emailInput.value.trim() || !emailRegex.test(emailInput.value)) {
+        document.getElementById("appointmentEmailError").textContent = "Please enter a valid email address"
+        emailInput.closest(".form-group").classList.add("error")
+        isValid = false
+      }
+
+      // Validate phone
+      const phoneInput = document.getElementById("appointmentPhone")
+      if (!phoneInput.value.trim()) {
+        document.getElementById("appointmentPhoneError").textContent = "Please enter your phone number"
+        phoneInput.closest(".form-group").classList.add("error")
+        isValid = false
+      }
+
+      // Validate date
+      const dateInput = document.getElementById("appointmentDate")
+      if (!dateInput.value) {
+        document.getElementById("appointmentDateError").textContent = "Please select a preferred date"
+        dateInput.closest(".form-group").classList.add("error")
+        isValid = false
+      }
+
+      // Validate time
+      const timeInput = document.getElementById("appointmentTime")
+      if (!timeInput.value) {
+        document.getElementById("appointmentTimeError").textContent = "Please select a preferred time"
+        timeInput.closest(".form-group").classList.add("error")
+        isValid = false
+      }
+
+      // Validate department
+      const departmentInput = document.getElementById("appointmentDepartment")
+      if (!departmentInput.value) {
+        document.getElementById("appointmentDepartmentError").textContent = "Please select a department"
+        departmentInput.closest(".form-group").classList.add("error")
+        isValid = false
+      }
+
+      // Validate reason
+      const reasonInput = document.getElementById("appointmentReason")
+      if (!reasonInput.value.trim()) {
+        document.getElementById("appointmentReasonError").textContent = "Please enter your reason for visit"
+        reasonInput.closest(".form-group").classList.add("error")
+        isValid = false
+      }
+
+      // Validate consent
+      const consentInput = document.getElementById("appointmentConsent")
+      if (!consentInput.checked) {
+        document.getElementById("appointmentConsentError").textContent = "You must consent to proceed"
+        consentInput.closest(".form-group").classList.add("error")
+        isValid = false
+      }
+
+      // If form is valid, show success message
+      if (isValid) {
+        // Generate a random reference number
+        const referenceNumber = "APT-" + Math.floor(10000 + Math.random() * 90000)
+        document.getElementById("referenceNumber").textContent = referenceNumber
+
+        appointmentForm.style.display = "none"
+        if (appointmentSuccessMessage) {
+          appointmentSuccessMessage.style.display = "block"
+        }
+
+        // Scroll to success message
+        appointmentSuccessMessage.scrollIntoView({ behavior: "smooth" })
+      }
+    })
+  }
+
+  // Reset appointment form button
+  if (resetAppointmentFormBtn) {
+    resetAppointmentFormBtn.addEventListener("click", () => {
+      if (appointmentForm) {
+        appointmentForm.reset()
+        appointmentForm.style.display = "flex"
+        appointmentSuccessMessage.style.display = "none"
+
+        // Remove all error states
+        const formGroups = appointmentForm.querySelectorAll(".form-group")
+        formGroups.forEach((group) => {
+          group.classList.remove("error")
+        })
+      }
+    })
+  }
+})
+
+
+</script>
 </body>
 </html>
+

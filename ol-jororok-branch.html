@@ -4,6 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>Ol Jororok Branch - Brooks of Cherith Hospitals</title>
+<link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="shortcut icon" href="/BOCfavicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/BOCfavicon/apple-touch-icon.png" />
+<meta name="apple-mobile-web-app-title" content="Brookofcherith" />
+<link rel="manifest" href="/BOCfavicon/site.webmanifest" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="locations-styles.css">
@@ -70,6 +76,7 @@
 <meta name="ICBM" content="-0.1546, 36.2718">
 </head>
 <body>
+
 <!-- Header Section -->
 <header>
     <!-- Top Bar -->
@@ -80,7 +87,7 @@
             </div>
             <div class="support-info">
                 <span><i class="fas fa-clock"></i> 24/7 Support</span>
-                <span><i class="fas fa-user-md"></i> Certified Medical Professionals</span>
+                <span class="professionals"><i class="fas fa-user-md"></i> Certified Medical Professionals</span>
             </div>
         </div>
     </div>
@@ -91,7 +98,7 @@
         </div>
         <nav class="main-nav">
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li class="dropdown">
                     <a href="services.html">Our Services </i></a>
                     <div class="dropdown-content">
@@ -105,11 +112,12 @@
                     <a href="locations.html">Locations </i></a>
                     <div class="dropdown-content">
                         <a href="main-hospital.html">Head Quarters</a>
-                        <a href="ol-jororok-branch.html" class="active">Ol Jororok Branch</a>
+                        <a class="active" href="ol-jororok-branch.html">Ol Jororok Branch</a>
                     </div>
                 </li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="news-insights.html">News & Insights</a></li>
+                <li class="contact-link"><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
         <div class="contact-btn">
@@ -121,12 +129,13 @@
     </div>
 </header>
 
+
 <!-- Location Hero Section -->
   <section class="location-detail-hero branch-hero">
       <div class="container">
           <div class="location-detail-hero-content">
               <div class="location-badge">
-                  <span><i class="fas fa-clock"></i> Mon-Sat: 8am-6pm</span>
+                  <span><i class="fas fa-clock"></i>Open 24/7</span>
               </div>
               <h1>Ol Jororok Branch</h1>
               <p>Our Ol Jororok Branch provides essential healthcare services to the local community including general outpatient care, preventive services, and basic diagnostic testing.</p>
@@ -134,7 +143,7 @@
                   <a href="tel:+254723043405" class="btn btn-primary btn-large">
                       <i class="fas fa-phone-alt"></i> Call: +254(0) 723 043 405
                   </a>
-                  <a href="https://www.google.com/maps/dir/?api=1&destination=-0.1546,36.2718" target="_blank" class="btn btn-outline-primary btn-large">
+                  <a href="https://www.google.com/maps/dir/?api=1&destination=-0.18038183072810443, 36.38345883428945" target="_blank" class="btn btn-outline-primary btn-large">
                       <i class="fas fa-directions"></i> Get Directions
                   </a>
               </div>
@@ -154,9 +163,9 @@
                               <i class="fas fa-map-marker-alt"></i>
                           </div>
                           <div class="info-content">
-                              <h3>Address</h3>
-                              <p>456 Care Street, Ol Jororok</p>
-                              <p>Nyandarua, Kenya 20318</p>
+                              <h3>Ol-Jororok (Along Nyahururu-Gilgil Road)</h3>
+                              <p>Nyakariang'a Centre</p>
+                              <p>Nyandarua, Kenya.</p>
                           </div>
                       </div>
                       
@@ -166,7 +175,7 @@
                           </div>
                           <div class="info-content">
                               <h3>Phone</h3>
-                              <p>Main Line: <a href="tel:+254723043405">+254(0) 723 043 405</a></p>
+                              <p>Main Line: <a href="tel:+254723476735">+254(0) 723 476 735</a></p>
                               <p>For emergencies after hours, please call our Main Hospital: <a href="tel:+254723043404">+254(0) 723 043 404</a></p>
                           </div>
                       </div>
@@ -176,10 +185,10 @@
                               <i class="fas fa-clock"></i>
                           </div>
                           <div class="info-content">
-                              <h3>Hours</h3>
-                              <p><strong>Monday to Friday:</strong> 8:00 AM - 6:00 PM</p>
-                              <p><strong>Saturday:</strong> 8:00 AM - 6:00 PM</p>
-                              <p><strong>Sunday:</strong> Closed</p>
+                            <h3>Hours</h3>
+                            <p><strong>Emergency Services:</strong> 24/7</p>
+                            <p><strong>Outpatient Services:</strong> 24/7</p>
+                            <p><strong>Specialist Consultations:</strong> By appointment</p>
                           </div>
                       </div>
                       
@@ -189,8 +198,7 @@
                           </div>
                           <div class="info-content">
                               <h3>Email</h3>
-                              <p>General Inquiries: <a href="mailto:oljororok@brookoflife.co.ke">oljororok@brookoflife.co.ke</a></p>
-                              <p>Appointments: <a href="mailto:appointments@brookoflife.co.ke">appointments@brookoflife.co.ke</a></p>
+                              <p>General Inquiries: <a href="mailto:info@brookofcherith.co.ke">info@brookofcherith.co.ke</a></p>
                           </div>
                       </div>
                   </div>
@@ -199,12 +207,13 @@
               <div class="location-map">
                   <h2>Find Us</h2>
                   <div class="map-wrapper">
-                    <iframe src="https://www.google.com/maps/embed?pb=!4v1742457049239!6m8!1m7!1sJwS94W0DTJiPNC_vbhSHEQ!2m2!1d-0.04769712329249916!2d36.36182071821199!3f93.16016709966227!4f-11.951205743646653!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                  </div>
-                  <div class="map-actions">
-                      <a href="https://www.google.com/maps/dir/?api=1&destination=-0.1546,36.2718" target="_blank" class="btn btn-primary">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d37305.507588109176!2d36.354505540924215!3d-0.16669853917942212!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1829c54417db7441%3A0xf6ddfc0c6b2ad13d!2sHospital...brook%20of%20cherith%20nyandarua!5e0!3m2!1sen!2ske!4v1742858728597!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="map-actions">
+                      <a href="https://www.google.com/maps/dir/?api=1&destination=-0.18038183072810443, 36.38345883428945" target="_blank" class="btn btn-primary">
                           <i class="fas fa-directions"></i> Get Directions
                       </a>
-                      <a href="#" class="btn btn-outline-primary" id="shareLocation">
+                      <a href="#" class="share-location-btn" data-lat="-0.18038183072810443" data-lng="36.38345883428945" data-title="Nyahururu Branch">
                           <i class="fas fa-share-alt"></i> Share Location
                       </a>
                   </div>
@@ -237,7 +246,7 @@
                   </div>
                   <h3>Preventive Care</h3>
                   <p>Preventive health services including vaccinations, health screenings, and wellness check-ups to help maintain optimal health.</p>
-                  <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                  <a href="general-outpatient.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
               </div>
               
               <div class="service-item">
@@ -246,7 +255,7 @@
                   </div>
                   <h3>Basic Laboratory Services</h3>
                   <p>Essential laboratory tests including blood work, urinalysis, and other routine diagnostic tests to aid in diagnosis and treatment.</p>
-                  <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                  <a href="diagnostic-services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
               </div>
               
               <div class="service-item">
@@ -255,7 +264,7 @@
                   </div>
                   <h3>Pharmacy Services</h3>
                   <p>On-site pharmacy providing prescribed medications and over-the-counter products with professional pharmacist consultation.</p>
-                  <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                  <a href="general-outpatient.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
               </div>
               
               <div class="service-item">
@@ -264,7 +273,7 @@
                   </div>
                   <h3>Maternal & Child Health</h3>
                   <p>Basic maternal and child health services including antenatal care, well-baby check-ups, and childhood vaccinations.</p>
-                  <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                  <a href="general-outpatient.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
               </div>
               
               <div class="service-item">
@@ -273,7 +282,7 @@
                   </div>
                   <h3>Minor Procedures</h3>
                   <p>Basic medical procedures including wound care, suturing, and other minor treatments that don't require hospitalization.</p>
-                  <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                  <a href="diagnostic-services.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
               </div>
           </div>
       </div>
@@ -380,11 +389,6 @@
                   <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=500&auto=format&fit=crop" alt="Waiting Area">
                   <div class="gallery-caption">Waiting Area</div>
               </div>
-          </div>
-          
-          <div class="gallery-actions">
-              <a href="#" class="btn btn-outline-primary btn-large" id="viewMorePhotos">View More Photos</a>
-              <a href="#" class="btn btn-primary btn-large" id="virtualTour">Take Virtual Tour</a>
           </div>
       </div>
   </section>
@@ -499,107 +503,96 @@
       </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-      <div class="container">
-          <div class="footer-top">
-              <div class="footer-column">
-                  <div class="footer-logo">
-                      <img src="/placeholder.svg?height=60&width=100" alt="Brooks of Cherith Hospitals">
-                      <p class="tagline">Healing with Compassion</p>
-                  </div>
-                  <p class="footer-about">Brooks of Cherith Hospitals provides holistic medical care that combines expertise with compassion, rooted in our faith-driven mission to heal and serve.</p>
-                  <div class="footer-certifications">
-                      <span><i class="fas fa-certificate"></i> Certified Medical Professionals</span>
-                      <span><i class="fas fa-award"></i> Accredited Healthcare Facility</span>
-                  </div>
-              </div>
-              
-              <div class="footer-column">
-                  <h4>Quick Links</h4>
-                  <ul class="footer-links">
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="about.html">About Us</a></li>
-                      <li><a href="services.html">Our Services</a></li>
-                      <li><a href="#">Find a Doctor</a></li>
-                      <li><a href="locations.html">Locations</a></li>
-                      <li><a href="news-insights.html">News & Insights</a></li>
-                      <li><a href="contact.html">Contact Us</a></li>
-                  </ul>
-              </div>
-              
-              <div class="footer-column">
-                  <h4>Our Services</h4>
-                  <ul class="footer-links">
-                      <li><a href="specialist-outpatient.html">Specialist Outpatient</a></li>
-                      <li><a href="general-outpatient.html">General Outpatient</a></li>
-                      <li><a href="diagnostic-services.html">Diagnostic Services</a></li>
-                      <li><a href="emergency-trauma-services.html">Emergency & Trauma</a></li>
-                      <li><a href="#">Antenatal Clinic</a></li>
-                      <li><a href="#">Pharmacy Services</a></li>
-                      <li><a href="#">Rehabilitative Medicine</a></li>
-                  </ul>
-              </div>
-              
-              <div class="footer-column">
-                  <h4>Contact & Support</h4>
-                  <ul class="footer-contact">
-                      <li>
-                          <i class="fas fa-phone-alt"></i>
-                          <div>
-                              <p>Emergency:</p>
-                              <a href="tel:+254723043404">+254(0) 723 043 404</a>
-                          </div>
-                      </li>
-                      <li>
-                          <i class="fas fa-envelope"></i>
-                          <div>
-                              <p>Email:</p>
-                              <a href="mailto:info@brookoflife.co.ke">info@brookoflife.co.ke</a>
-                          </div>
-                      </li>
-                      <li>
-                          <i class="fas fa-map-marker-alt"></i>
-                          <div>
-                              <p>Main Hospital:</p>
-                              <span>123 Health Avenue, Westlands, Nairobi</span>
-                          </div>
-                      </li>
-                  </ul>
-                  
-                  <div class="newsletter">
-                      <h4>Stay Informed – Join Our Newsletter</h4>
-                      <form class="newsletter-form">
-                          <input type="email" placeholder="Your email address">
-                          <button type="submit" class="btn-subscribe">Subscribe</button>
-                      </form>
-                  </div>
-              </div>
-          </div>
-          
-          <div class="footer-bottom">
-              <div class="footer-social">
-                  <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                  <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                  <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                  <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                  <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-              </div>
-              
-              <div class="footer-legal">
-                  <a href="#">Privacy Policy</a>
-                  <a href="#">Terms of Use</a>
-                  <a href="#">Sitemap</a>
-                  <a href="#">Careers</a>
-              </div>
-              
-              <div class="copyright">
-                  <p>&copy; 2025 Brooks of Cherith Hospitals. All Rights Reserved.</p>
-              </div>
-          </div>
-      </div>
-  </footer>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="footer-column">
+                <div class="footer-logo">
+                    <img src="Logo-white.jpg" alt="Brooks of Cherith Hospitals">
+                    <p class="tagline">We treat, God cures.</p>
+                </div>
+                <p class="footer-about">Brooks of Cherith Hospitals provides holistic medical care that combines expertise with compassion, rooted in our faith-driven mission to heal and serve.</p>
+                <div class="footer-certifications">
+                    <span><i class="fas fa-certificate"></i> Certified Medical Professionals</span>
+                    <span><i class="fas fa-award"></i> Accredited Healthcare Facility</span>
+                </div>
+            </div>
+            <div class="footer-sub-column">
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Our Services</a></li>
+                        <li><a href="locations.html">Locations</a></li>
+                        <li><a href="news-insights.html">News & Insights</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Our Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="specialist-outpatient.html">Specialist Outpatient</a></li>
+                        <li><a href="general-outpatient.html">General Outpatient</a></li>
+                        <li><a href="diagnostic-services.html">Diagnostic Services</a></li>
+                        <li><a href="emergency-trauma-services.html">Emergency Care</a></li>
+                        <li><a href="general-outpatient.html">Antenatal Clinic</a></li>
+                        <li><a href="general-outpatient.html">Rehabilitative Medicine</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Contact & Support</h4>
+                <ul class="footer-contact">
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <p>Emergency:</p>
+                            <a href="tel:+254723043404">+254(0) 723 043 404</a>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <p>Email:</p>
+                            <a href="mailto:info@brooksofcherith.co.ke">info@brookofcherith.co.ke</a>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <p>Main Hospital:</p>
+                            <span>UpperHill, Matumbato Rd Gate 37, Nairobi</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="footer-social">
+                <a href="https://web.facebook.com/brookofcherithmedicalcenter/?_rdc=1&_rdr#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/brookofcherith" class="social-icon"><i class="fas fa-x"></i></a>
+                <a href="https://www.instagram.com/brookofcherithmedical" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+            </div>
+            
+            <div class="footer-legal">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Use</a>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Brooks of Cherith Hospitals. All Rights Reserved.</p>
+            </div>
+        </div>
+    </div>
 
+<!-- Footer Section -->
+</footer>
   <script src="script.js"></script>
   <script src="locations.js"></script>
 </body>

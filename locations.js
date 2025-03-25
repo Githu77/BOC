@@ -34,85 +34,54 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   }
 
-  // Map controls
-  const zoomIn = document.getElementById("zoomIn")
-  const zoomOut = document.getElementById("zoomOut")
-  const resetMap = document.getElementById("resetMap")
-  const mapIframe = document.querySelector(".map-wrapper iframe")
+ // Map controls
+const resetMap = document.getElementById("resetMap");
+const mapIframe = document.querySelector(".map-wrapper iframe");
 
-  if (zoomIn && zoomOut && resetMap && mapIframe) {
-    // Store original map src for reset
-    const originalSrc = mapIframe.src
-    let zoomLevel = 15 // Default zoom level
+if (resetMap && mapIframe) {
+  // Store original map src for reset
+  const originalSrc = mapIframe.src;
 
-    zoomIn.addEventListener("click", () => {
-      if (zoomLevel < 20) {
-        zoomLevel++
-        updateMapZoom()
-      }
-    })
-
-    zoomOut.addEventListener("click", () => {
-      if (zoomLevel > 10) {
-        zoomLevel--
-        updateMapZoom()
-      }
-    })
-
-    resetMap.addEventListener("click", () => {
-      zoomLevel = 15
-      mapIframe.src = originalSrc
-    })
-
-    function updateMapZoom() {
-      // Extract current map URL
-      let currentSrc = mapIframe.src
-
-      // Check if zoom parameter exists
-      if (currentSrc.includes("&z=")) {
-        // Replace existing zoom parameter
-        currentSrc = currentSrc.replace(/&z=\d+/, `&z=${zoomLevel}`)
-      } else {
-        // Add zoom parameter
-        currentSrc += `&z=${zoomLevel}`
-      }
-
-      mapIframe.src = currentSrc
-    }
-  }
-
+  resetMap.addEventListener("click", () => {
+    mapIframe.src = originalSrc;
+  });
+}
   // Share location functionality
-  const shareLocationBtn = document.getElementById("shareLocation")
+ // Target all buttons with the class "share-location-btn"
+const shareLocationButtons = document.querySelectorAll(".share-location-btn");
 
-  if (shareLocationBtn) {
-    shareLocationBtn.addEventListener("click", (e) => {
-      e.preventDefault()
+shareLocationButtons.forEach((button) => {
+  button.addEventListener("click", (e) => {
+    e.preventDefault();
 
-      const locationTitle = document.querySelector("h1").textContent
-      const locationUrl = window.location.href
+    // Get location data from data attributes or fallback to defaults
+    const lat = button.getAttribute("data-lat") || "-1.3024891998467594";
+    const lng = button.getAttribute("data-lng") || "36.81893243921625";
+    const locationTitle = button.getAttribute("data-title") || document.querySelector("h1")?.textContent || "Location";
+    const locationUrl = `https://www.google.com/maps/dir/?api=1&destination=${lat},${lng}`;
 
-      // Check if Web Share API is available
-      if (navigator.share) {
-        navigator
-          .share({
-            title: locationTitle,
-            text: `Check out this location: ${locationTitle}`,
-            url: locationUrl,
-          })
-          .catch((error) => console.log("Error sharing:", error))
-      } else {
-        // Fallback for browsers that don't support Web Share API
-        const tempInput = document.createElement("input")
-        document.body.appendChild(tempInput)
-        tempInput.value = locationUrl
-        tempInput.select()
-        document.execCommand("copy")
-        document.body.removeChild(tempInput)
+    // Check if Web Share API is available
+    if (navigator.share) {
+      navigator
+        .share({
+          title: locationTitle,
+          text: `Check out this location: ${locationTitle}`,
+          url: locationUrl,
+        })
+        .catch((error) => console.log("Error sharing:", error));
+    } else {
+      // Fallback for browsers that don't support Web Share API
+      const tempInput = document.createElement("input");
+      document.body.appendChild(tempInput);
+      tempInput.value = locationUrl;
+      tempInput.select();
+      document.execCommand("copy");
+      document.body.removeChild(tempInput);
 
-        alert("Location URL copied to clipboard!")
-      }
-    })
-  }
+      alert("Location URL copied to clipboard!");
+    }
+  });
+});
 
   // Form validation for contact forms
   const locationContactForms = document.querySelectorAll(".location-contact-form")

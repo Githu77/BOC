@@ -204,8 +204,7 @@
   position: absolute;
   top: 15px;
   right: 15px;
-  background-color: rgba(76, 175, 80, 0.9);
-  color: white;
+  background-color: #ffffff;
   padding: 5px 12px;
   border-radius: 50px;
   font-size: 12px;
@@ -327,6 +326,17 @@
   font-size: 16px;
 }
 
+.share-location-btn{
+  padding: 15px 30px;
+  font-size: 16px;
+  border-radius: 50px;
+  font-weight: 500;
+  background-color: white;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
 .btn-outline-primary {
   border: 2px solid var(--primary-color);
   color: var(--primary-color);
@@ -363,7 +373,7 @@
 }
 
 .main-hospital-hero {
-  background-image: url("https://images.unsplash.com/photo-1586773860418-d37222d8fce3?q=80&w=2070&auto=format&fit=crop");
+  background-image: url("Main.JPG");
 }
 
 .branch-hero {
@@ -841,6 +851,12 @@
   .locations-hero,
   .location-detail-hero {
     padding: 60px 0;
+  }
+
+  .location-actions{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
   .locations-hero-content h1,
