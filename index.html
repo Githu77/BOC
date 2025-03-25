@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Brooks of Cherith Hospitals</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brooks of Cherith Hospitals - Expert healthcare in Nairobi and Nyahururu, Kenya. 24/7 emergency care, specialist outpatient, and diagnostics. Call +254(0) 723 043 404.">
+    <meta name="keywords" content="hospitals in Nairobi, hospitals in Nyahururu, emergency care Kenya, specialist outpatient Nairobi, Brooks of Cherith, Ol Jororok healthcare">
+    <meta name="robots" content="index, follow">
+    <title>Brooks of Cherith Hospitals | Healthcare in Nairobi & Nyahururu</title>
     <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
     <link rel="shortcut icon" href="/BOCfavicon/favicon.ico" />
@@ -12,6 +15,33 @@
     <link rel="manifest" href="/BOCfavicon/site.webmanifest" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Hospital",
+      "name": "Brooks of Cherith Hospitals",
+      "description": "Compassionate healthcare services in Nairobi and Nyahururu, Kenya, offering 24/7 emergency care, specialist outpatient, and diagnostic services.",
+      "telephone": "+254723043404",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "UpperHill, Matumbato Rd Gate 37",
+          "addressLocality": "Nairobi",
+          "addressRegion": "Nairobi County",
+          "addressCountry": "KE"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Nyakariang'a Centre",
+          "addressLocality": "Ol Jororok, Nyahururu",
+          "addressRegion": "Nyandarua County",
+          "addressCountry": "KE"
+        }
+      ],
+      "openingHours": "Mo-Su 00:00-23:59",
+      "url": "https://githu77.github.io/BOC/"
+    }
+    </script>
 </head>
 <body>
     <!-- Header Section -->
@@ -20,7 +50,7 @@
         <div class="emergency-bar">
             <div class="container">
                 <div class="emergency-contact">
-                    <i class="fas fa-phone-alt"></i> Emergency Services: +254(0) 723 043 404
+                    <i class="fas fa-phone-alt"></i> Emergency Services: <a href="tel:+254723043404">+254(0) 723 043 404</a>
                 </div>
                 <div class="support-info">
                     <span><i class="fas fa-clock"></i> 24/7 Support</span>
@@ -31,13 +61,13 @@
         
         <div class="container">
             <div class="logo">
-                <img src="Logo.png" alt="Brook of Cherith Hospitals">
+                <a href="index.html"><img src="Logo.png" alt="Brooks of Cherith Hospitals Logo" loading="lazy"></a>
             </div>
-            <nav class="main-nav">
+            <nav class="main-nav" aria-label="Main Navigation">
                 <ul>
-                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="index.html" class="active" aria-current="page">Home</a></li>
                     <li class="dropdown">
-                        <a href="services.html">Our Services </i></a>
+                        <a href="services.html">Our Services</a>
                         <div class="dropdown-content">
                             <a href="specialist-outpatient.html">Specialist Outpatient</a>
                             <a href="general-outpatient.html">General Outpatient</a>
@@ -46,7 +76,7 @@
                         </div>
                     </li>
                     <li class="dropdown">
-                        <a href="locations.html">Locations </i></a>
+                        <a href="locations.html">Locations</a>
                         <div class="dropdown-content">
                             <a href="main-hospital.html">Head Quarters</a>
                             <a href="ol-jororok-branch.html">Ol Jororok Branch</a>
@@ -60,7 +90,7 @@
             <div class="contact-btn">
                 <a href="contact.html" class="btn btn-primary">Contact Us <i class="fas fa-arrow-right"></i></a>
             </div>
-            <div class="mobile-menu-btn">
+            <div class="mobile-menu-btn" aria-label="Toggle Mobile Menu">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
@@ -74,22 +104,22 @@
                     <div class="tagline">
                         <p>We treat. God cures. We advise, you implement. We direct, you follow.</p>
                     </div>
-                    <h1>BROOK OF CHERITH HOSPITALS</h1>
-                    <h2>Compassionate Care Starts Here.</h2>
-                    <p class="description">Trust our certified medical professionals for expert hospital services anytime you need us.</p>
+                    <h1>Brooks of Cherith Hospitals</h1>
+                    <h2>Compassionate Healthcare in Nairobi & Nyahururu</h2>
+                    <p class="description">Trust our certified medical professionals for expert hospital services in Kenya, available 24/7 for your healthcare needs.</p>
                     <div class="cta-buttons">
                         <a data-scroll-to="Contact" class="btn btn-primary">Schedule Consultation</a>
-                        <a href="#" class="btn btn-outline">Learn More </a>
+                        <a href="about.html" class="btn btn-outline">Learn More</a>
                     </div>
                 </div>
                 <div class="services-panel">
                     <div class="panel-header">
-                        <h3>All Services</h3>
+                        <h3>All Healthcare Services</h3>
                         <span class="available-tag">Available 24/7</span>
                     </div>
                     <div class="search-box">
                         <i class="fas fa-search"></i>
-                        <input type="text" placeholder="Find a service">
+                        <input type="text" placeholder="Find a service" aria-label="Search Healthcare Services">
                     </div>
                     <div class="service-list">
                         <div class="service-item">
@@ -99,7 +129,7 @@
                             <a href="emergency-trauma-services.html">
                                 <div class="service-details">
                                     <h4>Emergency & Trauma Services</h4>
-                                <p><i class="fas fa-circle"></i> 24hrs Ambulance Services and more</p>
+                                    <p><i class="fas fa-circle"></i> 24hrs Ambulance Services and more</p>
                                 </div>
                             </a>
                         </div>
@@ -121,7 +151,7 @@
                             <div class="service-details">
                                 <a href="general-outpatient.html">
                                     <h4>Outpatient Services</h4>
-                                    <p><i class="fas fa-circle"></i>ANC (Antenatal Clinic) and more</p>
+                                    <p><i class="fas fa-circle"></i> ANC (Antenatal Clinic) and more</p>
                                 </a>
                             </div>
                         </div>
@@ -132,7 +162,7 @@
                             <a href="diagnostic-services.html">
                                 <div class="service-details">
                                     <h4>Diagnostic Services</h4>
-                                <p><i class="fas fa-circle"></i> Minor Surgery, ECG, Ultrasound</p>
+                                    <p><i class="fas fa-circle"></i> Minor Surgery, ECG, Ultrasound</p>
                                 </div>
                             </a>
                         </div>
@@ -146,8 +176,8 @@
     <section class="quick-access">
         <div class="container">
             <div class="section-header">
-                <h2>Quick Access</h2>
-                <p>Fast access to our most requested services</p>
+                <h2>Quick Access to Medical Services</h2>
+                <p>Fast access to our most requested healthcare services in Kenya</p>
             </div>
             <div class="service-grid">
                 <div class="service-card">
@@ -205,9 +235,8 @@
                     <div class="section-subtitle">Our Story</div>
                     <h2>Compassionate Care, Guided by Faith</h2>
                     <p class="about-description">
-                        At Brooks of Cherith Hospitals, we provide holistic medical care that combines expertise with compassion, rooted in our faith-driven mission to heal and serve. We believe in treating the whole person—body, mind, and spirit—with dignity and respect.
+                        At Brooks of Cherith Hospitals, we provide holistic medical care in Nairobi and Nyahururu, combining expertise with compassion, rooted in our faith-driven mission to heal and serve Kenya.
                     </p>
-                    
                     <div class="stats-container">
                         <div class="stat-item">
                             <div class="stat-number">15+</div>
@@ -222,250 +251,232 @@
                             <div class="stat-label">Patients Treated Annually</div>
                         </div>
                     </div>
-                    
                     <a href="about.html" class="btn btn-primary">Learn More About Us</a>
                 </div>
                 <div class="about-image">
-                    <img src="staff.jpg" alt="Medical professionals at Brooks of Cherith Hospitals">
+                    <img src="staff.jpg" alt="Medical Professionals at Brooks of Cherith Hospitals" loading="lazy">
                     <div class="image-caption">Our dedicated team of healthcare professionals</div>
                 </div>
             </div>
         </div>
     </section>
 
-<!-- Our Services Section -->
-<section class="our-services">
-    <div class="container">
-        <div class="section-header">
-            <h2>Comprehensive Care for All Your Needs</h2>
-            <p>Our range of specialized medical services designed to provide complete healthcare solutions</p>
-        </div>
-        
-        <div class="services-tabs">
-            <div class="tabs-navigation">
-                <button class="tab-btn active" data-tab="specialist">Specialist Outpatient</button>
-                <button class="tab-btn" data-tab="outpatient">Outpatient Services</button>
-                <button class="tab-btn" data-tab="diagnostic">Diagnostic Services</button>
-                <button class="tab-btn" data-tab="emergency">Emergency Care</button>
+    <!-- Our Services Section -->
+    <section class="our-services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Comprehensive Care for All Your Needs</h2>
+                <p>Our range of specialized medical services in Nairobi and Nyahururu</p>
             </div>
-            
-            <div class="tabs-content">
-                <div class="tab-pane active" id="specialist">
-                    <div class="service-detail">
-                        <div class="service-detail-content">
-                            <div class="service-badge">
-                                <span class="availability"><i class="fas fa-clock"></i> Available Mon-Sat</span>
+            <div class="services-tabs">
+                <div class="tabs-navigation">
+                    <button class="tab-btn active" data-tab="specialist">Specialist Outpatient</button>
+                    <button class="tab-btn" data-tab="outpatient">Outpatient Services</button>
+                    <button class="tab-btn" data-tab="diagnostic">Diagnostic Services</button>
+                    <button class="tab-btn" data-tab="emergency">Emergency Care</button>
+                </div>
+                <div class="tabs-content">
+                    <div class="tab-pane active" id="specialist">
+                        <div class="service-detail">
+                            <div class="service-detail-content">
+                                <div class="service-badge">
+                                    <span class="availability"><i class="fas fa-clock"></i> Available Mon-Sat</span>
+                                </div>
+                                <h3>Specialist Outpatient Services</h3>
+                                <p>Our specialist outpatient services provide expert care from experienced medical professionals in various fields of medicine in Kenya.</p>
+                                <div class="specialties-grid">
+                                    <div class="specialty-item">
+                                        <div class="specialty-icon">
+                                            <i class="fas fa-bone"></i>
+                                        </div>
+                                        <h4>Rheumatology</h4>
+                                        <p>Specialized care for arthritis, autoimmune diseases, and joint disorders</p>
+                                    </div>
+                                    <div class="specialty-item">
+                                        <div class="specialty-icon">
+                                            <i class="fas fa-lungs"></i>
+                                        </div>
+                                        <h4>Chest Specialist</h4>
+                                        <p>Expert treatment for respiratory conditions and lung diseases</p>
+                                    </div>
+                                    <div class="specialty-item">
+                                        <div class="specialty-icon">
+                                            <i class="fas fa-male"></i>
+                                        </div>
+                                        <h4>Urologist & Prostate Clinic</h4>
+                                        <p>Comprehensive care for urological disorders and prostate health</p>
+                                    </div>
+                                    <div class="specialty-item">
+                                        <div class="specialty-icon">
+                                            <i class="fas fa-tachometer-alt"></i>
+                                        </div>
+                                        <h4>Hypertension Clinic</h4>
+                                        <p>Specialized care for hypertension and cardiovascular health</p>
+                                    </div>
+                                </div>
+                                <a href="specialist-outpatient.html" class="btn btn-primary">Learn More <i class="fas fa-arrow-right"></i></a>
                             </div>
-                            <h3>Specialist Outpatient Services</h3>
-                            <p>Our specialist outpatient services provide expert care from experienced medical professionals in various fields of medicine. We offer consultations, treatments, and follow-up care for complex medical conditions.</p>
-                            
-                            <div class="specialties-grid">
-                                <div class="specialty-item">
-                                    <div class="specialty-icon">
-                                        <i class="fas fa-bone"></i>
-                                    </div>
-                                    <h4>Rheumatology</h4>
-                                    <p>Specialized care for arthritis, autoimmune diseases, and joint disorders</p>
-                                </div>
-                                <div class="specialty-item">
-                                    <div class="specialty-icon">
-                                        <i class="fas fa-lungs"></i>
-                                    </div>
-                                    <h4>Chest Specialist</h4>
-                                    <p>Expert treatment for respiratory conditions and lung diseases</p>
-                                </div>
-                                <div class="specialty-item">
-                                    <div class="specialty-icon">
-                                        <i class="fas fa-male"></i>
-                                    </div>
-                                    <h4>Urologist & Prostrate Clinic</h4>
-                                    <p>Comprehensive care for urological disorders and conditions, including prostate health.</p>
-                                </div>
-                                <div class="specialty-item">
-                                    <div class="specialty-icon">
-                                        <i class="fas fa-tachometer-alt"></i>
-                                    </div>
-                                    <h4>Hypertension Clinic</h4>
-                                    <p>Specialized care and management for hypertension, focusing on blood pressure control and related cardiovascular health.</p>
-                                </div>
+                            <div class="service-detail-image">
+                                <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=880&auto=format&fit=crop" alt="Specialist Consultation at Brooks of Cherith Hospitals" loading="lazy">
                             </div>
-                            
-                            <a href="specialist-outpatient.html" class="btn btn-primary">Learn More <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                        <div class="service-detail-image">
-                            <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?q=80&w=880&auto=format&fit=crop" alt="Specialist consultation">
                         </div>
                     </div>
-                </div>
-                
-                <div class="tab-pane" id="outpatient">
-                    <div class="service-detail">
-                        <div class="service-detail-content">
-                            <div class="service-badge">
-                                <span class="availability"><i class="fas fa-clock"></i> Available 24/7</span>
+                    <div class="tab-pane" id="outpatient">
+                        <div class="service-detail">
+                            <div class="service-detail-content">
+                                <div class="service-badge">
+                                    <span class="availability"><i class="fas fa-clock"></i> Available 24/7</span>
+                                </div>
+                                <h3>Outpatient Services</h3>
+                                <p>Our general outpatient department provides comprehensive healthcare services for patients of all ages in Kenya.</p>
+                                <div class="specialties-grid">
+                                    <div class="specialty-item">
+                                        <div class="specialty-icon">
+                                            <i class="fas fa-user-md"></i>
+                                        </div>
+                                        <h4>General Physician</h4>
+                                        <p>Comprehensive primary care for patients of all ages</p>
+                                    </div>
+                                    <div class="specialty-item">
+                                        <div class="specialty-icon">
+                                            <i class="fas fa-baby"></i>
+                                        </div>
+                                        <h4>Antenatal Clinic</h4>
+                                        <p>Complete care for expectant mothers throughout pregnancy</p>
+                                    </div>
+                                    <div class="specialty-item">
+                                        <div class="specialty-icon">
+                                            <i class="fas fa-baby"></i>
+                                        </div>
+                                        <h4>Family Planning Clinic</h4>
+                                        <p>Convenient access to prescribed medications and counseling</p>
+                                    </div>
+                                    <div class="specialty-item">
+                                        <div class="specialty-icon">
+                                            <i class="fas fa-wheelchair"></i>
+                                        </div>
+                                        <h4>Physiotherapy</h4>
+                                        <p>Therapeutic treatments to restore physical function</p>
+                                    </div>
+                                </div>
+                                <a href="general-outpatient.html" class="btn btn-primary">Learn More <i class="fas fa-arrow-right"></i></a>
                             </div>
-                            <h3>Outpatient Services</h3>
-                            <p>Our general outpatient department provides comprehensive healthcare services for patients of all ages. From routine check-ups to managing chronic conditions, our team of healthcare professionals is dedicated to providing personalized care.</p>
-                            
-                            <div class="specialties-grid">
-                                <div class="specialty-item">
-                                    <div class="specialty-icon">
-                                        <i class="fas fa-user-md"></i>
-                                    </div>
-                                    <h4>General Physician</h4>
-                                    <p>Comprehensive primary care for patients of all ages</p>
-                                </div>
-                                <div class="specialty-item">
-                                    <div class="specialty-icon">
-                                        <i class="fas fa-baby"></i>
-                                    </div>
-                                    <h4>Antenatal Clinic</h4>
-                                    <p>Complete care for expectant mothers throughout pregnancy</p>
-                                </div>
-                                <div class="specialty-item">
-                                    <div class="specialty-icon">
-                                        <i class="fas fa-baby"></i> <!-- Changed icon to better represent family planning -->
-                                    </div>
-                                    <h4>Family Planning Clinic</h4>
-                                    <p>Convenient access to prescribed medications and counseling for family planning needs.</p>
-                                </div>
-                                <div class="specialty-item">
-                                    <div class="specialty-icon">
-                                        <i class="fas fa-wheelchair"></i> <!-- Changed icon to better represent physiotherapy -->
-                                    </div>
-                                    <h4>Physiotherapy</h4>
-                                    <p>Therapeutic treatments to help restore physical function and mobility.</p>
-                                </div>
+                            <div class="service-detail-image">
+                                <img src="https://images.unsplash.com/photo-1666214280391-8ff5bd3c0bf0?q=80&w=880&auto=format&fit=crop" alt="Outpatient Services at Brooks of Cherith Hospitals" loading="lazy">
                             </div>
-                            
-                            <a href="general-outpatient.html" class="btn btn-primary">Learn More <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                        <div class="service-detail-image">
-                            <img src="https://images.unsplash.com/photo-1666214280391-8ff5bd3c0bf0?q=80&w=880&auto=format&fit=crop" alt="General physician consultation">
                         </div>
                     </div>
-                </div>
-                
-                <div class="tab-pane" id="diagnostic">
-                    <div class="service-detail">
-                        <div class="service-detail-content">
-                            <div class="service-badge">
-                                <span class="availability"><i class="fas fa-clock"></i> Available Mon-Sat</span>
+                    <div class="tab-pane" id="diagnostic">
+                        <div class="service-detail">
+                            <div class="service-detail-content">
+                                <div class="service-badge">
+                                    <span class="availability"><i class="fas fa-clock"></i> Available Mon-Sat</span>
+                                </div>
+                                <h3>Diagnostic Services</h3>
+                                <p>Our diagnostic center offers advanced tests and procedures to diagnose medical conditions in Kenya.</p>
+                                <div class="specialties-grid">
+                                    <div class="specialty-item">
+                                        <div class="specialty-icon">
+                                            <i class="fas fa-x-ray"></i>
+                                        </div>
+                                        <h4>Imaging Services</h4>
+                                        <p>X-rays, ultrasounds, and advanced imaging techniques</p>
+                                    </div>
+                                    <div class="specialty-item">
+                                        <div class="specialty-icon">
+                                            <i class="fas fa-heartbeat"></i>
+                                        </div>
+                                        <h4>ECG</h4>
+                                        <p>Electrocardiogram for heart function assessment</p>
+                                    </div>
+                                    <div class="specialty-item">
+                                        <div class="specialty-icon">
+                                            <i class="fas fa-vial"></i>
+                                        </div>
+                                        <h4>Laboratory Services</h4>
+                                        <p>Comprehensive blood tests and pathology services</p>
+                                    </div>
+                                    <div class="specialty-item">
+                                        <div class="specialty-icon">
+                                            <i class="fas fa-cut"></i>
+                                        </div>
+                                        <h4>Cultures</h4>
+                                        <p>Procedures for minor surgical interventions</p>
+                                    </div>
+                                </div>
+                                <a href="diagnostic-services.html" class="btn btn-primary">Learn More <i class="fas fa-arrow-right"></i></a>
                             </div>
-                            <h3>Diagnostic Services</h3>
-                            <p>Our state-of-the-art diagnostic center offers a comprehensive range of tests and procedures to help diagnose and monitor various medical conditions. We use advanced technology and equipment to ensure accurate and timely results.</p>
-                            
-                            <div class="specialties-grid">
-                                <div class="specialty-item">
-                                    <div class="specialty-icon">
-                                        <i class="fas fa-x-ray"></i>
-                                    </div>
-                                    <h4>Imaging Services</h4>
-                                    <p>X-rays, ultrasounds, and advanced imaging techniques</p>
-                                </div>
-                                <div class="specialty-item">
-                                    <div class="specialty-icon">
-                                        <i class="fas fa-heartbeat"></i>
-                                    </div>
-                                    <h4>ECG</h4>
-                                    <p>Electrocardiogram for heart function assessment</p>
-                                </div>
-                                <div class="specialty-item">
-                                    <div class="specialty-icon">
-                                        <i class="fas fa-vial"></i>
-                                    </div>
-                                    <h4>Laboratory Services</h4>
-                                    <p>Comprehensive blood tests and pathology services</p>
-                                </div>
-                                <div class="specialty-item">
-                                    <div class="specialty-icon">
-                                        <i class="fas fa-cut"></i>
-                                    </div>
-                                    <h4>Cultures</h4>
-                                    <p>Procedures for minor surgical interventions</p>
-                                </div>
+                            <div class="service-detail-image">
+                                <img src="https://images.unsplash.com/photo-1581595219315-a187dd40c322?q=80&w=880&auto=format&fit=crop" alt="Diagnostic Services at Brooks of Cherith Hospitals" loading="lazy">
                             </div>
-                            
-                            <a href="diagnostic-services.html" class="btn btn-primary">Learn More <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                        <div class="service-detail-image">
-                            <img src="https://images.unsplash.com/photo-1581595219315-a187dd40c322?q=80&w=880&auto=format&fit=crop" alt="Diagnostic equipment">
                         </div>
                     </div>
-                </div>
-                
-                <div class="tab-pane" id="emergency">
-                    <div class="service-detail">
-                        <div class="service-detail-content">
-                            <div class="service-badge">
-                                <span class="availability emergency-badge"><i class="fas fa-clock"></i> Available 24/7</span>
+                    <div class="tab-pane" id="emergency">
+                        <div class="service-detail">
+                            <div class="service-detail-content">
+                                <div class="service-badge">
+                                    <span class="availability emergency-badge"><i class="fas fa-clock"></i> Available 24/7</span>
+                                </div>
+                                <h3>Emergency Care</h3>
+                                <p>Our emergency department provides immediate care for life-threatening conditions in Kenya, available 24/7.</p>
+                                <div class="specialties-grid">
+                                    <div class="specialty-item">
+                                        <div class="specialty-icon">
+                                            <i class="fas fa-ambulance"></i>
+                                        </div>
+                                        <h4>Ambulance Services</h4>
+                                        <p>Rapid response emergency transportation</p>
+                                    </div>
+                                    <div class="specialty-item">
+                                        <div class="specialty-icon">
+                                            <i class="fas fa-procedures"></i>
+                                        </div>
+                                        <h4>Trauma Management</h4>
+                                        <p>Specialized treatment for serious injuries</p>
+                                    </div>
+                                    <div class="specialty-item">
+                                        <div class="specialty-icon">
+                                            <i class="fas fa-first-aid"></i>
+                                        </div>
+                                        <h4>Critical Care</h4>
+                                        <p>Intensive monitoring and treatment for critical conditions</p>
+                                    </div>
+                                    <div class="specialty-item">
+                                        <div class="specialty-icon">
+                                            <i class="fas fa-hospital"></i>
+                                        </div>
+                                        <h4>Emergency Surgery</h4>
+                                        <p>Immediate surgical intervention when needed</p>
+                                    </div>
+                                </div>
+                                <div class="emergency-contact-box">
+                                    <h4><i class="fas fa-phone-alt"></i> Emergency Hotline</h4>
+                                    <a href="tel:+254723043404" class="emergency-number">+254(0) 723 043 404</a>
+                                    <p>Call immediately in case of emergency</p>
+                                </div>
+                                <a href="emergency-trauma-services.html" class="btn btn-primary">Learn More <i class="fas fa-arrow-right"></i></a>
                             </div>
-                            <h3>Emergency Care</h3>
-                            <p>Our emergency department is equipped to handle critical medical situations with speed and precision. Our team of emergency medicine specialists is available 24/7 to provide immediate care for life-threatening conditions.</p>
-                            
-                            <div class="specialties-grid">
-                                <div class="specialty-item">
-                                    <div class="specialty-icon">
-                                        <i class="fas fa-ambulance"></i>
-                                    </div>
-                                    <h4>Ambulance Services</h4>
-                                    <p>Rapid response emergency transportation</p>
-                                </div>
-                                <div class="specialty-item">
-                                    <div class="specialty-icon">
-                                        <i class="fas fa-procedures"></i>
-                                    </div>
-                                    <h4>Trauma Management</h4>
-                                    <p>Specialized treatment for serious injuries</p>
-                                </div>
-                                <div class="specialty-item">
-                                    <div class="specialty-icon">
-                                        <i class="fas fa-first-aid"></i>
-                                    </div>
-                                    <h4>Critical Care</h4>
-                                    <p>Intensive monitoring and treatment for critical conditions</p>
-                                </div>
-                                <div class="specialty-item">
-                                    <div class="specialty-icon">
-                                        <i class="fas fa-hospital"></i>
-                                    </div>
-                                    <h4>Emergency Surgery</h4>
-                                    <p>Immediate surgical intervention when needed</p>
-                                </div>
+                            <div class="service-detail-image">
+                                <img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?q=80&w=880&auto=format&fit=crop" alt="Emergency Care at Brooks of Cherith Hospitals" loading="lazy">
                             </div>
-                            
-                            <div class="emergency-contact-box">
-                                <h4><i class="fas fa-phone-alt"></i> Emergency Hotline</h4>
-                                <a href="tel:+254723043404" class="emergency-number">+254(0) 723 043 404</a>
-                                <p>Call immediately in case of emergency</p>
-                            </div>
-                            
-                            <a href="emergency-trauma-services.html" class="btn btn-primary">Learn More <i class="fas fa-arrow-right"></i></a>
-                        </div>
-                        <div class="service-detail-image">
-                            <img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?q=80&w=880&auto=format&fit=crop" alt="Emergency care">
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="services-cta">
+                <a data-scroll-to="Contact" class="btn btn-large">Schedule a Visit <i class="fas fa-calendar-check"></i></a>
+                <a href="services.html" class="btn btn-outline-large">View All Services <i class="fas fa-arrow-right"></i></a>
+            </div>
         </div>
-        
-        <div class="services-cta">
-            <a  data-scroll-to="Contact" class="btn btn-large">Schedule a Visit <i class="fas fa-calendar-check"></i></a>
-            <a href="services.html" class="btn btn-outline-large">View All Services <i class="fas fa-arrow-right"></i></a>
-        </div>
-    </div>
-</section>
-
+    </section>
 
     <!-- Patient Testimonials Section -->
     <section class="testimonials">
         <div class="container">
             <div class="section-header">
                 <h2>Shared Experiences, Shared Trust</h2>
-                <p>Our patients say it best. Hear what our patients have to say about their experience with us.</p>
+                <p>Our patients share their healthcare experiences with Brooks of Cherith Hospitals in Kenya</p>
             </div>
-            
             <div class="testimonial-container">
                 <div class="testimonial-controls">
                     <button class="testimonial-prev" aria-label="Previous testimonial">
@@ -475,14 +486,13 @@
                         <i class="fas fa-chevron-right"></i>
                     </button>
                 </div>
-                
                 <div class="testimonial-slider">
                     <div class="testimonial-slide active">
                         <div class="testimonial-quote">
                             <i class="fas fa-quote-left quote-icon"></i>
                             <p>The Doctor listens with alot of patience, and offers counseling before treatment. I found this very amazing.</p>
                             <div class="testimonial-author">
-                                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=100&auto=format&fit=crop" alt="Sarah K.">
+                                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=100&auto=format&fit=crop" alt="Rosaline Kamau, Patient at Brooks of Cherith Hospitals" loading="lazy">
                                 <div class="author-info">
                                     <h4>Rosaline Kamau</h4>
                                     <p>Patient</p>
@@ -490,13 +500,12 @@
                             </div>
                         </div>
                     </div>
-                    
                     <div class="testimonial-slide">
                         <div class="testimonial-quote">
                             <i class="fas fa-quote-left quote-icon"></i>
                             <p>I love the great commitment that the staff have, the warm smiles from the gate all the way to the doctors office, the wonderful improvement that patients show and how fast you are attended, a place you can call home.</p>
                             <div class="testimonial-author">
-                                <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?q=80&w=100&auto=format&fit=crop" alt="John M.">
+                                <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?q=80&w=100&auto=format&fit=crop" alt="Teresia Kinyajui, Patient at Brooks of Cherith Hospitals" loading="lazy">
                                 <div class="author-info">
                                     <h4>Teresia Kinyajui</h4>
                                     <p>Patient</p>
@@ -504,13 +513,12 @@
                             </div>
                         </div>
                     </div>
-                    
                     <div class="testimonial-slide">
                         <div class="testimonial-quote">
                             <i class="fas fa-quote-left quote-icon"></i>
-                            <p>Choosing Brook of cherith Nyahururu branch was the best decision .Here all staff are caring and practice best professional values.God bless you for helping me deliver a safe baby.To the management congrats for maintaining good standards.</p>
+                            <p>Choosing Brook of cherith Nyahururu branch was the best decision. Here all staff are caring and practice best professional values. God bless you for helping me deliver a safe baby.</p>
                             <div class="testimonial-author">
-                                <img src="https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?q=80&w=100&auto=format&fit=crop" alt="Rebecca N.">
+                                <img src="https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?q=80&w=100&auto=format&fit=crop" alt="Adrine Githinji, Patient at Brooks of Cherith Hospitals" loading="lazy">
                                 <div class="author-info">
                                     <h4>Adrine Githinji</h4>
                                     <p>Patient</p>
@@ -518,14 +526,12 @@
                             </div>
                         </div>
                     </div>
-                    
                     <div class="testimonial-slide">
                         <div class="testimonial-quote">
                             <i class="fas fa-quote-left quote-icon"></i>
-                            <p>Best trained doctors and nursing care is amazing.
-                            </p>
+                            <p>Best trained doctors and nursing care is amazing.</p>
                             <div class="testimonial-author">
-                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop" alt="David L.">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop" alt="Brian Wango, Patient at Brooks of Cherith Hospitals" loading="lazy">
                                 <div class="author-info">
                                     <h4>Brian Wango</h4>
                                     <p>Patient</p>
@@ -534,7 +540,6 @@
                         </div>
                     </div>
                 </div>
-                
                 <div class="testimonial-dots">
                     <span class="dot active"></span>
                     <span class="dot"></span>
@@ -551,18 +556,16 @@
             <div class="cta-content">
                 <div class="cta-text">
                     <h2>Book Your Appointment Today</h2>
-                    <p>Take the first step towards better health. Our team of medical professionals is ready to provide you with the care you deserve.</p>
-                    
+                    <p>Take the first step towards better health with our expert medical team in Nairobi and Nyahururu.</p>
                     <div class="cta-buttons">
                         <a href="tel:+254723043404" class="btn btn-outline-light">
                             <i class="fas fa-phone-alt"></i> Call Us: +254(0) 723 043 404
                         </a>
                     </div>
                 </div>
-                
                 <div class="appointment-form">
                     <h3>Request an Appointment</h3>
-                    <form>
+                    <form aria-label="Appointment Request Form">
                         <div class="form-group">
                             <label for="name">Full Name</label>
                             <input type="text" id="name" placeholder="Enter your full name">
@@ -602,339 +605,319 @@
     </section>
 
     <!-- News & Insights Section -->
-<section class="news-insights">
-    <div class="container">
-        <div class="section-header">
-            <h2>Health Tips & Updates</h2>
-            <p>Stay informed with the latest medical news and health advice from our experts</p>
+    <section class="news-insights">
+        <div class="container">
+            <div class="section-header">
+                <h2>Health Tips & Updates</h2>
+                <p>Stay informed with medical news and health advice from our experts in Kenya</p>
+            </div>
+            <div class="news-grid">
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=500&auto=format&fit=crop" alt="Pregnancy Health Tips from Brooks of Cherith Hospitals" loading="lazy">
+                        <div class="news-category">Health Tips</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">
+                            <i class="fas fa-calendar-alt"></i> March 10, 2025
+                        </div>
+                        <h3>5 Essential Tips for a Healthy Pregnancy</h3>
+                        <p>Discover key nutritional guidelines and self-care practices for a healthy pregnancy journey.</p>
+                        <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1616012760010-8b8b1c5c2b1f?q=80&w=500&auto=format&fit=crop" alt="Rheumatoid Arthritis Insights from Brooks of Cherith" loading="lazy">
+                        <div class="news-category">Medical Insights</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">
+                            <i class="fas fa-calendar-alt"></i> March 5, 2025
+                        </div>
+                        <h3>Understanding Rheumatoid Arthritis: Causes and Treatments</h3>
+                        <p>Learn about innovative treatments and lifestyle changes for rheumatoid arthritis.</p>
+                        <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=500&auto=format&fit=crop" alt="New Specialist at Brooks of Cherith Hospitals" loading="lazy">
+                        <div class="news-category">Hospital News</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">
+                            <i class="fas fa-calendar-alt"></i> February 28, 2025
+                        </div>
+                        <h3>Renowned Cardiologist Dr. Sarah Johnson Joins Our Team</h3>
+                        <p>Welcome Dr. Sarah Johnson, a leading cardiologist with over 15 years of experience.</p>
+                        <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="news-card">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?q=80&w=500&auto=format&fit=crop" alt="Diabetes Management Tips from Brooks of Cherith" loading="lazy">
+                        <div class="news-category">Health Tips</div>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">
+                            <i class="fas fa-calendar-alt"></i> February 20, 2025
+                        </div>
+                        <h3>Diabetes Management: New Approaches for Better Control</h3>
+                        <p>Explore strategies for managing diabetes with technology and diet.</p>
+                        <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="view-all-news">
+                <a href="news-insights.html" class="btn btn-outline-large">View All News & Articles <i class="fas fa-arrow-right"></i></a>
+            </div>
         </div>
-        
-        <div class="news-grid">
-            <div class="news-card">
-                <div class="news-image">
-                    <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?q=80&w=500&auto=format&fit=crop" alt="Pregnancy Health Tips">
-                    <div class="news-category">Health Tips</div>
-                </div>
-                <div class="news-content">
-                    <div class="news-date">
-                        <i class="fas fa-calendar-alt"></i> March 10, 2025
-                    </div>
-                    <h3>5 Essential Tips for a Healthy Pregnancy</h3>
-                    <p>Discover the key nutritional guidelines, exercise recommendations, and self-care practices that can help ensure a healthy pregnancy journey.</p>
-                    <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-            
-            <div class="news-card">
-                <div class="news-image">
-                    <img src="https://images.unsplash.com/photo-1616012760010-8b8b1c5c2b1f?q=80&w=500&auto=format&fit=crop" alt="Rheumatoid Arthritis">
-                    <div class="news-category">Medical Insights</div>
-                </div>
-                <div class="news-content">
-                    <div class="news-date">
-                        <i class="fas fa-calendar-alt"></i> March 5, 2025
-                    </div>
-                    <h3>Understanding Rheumatoid Arthritis: Causes and Treatments</h3>
-                    <p>Learn about the latest research on rheumatoid arthritis, including innovative treatment approaches and lifestyle modifications that can help manage symptoms.</p>
-                    <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-            
-            <div class="news-card">
-                <div class="news-image">
-                    <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=500&auto=format&fit=crop" alt="New Specialist">
-                    <div class="news-category">Hospital News</div>
-                </div>
-                <div class="news-content">
-                    <div class="news-date">
-                        <i class="fas fa-calendar-alt"></i> February 28, 2025
-                    </div>
-                    <h3>Renowned Cardiologist Dr. Sarah Johnson Joins Our Team</h3>
-                    <p>We're excited to welcome Dr. Sarah Johnson, a leading cardiologist with over 15 years of experience in cardiovascular health and preventive cardiology.</p>
-                    <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-            
-            <div class="news-card">
-                <div class="news-image">
-                    <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?q=80&w=500&auto=format&fit=crop" alt="Diabetes Management">
-                    <div class="news-category">Health Tips</div>
-                </div>
-                <div class="news-content">
-                    <div class="news-date">
-                        <i class="fas fa-calendar-alt"></i> February 20, 2025
-                    </div>
-                    <h3>Diabetes Management: New Approaches for Better Control</h3>
-                    <p>Explore the latest strategies for managing diabetes, including technological advancements, dietary recommendations, and exercise protocols.</p>
-                    <a href="#" class="news-link">Read More <i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="view-all-news">
-            <a href="news-insights.html" class="btn btn-outline-large">View All News & Articles <i class="fas fa-arrow-right"></i></a>
-        </div>
-    </div>
-</section>
+    </section>
 
-<!-- Locations & Contact Section -->
-<section class="locations-contact">
-    <div class="container">
-        <div class="section-header">
-            <h2>Visit Us</h2>
-            <p>Find our locations and get in touch with our team</p>
-        </div>
-        
-        <div class="location-container">
-            <div class="map-container">
-                <div class="map-responsive">
-                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1S9eNXTycN2PpUx22eX4L_oHGLX8yMVo&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>                </div>
+    <!-- Locations & Contact Section -->
+    <section class="locations-contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visit Us in Nairobi & Nyahururu</h2>
+                <p>Find our healthcare facilities and contact our team in Kenya</p>
             </div>
-            <div class="contact-details">
-                <div class="location-card">
-                    <h3>Head Quarters</h3>
-                    <div class="location-info">
-                        <div class="info-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <p>UpperHill, Matumbato Rd Gate 37</p>
-                                <p>Opp, Matumbato Estate</p>
+            <div class="location-container">
+                <div class="map-container">
+                    <div class="map-responsive">
+                        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1S9eNXTycN2PpUx22eX4L_oHGLX8yMVo&ehbc=2E312F&noprof=1" width="640" height="480" loading="lazy" title="Brooks of Cherith Hospitals Locations in Kenya"></iframe>
+                    </div>
+                </div>
+                <div class="contact-details">
+                    <div class="location-card">
+                        <h3>Head Quarters</h3>
+                        <div class="location-info">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <p>UpperHill, Matumbato Rd Gate 37</p>
+                                    <p>Opp, Matumbato Estate</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <div>
+                                    <p>Emergency: <a href="tel:+254723043404">+254(0) 723 043 404</a></p>
+                                    <p>Tel: <a href="tel:020-2240139/ 166">020-2240139/ 166</a></p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <p><a href="mailto:info@brooksofcherith.co.ke">info@brookofcherith.co.ke</a></p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <p><span class="highlight-text">Emergency Services:</span> 24/7</p>
+                                    <p><span class="highlight-text">Outpatient Services:</span> 24/7</p>
+                                    <p><span class="highlight-text">Specialist Consultations:</span> By appointment</p>
+                                </div>
                             </div>
                         </div>
-                        
-                        <div class="info-item">
+                        <div class="location-badge">
+                            <span><i class="fas fa-check-circle"></i> Main Facility</span>
+                        </div>
+                    </div>
+                    <div class="location-card">
+                        <h3>Nyahururu Branch - Ol Jororok</h3>
+                        <div class="location-info">
+                            <div class="info-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <p>Nyakariang'a Centre</p>
+                                    <p>Nyahururu, Ol-Jororok</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <div>
+                                    <p>Emergency: <a href="tel:+254723043404">+254(0) 723 043 404</a></p>
+                                    <p>Clinic: <a href="tel:0723-476735">0723-476735</a></p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <p><span class="highlight-text">Clinic Hours:</span> 24/7</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-connect">
+                        <h4>Connect With Us</h4>
+                        <div class="social-icons">
+                            <a href="https://web.facebook.com/brookofcherithmedicalcenter/?_rdc=1&_rdr#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://x.com/brookofcherith" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/brookofcherithmedical?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Partners Section -->
+    <section class="partners">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Partners</h2>
+                <p>Working together with leading healthcare and insurance providers in Kenya</p>
+            </div>
+            <div class="partner-slider">
+                <div class="partner-track">
+                    <div class="partner-logo">
+                        <img src="https://cdn.brandfetch.io/idUf8O72cj/w/300/h/75/theme/dark/logo.png?c=1bxid64Mup7aczewSAYMX&t=1740699615731" alt="Kenbright Insurance Partner of Brooks of Cherith" loading="lazy" class="partner-logo">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://cdn.brandfetch.io/idRtksYuzn/w/2178/h/1107/theme/dark/logo.png?c=1bxid64Mup7aczewSAYMX&t=1740303263725" alt="NHIF - National Hospital Insurance Fund Partner" loading="lazy" class="partner-logo">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://cdn.brandfetch.io/idz3KTARg7/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1737820704049" alt="Minet Insurance Partner of Brooks of Cherith" loading="lazy" class="partner-logo">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://makl.co.ke/assets/images/logo%201.png" alt="Makl Healthcare Partner" loading="lazy" class="partner-logo">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://cdn.brandfetch.io/idmCd_3wYI/w/820/h/202/theme/dark/logo.png?c=1bxid64Mup7aczewSAYMX&t=1742241752382" alt="Allianz Worldwide Care Partner" loading="lazy" class="partner-logo">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://www.madison.co.ke/wp-content/uploads/2020/12/logo.png" alt="Madison Insurance Partner" loading="lazy" class="partner-logo">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://cdn.brandfetch.io/idqET1HYHr/w/322/h/270/theme/dark/logo.png?c=1bxid64Mup7aczewSAYMX&t=1737267539048" alt="CIC GROUP Partner of Brooks of Cherith" loading="lazy" class="partner-logo">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://medilinkworld.com/images/logo.svg" alt="Africa Medilink Partner" loading="lazy" class="partner-logo">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://cdn.brandfetch.io/idurfy9_nr/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1667878035340" alt="BUPA Healthcare Partner" loading="lazy" class="partner-logo">
+                    </div>
+                    <!-- Duplicate set for infinite scroll effect -->
+                    <div class="partner-logo">
+                        <img src="https://cdn.brandfetch.io/idUf8O72cj/w/300/h/75/theme/dark/logo.png?c=1bxid64Mup7aczewSAYMX&t=1740699615731" alt="Kenbright Insurance Partner of Brooks of Cherith" loading="lazy" class="partner-logo">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://cdn.brandfetch.io/idRtksYuzn/w/2178/h/1107/theme/dark/logo.png?c=1bxid64Mup7aczewSAYMX&t=1740303263725" alt="NHIF - National Hospital Insurance Fund Partner" loading="lazy" class="partner-logo">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://cdn.brandfetch.io/idz3KTARg7/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1737820704049" alt="Minet Insurance Partner of Brooks of Cherith" loading="lazy" class="partner-logo">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://makl.co.ke/assets/images/logo%201.png" alt="Makl Healthcare Partner" loading="lazy" class="partner-logo">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://cdn.brandfetch.io/idmCd_3wYI/w/820/h/202/theme/dark/logo.png?c=1bxid64Mup7aczewSAYMX&t=1742241752382" alt="Allianz Worldwide Care Partner" loading="lazy" class="partner-logo">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://www.madison.co.ke/wp-content/uploads/2020/12/logo.png" alt="Madison Insurance Partner" loading="lazy" class="partner-logo">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://cdn.brandfetch.io/idqET1HYHr/w/322/h/270/theme/dark/logo.png?c=1bxid64Mup7aczewSAYMX&t=1737267539048" alt="CIC GROUP Partner of Brooks of Cherith" loading="lazy" class="partner-logo">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://medilinkworld.com/images/logo.svg" alt="Africa Medilink Partner" loading="lazy" class="partner-logo">
+                    </div>
+                    <div class="partner-logo">
+                        <img src="https://cdn.brandfetch.io/idurfy9_nr/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1667878035340" alt="BUPA Healthcare Partner" loading="lazy" class="partner-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-column">
+                    <div class="footer-logo">
+                        <img src="Logo-white.jpg" alt="Brooks of Cherith Hospitals Footer Logo" loading="lazy">
+                        <p class="tagline">We treat, God cures.</p>
+                    </div>
+                    <p class="footer-about">Brooks of Cherith Hospitals provides holistic medical care in Nairobi and Nyahururu, Kenya, rooted in our faith-driven mission.</p>
+                    <div class="footer-certifications">
+                        <span><i class="fas fa-certificate"></i> Certified Medical Professionals</span>
+                        <span><i class="fas fa-award"></i> Accredited Healthcare Facility</span>
+                    </div>
+                </div>
+                <div class="footer-sub-column">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="services.html">Our Services</a></li>
+                            <li><a href="locations.html">Locations</a></li>
+                            <li><a href="news-insights.html">News & Insights</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Our Services</h4>
+                        <ul class="footer-links">
+                            <li><a href="specialist-outpatient.html">Specialist Outpatient</a></li>
+                            <li><a href="general-outpatient.html">General Outpatient</a></li>
+                            <li><a href="diagnostic-services.html">Diagnostic Services</a></li>
+                            <li><a href="emergency-trauma-services.html">Emergency Care</a></li>
+                            <li><a href="general-outpatient.html">Antenatal Clinic</a></li>
+                            <li><a href="general-outpatient.html">Rehabilitative Medicine</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact & Support</h4>
+                    <ul class="footer-contact">
+                        <li>
                             <i class="fas fa-phone-alt"></i>
                             <div>
-                                <p>Emergency: <a href="tel:+254723043404">+254(0) 723 043 404</a></p>
-                                <p>Tel: <a href="tel:020-2240139/ 166">020-2240139/ 166</a></p>
+                                <p>Emergency:</p>
+                                <a href="tel:+254723043404">+254(0) 723 043 404</a>
                             </div>
-                        </div>
-                        
-                        <div class="info-item">
+                        </li>
+                        <li>
                             <i class="fas fa-envelope"></i>
                             <div>
-                                <p><a href="mailto:info@brooksofcherith.co.ke">info@brookofcherith.co.ke</a></p>
+                                <p>Email:</p>
+                                <a href="mailto:info@brooksofcherith.co.ke">info@brookofcherith.co.ke</a>
                             </div>
-                        </div>
-                        
-                        <div class="info-item">
-                            <i class="fas fa-clock"></i>
-                            <div>
-                                <p><span class="highlight-text">Emergency Services:</span> 24/7</p>
-                                <p><span class="highlight-text">Outpatient Services:</span> 24/7</p>
-                                <p><span class="highlight-text">Specialist Consultations:</span> By appointment</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="location-badge">
-                        <span><i class="fas fa-check-circle"></i> Main Facility</span>
-                    </div>
-                </div>
-                
-                <div class="location-card">
-                    <h3>Nyahururu Branch - Ol Jororok</h3>
-                    <div class="location-info">
-                        <div class="info-item">
+                        </li>
+                        <li>
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
-                                <p>Nyakariang'a Centre</p>
-                                <p>Nyahururu, Ol-Jororok</p>
+                                <p>Main Hospital:</p>
+                                <span>UpperHill, Matumbato Rd Gate 37, Nairobi</span>
                             </div>
-                        </div>
-                        
-                        <div class="info-item">
-                            <i class="fas fa-phone-alt"></i>
-                            <div>
-                                <p>Emergency: <a href="tel:+254723043404">+254(0) 723 043 404</a></p>
-                                <p>Clinic: <a href="tel:0723-476735">0723-476735</a></p>
-                            </div>
-                        </div>
-                        
-                        <div class="info-item">
-                            <i class="fas fa-clock"></i>
-                            <div>
-                                <p><span class="highlight-text">Clinic Hours:</span> 24/7</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="social-connect">
-                    <h4>Connect With Us</h4>
-                    <div class="social-icons">
-                        <a href="https://web.facebook.com/brookofcherithmedicalcenter/?_rdc=1&_rdr#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://x.com/brookofcherith" class="social-icon"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/brookofcherithmedical?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Our Partners Section -->
-<section class="partners">
-    <div class="container">
-        <div class="section-header">
-            <h2>Our Partners</h2>
-            <p>Working together with leading healthcare and insurance providers</p>
-        </div>
-        
-        <div class="partner-slider">
-            <div class="partner-track">
-                <!-- First set of logos -->
-                <div class="partner-logo">
-                    <img src="https://cdn.brandfetch.io/idUf8O72cj/w/300/h/75/theme/dark/logo.png?c=1bxid64Mup7aczewSAYMX&t=1740699615731" alt="Kenbright Insurance" class="partner-logo">
-                </div>
-                <div class="partner-logo">
-                    <img src="https://cdn.brandfetch.io/idRtksYuzn/w/2178/h/1107/theme/dark/logo.png?c=1bxid64Mup7aczewSAYMX&t=1740303263725" alt="NHIF - National Hospital Insurance Fund" class="partner-logo">
-                </div>
-                <div class="partner-logo">
-                    <img src="https://cdn.brandfetch.io/idz3KTARg7/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1737820704049" alt="Minet Insurance" class="partner-logo">
-                </div>
-                <div class="partner-logo">
-                    <img src="https://makl.co.ke/assets/images/logo%201.png" alt="Makl Healthcare" class="partner-logo">
-                </div>
-                <div class="partner-logo">
-                    <img src="https://cdn.brandfetch.io/idmCd_3wYI/w/820/h/202/theme/dark/logo.png?c=1bxid64Mup7aczewSAYMX&t=1742241752382" alt="Allianz Worldwide Care" class="partner-logo">
-                </div>
-                <div class="partner-logo">
-                    <img src="https://www.madison.co.ke/wp-content/uploads/2020/12/logo.png" alt="Madison Insurance" class="partner-logo">
-                </div>
-                <div class="partner-logo">
-                    <img src="https://cdn.brandfetch.io/idqET1HYHr/w/322/h/270/theme/dark/logo.png?c=1bxid64Mup7aczewSAYMX&t=1737267539048" alt="CIC GROUP" class="partner-logo">
-                </div>
-                <div class="partner-logo">
-                    <img src="https://medilinkworld.com/images/logo.svg" alt="Africa Medilink" class="partner-logo">
-                </div>
-                <div class="partner-logo">
-                    <img src="https://cdn.brandfetch.io/idurfy9_nr/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1667878035340" alt="BUPA Healthcare" class="partner-logo">
-                </div>
-                
-                <!-- Duplicate set for infinite scroll effect -->
-                <div class="partner-logo">
-                    <img src="https://cdn.brandfetch.io/idUf8O72cj/w/300/h/75/theme/dark/logo.png?c=1bxid64Mup7aczewSAYMX&t=1740699615731" alt="Kenbright Insurance" class="partner-logo">
-                </div>
-                <div class="partner-logo">
-                    <img src="https://cdn.brandfetch.io/idRtksYuzn/w/2178/h/1107/theme/dark/logo.png?c=1bxid64Mup7aczewSAYMX&t=1740303263725" alt="NHIF - National Hospital Insurance Fund" class="partner-logo">
-                </div>
-                <div class="partner-logo">
-                    <img src="https://cdn.brandfetch.io/idz3KTARg7/w/400/h/400/theme/dark/icon.jpeg?c=1bxid64Mup7aczewSAYMX&t=1737820704049" alt="Minet Insurance" class="partner-logo">
-                </div>
-                <div class="partner-logo">
-                    <img src="https://makl.co.ke/assets/images/logo%201.png" alt="Makl Healthcare" class="partner-logo">
-                </div>
-                <div class="partner-logo">
-                    <img src="https://cdn.brandfetch.io/idmCd_3wYI/w/820/h/202/theme/dark/logo.png?c=1bxid64Mup7aczewSAYMX&t=1742241752382" alt="Allianz Worldwide Care" class="partner-logo">
-                </div>
-                <div class="partner-logo">
-                    <img src="https://cdn.brandfetch.io/idr9tBncOK/w/278/h/75/theme/dark/logo.png?c=1bxid64Mup7aczewSAYMX&t=1736614508048" alt="Madison Insurance" class="partner-logo">
-                </div>
-                <div class="partner-logo">
-                    <img src="https://cdn.brandfetch.io/idqET1HYHr/w/322/h/270/theme/dark/logo.png?c=1bxid64Mup7aczewSAYMX&t=1737267539048" alt="CIC GROUP" class="partner-logo">
-                </div>
-                <div class="partner-logo">
-                    <img src="https://medilinkworld.com/images/logo.svg" alt="Africa Medilink" class="partner-logo">
-                </div>
-                <div class="partner-logo">
-                    <img src="https://cdn.brandfetch.io/idurfy9_nr/theme/dark/logo.svg?c=1bxid64Mup7aczewSAYMX&t=1667878035340" alt="BUPA Healthcare" class="partner-logo">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer class="footer">
-    <div class="container">
-        <div class="footer-top">
-            <div class="footer-column">
-                <div class="footer-logo">
-                    <img src="Logo-white.jpg" alt="Brooks of Cherith Hospitals">
-                    <p class="tagline">We treat, God cures.</p>
-                </div>
-                <p class="footer-about">Brooks of Cherith Hospitals provides holistic medical care that combines expertise with compassion, rooted in our faith-driven mission to heal and serve.</p>
-                <div class="footer-certifications">
-                    <span><i class="fas fa-certificate"></i> Certified Medical Professionals</span>
-                    <span><i class="fas fa-award"></i> Accredited Healthcare Facility</span>
-                </div>
-            </div>
-            <div class="footer-sub-column">
-                <div class="footer-column">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="services.html">Our Services</a></li>
-                        <li><a href="locations.html">Locations</a></li>
-                        <li><a href="news-insights.html">News & Insights</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h4>Our Services</h4>
-                    <ul class="footer-links">
-                        <li><a href="specialist-outpatient.html">Specialist Outpatient</a></li>
-                        <li><a href="general-outpatient.html">General Outpatient</a></li>
-                        <li><a href="diagnostic-services.html">Diagnostic Services</a></li>
-                        <li><a href="emergency-trauma-services.html">Emergency Care</a></li>
-                        <li><a href="general-outpatient.html">Antenatal Clinic</a></li>
-                        <li><a href="general-outpatient.html">Rehabilitative Medicine</a></li>
+                        </li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-column">
-                <h4>Contact & Support</h4>
-                <ul class="footer-contact">
-                    <li>
-                        <i class="fas fa-phone-alt"></i>
-                        <div>
-                            <p>Emergency:</p>
-                            <a href="tel:+254723043404">+254(0) 723 043 404</a>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <p>Email:</p>
-                            <a href="mailto:info@brooksofcherith.co.ke">info@brookofcherith.co.ke</a>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <p>Main Hospital:</p>
-                            <span>UpperHill, Matumbato Rd Gate 37, Nairobi</span>
-                        </div>
-                    </li>
-                </ul>
+            <div class="footer-bottom">
+                <div class="footer-social">
+                    <a href="https://web.facebook.com/brookofcherithmedicalcenter/?_rdc=1&_rdr#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://x.com/brookofcherith" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/brookofcherithmedical" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#" class="social-icon" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                </div>
+                <div class="copyright">
+                    <p>© 2025 Brooks of Cherith Hospitals. All Rights Reserved.</p>
+                </div>
             </div>
         </div>
-        
-        <div class="footer-bottom">
-            <div class="footer-social">
-                <a href="https://web.facebook.com/brookofcherithmedicalcenter/?_rdc=1&_rdr#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://x.com/brookofcherith" class="social-icon"><i class="fas fa-x"></i></a>
-                <a href="https://www.instagram.com/brookofcherithmedical" class="social-icon"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
-            </div>
-            
-            <div class="footer-legal">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Use</a>
-            </div>
-            
-            <div class="copyright">
-                <p>&copy; 2025 Brooks of Cherith Hospitals. All Rights Reserved.</p>
-            </div>
-        </div>
-    </div>
-</footer>
-<script src="script.js"></script>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
