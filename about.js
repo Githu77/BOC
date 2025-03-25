@@ -136,3 +136,14 @@ document.addEventListener("DOMContentLoaded", () => {
   animateElements(document.querySelectorAll(".gallery-item"))
 })
 
+document.querySelectorAll('.leader-image img').forEach(img => {
+  img.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+    return false;
+  });
+
+  img.addEventListener('dragstart', (e) => {
+    e.preventDefault();
+    return false;
+  });
+});
