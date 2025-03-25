@@ -682,19 +682,35 @@
 /* Touch device optimizations */
 @media (hover: none) {
   .leader-bio {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     opacity: 0.9;
-    transform: translateY(70%);
-    height: 30%;
+    max-height: 30%;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+  }
+
+  .leader-image {
+    position: relative;
+    overflow: hidden;
   }
 
   .leader-image:active .leader-bio {
-    transform: translateY(0);
-    height: 100%;
+    max-height: 100%;
+    opacity: 0.9;
   }
 
   .gallery-caption {
-    transform: translateY(0);
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     opacity: 0.9;
   }
 }
-
